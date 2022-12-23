@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<package>
+  <name>tams_apriltags</name>
+  <version>0.0.1</version>
+  <description>
+    This package provides URDF models and Collada meshes of
+    "apriltags cards" for use in Gazebo, Moveit!, 
+    and for visualization in rviz.
+
+    Due to problems with Gazebo, the current implementation uses
+    individual Collada 3D-meshes, one per Apriltag card.
+ </description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag --> 
+  <maintainer email="hendrich@informatik.uni-hamburg.de">Norman Hendrich</maintainer>
+
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>TODO</license>
+
+
+  <!-- Url tags are optional, but mutiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/find_user_exekutor</url> -->
+
+
+  <!-- Author tags are optional, mutiple are allowed, one per tag -->
+  <!-- Authors do not have to be maintianers, but could be -->
+  <!-- Example: -->
+  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+
+
+  <!-- The *_depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <!-- Examples: -->
+  <!-- Use build_depend for packages you need at compile time: -->
+  <!--   <build_depend>message_generation</build_depend> -->
+  <!-- Use buildtool_depend for build tool packages: -->
+  <!--   <buildtool_depend>catkin</buildtool_depend> -->
+  <!-- Use run_depend for packages you need at runtime: -->
+  <!--   <run_depend>message_runtime</run_depend> -->
+  <!-- Use test_depend for packages you need only for testing: -->
+  <!--   <test_depend>gtest</test_depend> -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>urdf</build_depend>
+
+  <run_depend>tf</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>gazebo_ros</run_depend>  <!-- fnh 2015.05.14 -->
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <gazebo_ros gazebo_media_path="${prefix}" />  <!-- for standalone Gazebo, ROS Hydro and up -->
+    <gazebo gazebo_media_path="${prefix}" />
+    <gazebo plugin_path="${prefix}/lib" />
+    <rviz rviz_media_path="${prefix}/Media/materials/scripts:${prefix}/Media/textures"/>
+
+    <!-- You can specify that this package is a metapackage here: -->
+    <!-- <metapackage/> -->
+
+    <!-- Other tools can request additional information be placed here -->
+  </export>
+</package>

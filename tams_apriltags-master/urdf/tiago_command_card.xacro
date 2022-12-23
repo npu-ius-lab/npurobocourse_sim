@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="tiago_card">
+
+  <!-- ROS xacro/urdf model of one "Tiago demo command card",
+       which has a command/cocktail recipe on the front and an
+       apriltag marker on the back.
+       Showing the card to our bartender robot will trigger the
+       corresponding command.
+
+       2018.05.16 - created
+
+       (C) 2018 fnh, hendrich@informatik.uni-hamburg.de
+
+       Usage:
+       <xacro:tiago_command_card namespace="" name="tiago_reset_card" front="reset.png"  
+              family="36h11" tagID="201" dx="0.1" dy="0.06" dz="0.005"/>
+
+       <xacro:apriltag_marker namespace="doro/" name="apriltag13" parent="base_link" 
+              family="36h11" ID="13" size="0.05">
+         <origin xyz="0.2 0.3 05" rpy="0 0 3.14" />
+       </xacro:apriltag_marker>
+   -->
+
+  <xacro:include filename="$(find tams_apriltags)/urdf/apriltag_marker.xacro" />
+
+
+  <xacro:macro name="tiago_command_card" params="namespace name texture gazeboMaterial family tagID tagSize dx dy dz" >
+    <!-- main body with collision but without visual -->
+    <link name="${namespace}${name}">
+      <inertial>
+        <mass value="0.01" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+      </inertial>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="${dx} ${dy} ${dz}" />
+        </geometry>
+      </collision>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="${dx} ${dy} ${dz}" />
+        </geometry>      
+        <material name="tiago_command_card_white/${name}">
+          <color rgba="1.0 1.0 1.0 1.0"/>
+        </material>
+      </visual>
+    </link>
+    <gazebo reference="${namespace}${name}">
+      <!-- material/texture definition for Gazebo -->
+      <!-- <material>Gazebo/White</material> -->
+      <turnGravityOff>false</turnGravityOff>
+      <selfCollide>false</selfCollide>
+      <mu1>0</mu1>
+      <mu2>0</mu2>
+      <kp>1000000.0</kp>
+      <kd>1.0</kd>
+    </gazebo>
+
+    <!-- texture on the front of the command card -->
+    <link name="${namespace}${name}_logo_link">
+      <visual>
+        <!--<material name="red" />-->
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="${dx} ${dy} ${0.0001}" />
+        </geometry>      
+        <!-- material definition for rviz -->
+        <material name="tiago_command_card_texture/${name}/texture" >
+          <texture filename="file://$(find tams_apriltags)/Media/materials/textures/${texture}" />
+        </material>
+      </visual>
+    </link>
+    <gazebo reference="${namespace}${name}_logo_link">
+      <!-- material/texture definition for Gazebo -->
+      <!-- <material>Gazebo/Red</material> -->
+      <material>${gazeboMaterial}</material> 
+      <turnGravityOff>false</turnGravityOff>
+      <selfCollide>false</selfCollide>
+      <mu1>0</mu1>
+      <mu2>0</mu2>
+      <kp>1000000.0</kp>
+      <kd>1.0</kd>
+    </gazebo>
+
+    <!-- the apriltag on the back of the command card -->
+    <link name="${namespace}${name}_atag_link">
+      <visual>
+        <!--<material name="red" />-->
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="${tagSize} ${tagSize} ${0.001}" />
+        </geometry>      
+        <!-- material definition for rviz -->
+        <material name="apriltag_${family}/tag${family}_${tagID}" >
+          <!-- we generate 5-digit numbers in the filenames; for 36h11 this means we need 2 leading zeros -->
+          <!--<texture filename="file://$(find tams_apriltags)/Media/materials/textures/tag${family}/tag36_11_0000${tagID}.png" />-->
+          <texture filename="file://$(find tams_apriltags)/Media/materials/textures/rviz/${family}/${tagID}.png" />
+        </material>
+      </visual>
+    </link>
+    <gazebo reference="${namespace}${name}_atag_link">
+      <!-- material/texture definition for Gazebo -->
+      <!-- <material>Gazebo/Red</material> -->
+      <material>apriltag_${family}/tag${family}_${tagID}</material> 
+      <turnGravityOff>false</turnGravityOff>
+      <selfCollide>false</selfCollide>
+      <mu1>0</mu1>
+      <mu2>0</mu2>
+      <kp>1000000.0</kp>
+      <kd>1.0</kd>
+    </gazebo>
+
+    <joint name="${namespace}${name}_logo_joint" type="fixed">
+      <parent link="${namespace}${name}" />
+      <child link="${namespace}${name}_logo_link" />
+      <origin xyz="0 0 ${-dz/2-0.001}" rpy="0 0 0" />
+    </joint>
+
+    <joint name="${namespace}${name}_atag_joint" type="fixed">
+      <parent link="${namespace}${name}" />
+      <child link="${namespace}${name}_atag_link" />
+      <origin xyz="0 0 ${dz/2+0.001}" rpy="0 0 0" />
+    </joint>
+  </xacro:macro>
+
+
+</robot>

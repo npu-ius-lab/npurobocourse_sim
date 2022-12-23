@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- launches the given xacro object in Gazebo. Use "model_name:=nescafe" ... 
+       to select the object/namespace of the robot model,
+       and use "x:=3.14" ... "yaw:=3.14" to specify initial object pose.
+       This file expects that Gazebo is already running (or maybe paused).
+       Due to limitations in roslaunch (no nested substitutions), we need
+       the absolute pathname of the object here.
+  -->
+
+  <arg name="xacro_file" default="/opt/ros/hydro/hugo/urdf/nescafe.xacro" />
+  <arg name="model_name" default="nescafe" />
+  <arg name="x" default="0" />
+  <arg name="y" default="0" />
+  <arg name="z" default="0.01" />
+  <arg name="roll" default="0" />
+  <arg name="pitch" default="0" />
+  <arg name="yaw" default="0" />
+
+
+  <!-- upload the robot xacro/urdf to the param server -->
+  <param name="$(arg model_name)_description" 
+         command="$(find xacro)/xacro --inorder $(arg xacro_file)" />
+
+
+
+  <!-- spawn the robot at xzy=(-1,0,0) -->
+  <node name="spawn_$(arg model_name)" pkg="gazebo_ros" type="spawn_model" 
+        args="-urdf -param $(arg model_name)_description -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw) -model $(arg model_name)"
+        respawn="false" output="screen" />
+
+
+</launch>

@@ -1,0 +1,506 @@
+% LaTeX "driver" file to create a set of "command cards"
+% for use with our Tiago barkeeper demo.
+%
+
+\documentclass[a4wide]{article}
+\usepackage[a4paper,margin=10mm]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{times}
+
+% a bit too small
+%\def\cardwidth{80mm}
+%\def\cardheight{100mm}
+
+\def\cardwidth{90mm}
+\def\cardheight{130mm}
+
+\setlength{\textwidth}{190mm}
+\setlength{\leftmargin}{0mm}
+
+
+
+
+
+% one command card with 
+% #1 apriltag ID,     (e.g. "420")
+% #2 command name     (e.g. "emergency-stop", "order-tequila-sunrise")
+% #3 main text        (a full minipage contents)
+% #4 top banner makebox contents 
+%
+\def\commandCardWithBanner#1#2#3#4{%
+\begin{center}
+{\color{lightgray}\hrule}\vspace*{1mm}
+% todo: top cutting marks
+% left (user text) minipage: [outer-adjusting][height][inner-vertical-adj]{width}
+\framebox{%
+\begin{minipage}[b][\cardheight][c]{\cardwidth}%
+\strut
+\makebox[\cardwidth]{#4}\\
+\vfill
+{#3}
+\vfill
+\makebox[\cardwidth]{\strut\quad #1 \hfill #2\quad\strut}%
+\end{minipage}}%
+\hspace*{1mm}%
+% right (apriltag) minipage
+\framebox{%
+\begin{minipage}[b][\cardheight][t]{\cardwidth}%
+\vfill
+\includegraphics[width=\cardwidth]{../Media/materials/textures/large36h11/tag36_11_00#1.png}\\
+\vfill
+\makebox[\cardwidth]{\strut\quad #1 \hfill #2\quad\strut}%
+\end{minipage}}%
+%
+% todo: bottom cutting marks
+\vspace*{1mm}{\color{lightgray}\hrule}
+\end{center}
+%\vspace*{1mm}
+}% end \commandCardWithBanner
+
+
+% one command card with 
+% #1 apriltag ID,     (e.g. "420")
+% #2 command name     (e.g. "emergency-stop", "order-tequila-sunrise")
+% #3 main text        (a full minipage contents)
+% no banner image
+%
+\def\commandCard#1#2#3{%
+\commandCardWithBanner{#1}{#2}{#3}{~}%
+}
+
+
+
+% one command card with 
+% #1 apriltag ID,     (e.g. "420")
+% #2 command name     (e.g. "emergency-stop", "order-tequila-sunrise")
+% #3 main text        (a full minipage contents)
+% UHAM and PAL robotics banner image
+%
+\def\tiagoCommandCard#1#2#3{%
+\commandCardWithBanner{#1}{#2}{#3}{%
+%\strut
+\rule[-0\baselineskip]{0pt}{8mm}%
+\hspace*{1mm}\includegraphics[height=7mm]{UHH-logo-800.png}%
+\hfill\includegraphics[height=7mm]{PAL-robotics-logo.png}
+}%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\commandCard{402}{emergency-stop}
+{
+\vfill
+\begin{center}\Huge
+Emergency\\Stop!
+\end{center}
+\vfill
+}
+
+\commandCardWithBanner{402}{emergency-stop}
+{
+\strut\vfill
+\centering{\Huge Emergency Stop!}
+\vfill\strut
+\begin{center}
+Unconditional emergency stop of the robot.\\
+Any ongoing motion and activity will be lost.\\
+You will probably need to restart Tiago.
+\end{center}
+}
+{\includegraphics[height=8mm]{UHH-logo-800.png}}
+
+
+\tiagoCommandCard{403}{command-pause}
+{
+\strut\vfill
+\centering\Huge Pause 
+\vfill\strut
+}
+
+\tiagoCommandCard{404}{command-continue}
+{
+\strut\vfill
+\centering\Huge Continue
+\vfill\strut
+}
+
+\tiagoCommandCard{405}{command-cancel-active-task}
+{
+\strut\vfill
+\centering{\Huge Cancel}
+\vfill\strut
+\begin{center}
+Cancels the currently active task;\\
+any ongoing arm motion will be completed.\\
+Tiago will then continue with its\\
+next scheduled task.
+\end{center}
+}
+
+{
+\tiagoCommandCard{406}{command-cancel-all-tasks}
+{
+\strut\vfill
+\centering{\Huge Cancel All}
+\vfill\strut
+\begin{center}
+Cancels all pending tasks;\\
+any ongoing arm motion will be completed.\\
+Tiago will then remain in an idle state\\
+and wait for new commands.
+\end{center}
+}
+
+\tiagoCommandCard{407}{move-look-straight}
+{
+\strut\vfill
+\centering\Huge Look Straight!
+\vfill\strut
+}
+
+\tiagoCommandCard{408}{move-look-at-me}
+{
+\strut\vfill
+\centering{\Huge Look At Me!}
+\vfill\strut
+\begin{center}
+Makes Tiago to look at the command card.\\
+Move slowly, and the head will follow.
+\end{center}
+}
+
+\tiagoCommandCard{409}{move-tuck-arm}
+{
+\strut\vfill
+\centering\Huge Tuck Arm!
+\vfill\strut
+}
+
+\tiagoCommandCard{410}{move-arm-home-position}
+{
+\strut\vfill
+\centering{\Huge Move Arm\\to Home Position!\\}
+\vfill\strut
+\begin{center}
+Moves the Tiago arm to its home position,\\
+with the hand extended forward.
+\end{center}
+}
+
+\tiagoCommandCard{411}{move-torso-down}
+{
+\strut\vfill
+\centering{\Huge Move Torso Down!}
+\vfill\strut
+}
+
+\tiagoCommandCard{412}{move-torso-up}
+{
+\strut\vfill
+\centering{\Huge Move Torso Up!}
+\vfill\strut
+}
+
+\tiagoCommandCard{413}{move-torso-interactive}
+{
+\strut\vfill
+\centering{\Huge Move Torso!}
+\vfill\strut
+\begin{center}
+Move the card up and down and Tiago will follow.
+\end{center}
+}
+
+\tiagoCommandCard{414}{move-open-gripper}
+{
+\strut\vfill
+\centering{\Huge Open Gripper!}
+\vfill\strut
+}
+
+\tiagoCommandCard{415}{move-close-gripper}
+{
+\strut\vfill
+\centering{\Huge Close Gripper!}
+\vfill\strut
+}
+
+\tiagoCommandCard{416}{move-arm-interactive}
+{
+\strut\vfill
+\centering{\Huge Move Arm!\\}
+\centering{\large (Interactively)\\}
+\vfill\strut
+\begin{center}
+Hold the card still initially (about 3 seconds).\\
+Then slowly move and rotate the card, and Tiago's\\
+hand will follow your motion. Use with care!
+\end{center}
+}
+
+
+
+\tiagoCommandCard{420}{drive-to-docking-station}
+{
+\strut\vfill
+\centering{\Huge Drive to\\Docking Station!\\}
+\vfill\strut
+}
+
+\tiagoCommandCard{421}{drive-to-barkeeper-position}
+{
+\strut\vfill
+\centering{\Huge Drive Home!}
+\vfill\strut
+\begin{center}
+Tiago will move back home\\
+to his barkeeper position behind the bar.
+\end{center}
+}
+
+\tiagoCommandCard{422}{drive-turn-left}
+{
+\strut\vfill
+\centering{\Huge Turn Left!}
+\vfill\strut
+\begin{center}
+(about 5\,degree/second)
+\end{center}
+}
+
+\tiagoCommandCard{423}{drive-turn-right}
+{
+\strut\vfill
+\centering{\Huge Turn right!}
+\vfill\strut
+\begin{center}
+(about 5\,degree/second)
+\end{center}
+}
+
+\tiagoCommandCard{424}{drive-reverse}
+{
+\strut\vfill
+\centering{\Huge Drive Reverse!}
+\vfill\strut
+\begin{center}
+Interactive recovery if the robot gets stuck.\\
+Speed is 5\,cm/second.
+Use with care!
+\end{center}
+}
+
+\tiagoCommandCard{425}{drive-forward}
+{
+\strut\vfill
+\centering{\Huge Drive Forward!}
+\vfill\strut
+\begin{center}
+Interactive recovery if the robot gets stuck.\\
+Speed is 5\,cm/second.
+Use with care!
+\end{center}
+}
+
+\tiagoCommandCard{426}{drive-here}
+{
+\strut\vfill
+\centering{\Huge Come Here!}
+\vfill\strut
+\begin{center}
+Hold the card still initially (about 3 seconds).\\
+Tiago well then try to drive to your position.
+\end{center}
+}
+
+\tiagoCommandCard{427}{drive-follow-user}
+{
+\strut\vfill
+\centering{\Huge Follow Me!}
+\vfill\strut
+\begin{center}
+Hold the card still initially (about 3 seconds).\\
+Then slowly move and rotate the card, and Tiago
+will drive to follow your motion. Use with care!
+Maximum Speed is 5\,cm/second.
+\end{center}
+}
+
+
+
+
+
+\tiagoCommandCard{430}{order-glass-of-still-water}
+{
+\strut\vfill
+\centering{\Huge Still Water}
+\vfill\strut
+\begin{center}
+Order one glass (0.2\,l) of pure still spring water.
+\end{center}
+}
+
+\tiagoCommandCard{431}{order-glass-of-sparkling-water}
+{
+\strut\vfill
+\centering{\Huge Sparkling Water}
+\vfill\strut
+\begin{center}
+Order one glass (0.2\,l) of sparkling mineral water.
+\end{center}
+}
+
+\tiagoCommandCard{433}{order-glass-of-tonic-water}
+{
+\strut\vfill
+\centering{\Huge Tonic Water}
+\vfill\strut
+\begin{center}
+Order one glass (0.2\,l) of Schweppes tonic water.
+\end{center}
+}
+
+\tiagoCommandCard{434}{order-glass-of-bitter-lemon}
+{
+\strut\vfill
+\centering{\Huge Bitter Lemon}
+\vfill\strut
+\begin{center}
+Order one glass (0.2\,l) of Schweppes Bitter Lemon.
+\end{center}
+}
+
+\tiagoCommandCard{435}{order-glass-of-bitter-orange}
+{
+\strut\vfill
+\centering{\Huge Bitter Orange}
+\vfill\strut
+\begin{center}
+Order one glass (0.2\,l) of Schweppes Bitter Orange.
+\end{center}
+}
+
+\tiagoCommandCard{436}{order-glass-of-coca-cola}
+{
+\strut\vfill
+\centering{\Huge Coca Cola}
+\vfill\strut
+\begin{center}
+Order one glass (0.2\,l) of Coca Cola.
+\end{center}
+}
+
+\tiagoCommandCard{437}{order-glass-of-fanta}
+{
+\strut\vfill
+\centering{\Huge Fanta}
+\vfill\strut
+\begin{center}
+Order one glass (0.2\,l) of Fanta orange lemonade.
+\end{center}
+}
+
+
+
+
+
+
+
+
+
+\tiagoCommandCard{440}{order-glass-of-apple-juice}
+{
+\strut\vfill
+\centering\Huge Apple Juice
+\vfill\strut
+}
+
+\tiagoCommandCard{441}{order-glass-of-orange-juice}
+{
+\strut\vfill
+\centering\Huge Orange Juice
+\vfill\strut
+}
+
+\tiagoCommandCard{442}{order-glass-of-pineapple-juice}
+{
+\strut\vfill
+\centering\Huge Pineapple Juice
+\vfill\strut
+}
+
+
+
+\tiagoCommandCard{450}{order-glass-of-white-wine}
+{
+\strut\vfill
+\begin{center}
+\Huge White Wine
+\end{center}
+\begin{center}
+\Large Chardonnay (2013)
+\end{center}
+\vfill\strut
+}
+
+\tiagoCommandCard{451}{order-glass-of-red-wine}
+{
+\strut\vfill
+\begin{center}
+\Huge Red Wine
+\end{center}
+\begin{center}
+\Large Rioja (2010)
+\end{center}
+\vfill\strut
+}
+
+\tiagoCommandCard{452}{order-glass-of-sangria}
+{
+\strut\vfill
+\begin{center}
+\Huge Sangria
+\end{center}
+\vfill\strut
+}
+
+
+\tiagoCommandCard{460}{order-glass-of-cuba-libre}
+{
+\strut\vfill
+\begin{center}
+\Huge Cuba Libre
+\end{center}
+\vfill\strut
+}
+
+\tiagoCommandCard{461}{order-glass-of-tequila}
+{
+\strut\vfill
+\begin{center}
+\Huge Tequila (pure)
+\end{center}
+\vfill\strut
+}
+
+\tiagoCommandCard{462}{order-glass-of-tequila-sunrise}
+{
+\strut\vfill
+\begin{center}
+\Huge Tequila Sunrise
+\end{center}
+\vfill\strut
+}
+
+\end{document}
+
+

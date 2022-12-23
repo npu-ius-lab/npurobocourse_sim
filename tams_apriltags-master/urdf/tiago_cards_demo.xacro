@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="apriltag_demo">
+
+  <xacro:include filename="$(find tams_apriltags)/urdf/tiago_command_card.xacro" />
+  <xacro:include filename="$(find tams_apriltags)/urdf/apriltag_marker.xacro" />
+
+
+  <link name="world" />
+  <link name="tiago/world" />
+
+  <joint name="hugo" type="fixed">
+    <parent link="world" />
+    <child  link="tiago/world" />
+  </joint>
+
+  <xacro:tiago_command_card namespace="" name="tiago_reset_card" texture="reset-logo.png" 
+                             gazeboMaterial="tiago/Reset"
+                             family="36h11" tagID="201" 
+                             dx="0.1" dy="0.05" dz="0.01" tagSize="0.025" />
+  <joint name="tiago_reset_card_joint" type="fixed">
+    <parent link="world" />
+    <child  link="tiago_reset_card" />
+    <origin xyz="0 0 1" rpy="0 1.571 0" />
+  </joint>
+
+
+  <xacro:tiago_command_card namespace="" name="tiago_bacardi_card" texture="bacardi-logo.png" 
+                             gazeboMaterial="tiago/Bacardi"
+                             family="36h11" tagID="202" 
+                             dx="0.2" dy="0.15" dz="0.02" tagSize="0.1" />
+  <joint name="tiago_bacardi_card_joint" type="fixed">
+    <parent link="world" />
+    <child  link="tiago_bacardi_card" />
+    <origin xyz="0.2 0 1" rpy="0 1.571 0" />
+  </joint>
+
+
+  <xacro:tiago_command_card namespace="" name="tiago_coke_card" texture="coke-logo.png" 
+                             gazeboMaterial="tiago/Coke"
+                             family="36h11" tagID="203" 
+                             dx="0.1" dy="0.05" dz="0.01" tagSize="0.05" />
+  <joint name="tiago_coke_card_joint" type="fixed">
+    <parent link="world" />
+    <child  link="tiago_coke_card" />
+    <origin xyz="0.4 0 1" rpy="0 1.571 0.6" />
+  </joint>
+
+
+  <xacro:apriltag_marker namespace="" name="apriltag2" parent="world" 
+                         family="36h11" ID="2" size="0.1"> 
+    <origin xyz="0.5 1 1" rpy=" 0 0 0" />
+  </xacro:apriltag_marker>
+
+  <xacro:apriltag_marker namespace="" name="apriltag3" parent="world" family="36h11" ID="3" size="0.1"> 
+    <origin xyz="0.5 0.5 1" rpy=" 0 0 0.8" />
+  </xacro:apriltag_marker>
+
+</robot>

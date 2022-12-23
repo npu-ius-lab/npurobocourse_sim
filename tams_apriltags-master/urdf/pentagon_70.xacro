@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<robot name="sensing_pentagon_70" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+  <!-- URDF model of the TAMS "force-sensing" pentagon object
+       with Apriltag 36h11 #70 on top for position tracking.
+       To get started, we use a cylinder as visual+collision instead 
+       of the actual pentagon.
+
+       Note that our apriltag textures include the white border around
+       the actual pattern (100x100 pixels total, with 80x80 pixels pattern).
+       For example, our demo cubes are 70x70x70 mm diameter, and this
+       needs to be specified here for marker_size. The apriltags node
+       instead want the "internal" size, which is 0.056 (0.07*80/100)  
+       in this case.
+
+       2016.09.19 - fnh - created
+  -->
+
+  <xacro:include filename="$(find tams_apriltags)/urdf/utilities.xacro" />
+  <xacro:include filename="$(find tams_apriltags)/urdf/apriltag_marker.xacro" />
+
+
+  <xacro:macro name="sensing_pentagon" params="name diameter length marker_size marker_id" >
+    <link name="${name}">
+      <inertial>
+        <!-- center of mass near the bottom for stability -->
+        <origin xyz="0 0 ${length/2}" />
+        <mass value="0.03" />
+        <inertia  ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+      </inertial>
+      <visual>
+        <material name="white" /> 
+        <origin xyz="0 0 ${length/2}" />
+        <geometry>
+          <cylinder length="${length}" radius="${diameter/2}" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 ${length/2}" />
+        <geometry>
+          <cylinder length="${length}" radius="${diameter/2}" />
+        </geometry>
+      </collision>
+    </link>
+    <gazebo reference="${name}">
+      <!--<material>Gazebo/White</material>-->
+      <turnGravityOff>false</turnGravityOff>
+      <selfCollide>false</selfCollide>
+      <!-- kp: stiffness kd: damping mu1, mu2: friction -->
+      <mu1>100.0</mu1>
+      <mu2>100.0</mu2>
+      <kp>1000000.0</kp>
+      <kd>1.0</kd>
+    </gazebo>
+
+    <!-- top -->
+    <xacro:apriltag_marker namespace="" name="${name}_tag_${marker_id}" parent="${name}"  
+           family="36h11" ID="${marker_id}" size="${marker_size}">
+           <origin xyz="0 0 ${length+0.001}" rpy="0 0 1.571" />
+    </xacro:apriltag_marker>
+
+  </xacro:macro>
+
+
+
+   <xacro:sensing_pentagon name="pentagon" length="0.05" diameter="0.06" 
+                           marker_size="${10/8.0*0.026}" marker_id="70" >
+   </xacro:sensing_pentagon>
+
+</robot>

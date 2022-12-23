@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<robot>
+
+  <material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+  
+  <material name="blue">
+    <color rgba="0.0 0.0 0.8 1.0"/>
+  </material>
+  
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
+  </material>
+  
+  <material name="gray">
+    <color rgba="0.2 0.2 0.2 1.0"/>
+  </material>
+  
+  <material name="lightgray">
+    <color rgba="0.6 0.6 0.6 1.0"/>
+  </material>
+  
+  <material name="darkgray">
+    <color rgba="0.4 0.4 0.4 1.0"/>
+  </material>
+  
+  <material name="red">
+    <color rgba="0.9 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="orange">
+    <color rgba="0.95 0.64 0.0 1.0"/>
+  </material>
+
+  <material name="yellow">
+    <color rgba="0.9 0.9 0.0 1.0"/>
+  </material>
+
+  <material name="gold">
+    <color rgba="0.7 0.7 0.0 1.0"/>
+  </material>
+
+  <material name="silver">
+    <color rgba="0.95 0.95 0.95 1.0"/>
+  </material>
+  
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+
+  <material name="koto_wood">
+    <texture filename="file://$(find tams_apriltags)/Media/materials/textures/koto.jpg" />
+    <!-- <color rgba="0.7 0.7 0.2 1.0" /> -->
+  </material>
+
+  <material name="noyer_wood">
+    <texture filename="file://$(find tams_apriltags)/Media/materials/textures/noyer.jpg" />
+    <!-- <color rgba="0.7 0.7 0.2 1.0" /> -->
+  </material>
+
+
+  <material name="RAL1003">
+    <!-- Coro base and stuff: RAL 1003 rgb (243, 173, 30) -->
+    <color rgba="0.95 0.68 0.12 1.0"/>
+  </material>
+
+  <material name="RAL2003">
+    <!-- Doro orange: RAL 2003 rgb (240, 127, 65) pastel orange -->
+    <color rgba="0.94 0.50 0.25 1.0"/>
+  </material>
+
+  <material name="RAL5012">
+    <!-- Doro Scitos base and some details: RAL 5012 ~ rgb (59, 142, 187) 2191BD -->
+    <!-- much to bright: <color rgba="0.13 0.57 0.74 1.0"/> -->
+    <!-- still to bright in rviz: <color rgba="0.00 0.57 0.74 1.0"/> -->
+    <color rgba="0.01 0.47 0.64 1.0"/> -->
+  </material>
+
+  <material name="SickS300Yellow">
+    <!-- pipette on S300 product image: RGB 250 200 1 -->
+    <color rgba="0.97 0.78 0.01 1.0"/>
+  </material>
+
+  <material name="OutdoorGreen">
+    <!-- taken by pipette tool from photos -->
+    <color rgba="0.12 0.40 0.24 1.0" />
+  </material>
+
+  <material name="OutdoorDarkGreen">
+    <!-- taken by pipette tool from photos -->
+    <color rgba="0.20 0.51 0.47 1.0" />
+  </material>
+
+  <material name="OutdoorBlue">
+    <!-- taken by pipette tool from photos -->
+    <color rgba="0.16 0.20 0.43 1.0" />
+  </material>
+
+</robot>

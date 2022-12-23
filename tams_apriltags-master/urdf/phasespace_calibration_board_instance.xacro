@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="phasespace_calibration_demo">
+
+  <!-- a foam cube of given size with one centered apriltag of given 
+       marker_size centered on each of the six faces.
+
+       Note that our apriltag textures include the white border around
+       the actual pattern (100x100 pixels total, with 80x80 pixels pattern).
+       For example, our demo cubes are 70x70x70 mm diameter, and this
+       needs to be specified here for marker_size. The apriltags node
+       instead want the "internal" size, which is 0.056 (0.07*80/100)  
+       in this case.
+
+       2016.08.12 - fnh - rename links to simply pose reconstruction
+       2016.07.14 - fnh - created
+
+       for details, see tracknrec_ros/config/trackers.yaml:
+ - id: 2
+    type: "rigid"
+    name: "calibobj_tracker"
+    markers:
+      - {id: 32, name: "origin_marker", options: "pos=3.5,3.0,3.0"}
+      - {id: 33, name: "x_axis_marker", options: "pos=268.951,3.0,3.0"}
+      - {id: 34, name: "aux1_marker", options: "pos=269.188,199.116,0.58"}
+      - {id: 35, name: "aux2_marker", options: "pos=233.578,235.966,0.0"}
+      - {id: 36, name: "y_axis_marker", options: "pos=7.356,234.888,3.0"}
+
+  -->
+
+  <xacro:include filename="$(find tams_apriltags)/urdf/phasespace_calibration_board.xacro" />
+
+  <!-- instantiate the calibration board without fixed world transform  -->
+  <xacro:phasespace_calibration_board name="calibration_board" >
+  </xacro:phasespace_calibration_board>
+
+</robot>

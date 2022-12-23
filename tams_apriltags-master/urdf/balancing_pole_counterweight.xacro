@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<robot name="balancing_pole" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+  <!-- a wooden pole with 2x4 apriltag markers on it, 
+       to be used in robot pole-balancing demos.
+       This one has a counterweight, to get started quickly
+       in Gazebo without the object falling down all the time.
+
+       2016.06.12 created
+
+       (c) 2016 fnh, hendrich@informatik.uni-hamburg.de
+  -->
+ 
+  <property name="pole_length"   value="0.50" />
+  <property name="pole_diameter" value="0.02" />
+  <property name="tag_diameter"  value="0.07" />
+  <property name="eps"           value="0.001" />
+  <property name="deg90"         value="1.571" />
+
+  <xacro:include filename="$(find tams_apriltags)/urdf/apriltag_marker.xacro" />
+  <xacro:include filename="$(find tams_apriltags)/urdf/materials.xacro" />
+  <xacro:include filename="$(find tams_apriltags)/urdf/utilities.xacro" />
+
+  <link name="balancing_pole" >
+    <default_inertial_with_mass mass="0.001" inertial="0.01" />
+  </link>
+
+  <!-- the main body of this pole has size 0.03*0.03*0.6 meters -->
+  <!-- Note: origin is at the bottom of the pole, not centered -->
+  <xacro:tams_box
+         name="balancing_pole_body" parent="balancing_pole"
+         sx="${pole_diameter}" sy="${pole_diameter}" sz="${pole_length}" mass="0.1" inertial="0.002"
+         material="koto_wood" gmaterial="robotera/KotoWood" >
+     <origin xyz="0 0 ${pole_length/2}" rpy=" 0 0 0" />
+  </xacro:tams_box>
+
+  <xacro:tams_box
+         name="balancing_pole_counterweight" parent="balancing_pole"
+         sx="0" sy="0" sz="0" mass="0.5" inertial="0.01"
+         material="koto_wood" gmaterial="robotera/KotoWood" >
+     <origin xyz="0 0 -${pole_length}" rpy=" 0 0 0" />
+  </xacro:tams_box>
+
+  <!-- four apriltag markers on all four sides, near the bottom at z=0.1 (id 200,201,202,203) -->
+  <xacro:apriltag_marker namespace="" name="balancing_pole_apriltag_200" parent="balancing_pole"
+           family="36h11" ID="200" size="${tag_diameter}">
+     <origin xyz="${tag_diameter/2+eps} 0 0.1" rpy="0 ${deg90} 0" />
+  </xacro:apriltag_marker>
+
+  <xacro:apriltag_marker namespace="" name="balancing_pole_apriltag_201" parent="balancing_pole"
+           family="36h11" ID="201" size="${tag_diameter}">
+     <origin xyz="0 ${tag_diameter/2+eps} 0.1" rpy="${-deg90} ${deg90} 0" />
+  </xacro:apriltag_marker>
+
+  <xacro:apriltag_marker namespace="" name="balancing_pole_apriltag_202" parent="balancing_pole"
+           family="36h11" ID="202" size="${tag_diameter}">
+     <origin xyz="${-tag_diameter/2-eps} 0 0.1" rpy="3.141 ${deg90} 0" />
+  </xacro:apriltag_marker>
+
+  <xacro:apriltag_marker namespace="" name="balancing_pole_apriltag_203" parent="balancing_pole"
+           family="36h11" ID="203" size="${tag_diameter}">
+     <origin xyz="0 ${-tag_diameter/2-eps} 0.1" rpy="${deg90} ${deg90} 0" />
+  </xacro:apriltag_marker>
+
+  <!-- four apriltag markers on all four sides, near the top (id 204,205,206,207) -->
+  <xacro:apriltag_marker namespace="" name="balancing_pole_apriltag_204" parent="balancing_pole"
+           family="36h11" ID="204" size="${tag_diameter}">
+     <origin xyz="${tag_diameter/2+eps} 0 ${pole_length-0.1}" rpy="0 ${deg90} 0" />
+  </xacro:apriltag_marker>
+
+  <xacro:apriltag_marker namespace="" name="balancing_pole_apriltag_205" parent="balancing_pole"
+           family="36h11" ID="205" size="${tag_diameter}">
+     <origin xyz="0 ${tag_diameter/2+eps} ${pole_length-0.1}" rpy="${-deg90} ${deg90} 0" />
+  </xacro:apriltag_marker>
+
+  <xacro:apriltag_marker namespace="" name="balancing_pole_apriltag_206" parent="balancing_pole"
+           family="36h11" ID="206" size="${tag_diameter}">
+     <origin xyz="${-tag_diameter/2-eps} 0 ${pole_length-0.1}" rpy="3.141 ${deg90} 0" />
+  </xacro:apriltag_marker>
+
+  <xacro:apriltag_marker namespace="" name="balancing_pole_apriltag_207" parent="balancing_pole"
+           family="36h11" ID="207" size="${tag_diameter}">
+     <origin xyz="0 ${-tag_diameter/2-eps} ${pole_length-0.1}" rpy="${deg90} ${deg90} 0" />
+  </xacro:apriltag_marker>
+
+</robot>

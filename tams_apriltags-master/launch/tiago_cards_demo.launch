@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- simple demo of apriltag_marker objects in rviz and Gazebo.
+  -->
+
+  <arg name="x" default="0" />
+  <arg name="y" default="0" />
+  <arg name="z" default="0.01" />
+
+  <!-- doesn't work anymore <arg name="world_name" default="$(find gazebo_ros)/worlds/empty.world" /> -->
+  <arg name="world_name" default="worlds/empty.world" /> -->
+
+
+
+  <!-- upload the robot xacro/urdf to the param server -->
+  <param name="robot_description" 
+         command="$(find xacro)/xacro --inorder $(find tams_apriltags)/urdf/tiago_cards_demo.xacro" />
+
+
+
+  <!-- start gazebo server:  gzserver/debug-->
+  <node name="gazebo" pkg="gazebo_ros" type="gzserver" respawn="false" output="screen"
+        args="$(arg world_name)" />
+
+
+  <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen"/>
+
+
+
+  <!-- spawn the robot at xzy=(-1,0,0) -->
+  <node name="spawn_tiago_cards_demo" pkg="gazebo_ros" type="spawn_model" 
+        args="-urdf -param robot_description -x 0 -y 0 -z 0 -R 0 -P 0 -Y 0 -model tiago_cards" 
+        respawn="false" output="screen" />
+
+
+  <!-- publish world transform to tf -->
+  <node pkg="tf" type="static_transform_publisher" 
+        name="static_map_tf_publisher" args="0 0 0 0 0 0 world map 100" />
+
+
+ <!-- publishes robot-state, reading the urdf robot model from "doro_description",
+       subscribing to /joint_states and publishing to /tf -->
+  <node pkg="robot_state_publisher" type="state_publisher" respawn="false"
+        name="dummy_state_publisher">
+     <param name="publish_frequency" type="double" value="100.0" />
+     <param name="tf_prefix" type="string" value="" />
+     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find tams_apriltags)/urdf/tiago_cards_demo.xacro" />  
+     <remap from="joint_states" to="cards/joint_states" />
+ </node>
+
+
+
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false" output="screen"
+        args="-d $(find tams_apriltags)/launch/tiago_cards_demo.rviz" />
+
+</launch>

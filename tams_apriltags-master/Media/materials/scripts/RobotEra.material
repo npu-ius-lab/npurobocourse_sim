@@ -1,0 +1,388 @@
+
+
+material robotera/SickYellow
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient  0.9 0.9 0.0 1
+      diffuse  0.9 0.9 0.0 1
+      specular 0.8 0.8 0.0 1
+      emissive 0 0 0 0
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+material robotera/Orange
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 1.000 0.45 0.000 1.000
+      diffuse 1.000 0.45 0.000 1.000
+      specular 1.000 0.45 0.000 1.000
+      emissive 0.000 0.0 0.000 1.000
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/BiotacGreen
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0 0.4 0 1
+      diffuse 0.4 1.0 0.4 1
+      specular 0.4 0.7 0.4 1
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/DarkGreen
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.0 0.8 0.0 1.0
+      diffuse 0.0 0.8 0.0 1.0
+      specular 0.0 0.8 0.0 1.0
+      emissive 0.0 0.0 0.0 1.0
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/DarkBlue
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.0 0.0 0.4 1.0
+      diffuse 0.0 0.0 0.4 1.0
+      specular 0.0 0.0 0.4 1.0
+      emissive 0.0 0.0 0.0 1.0
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/DarkRed
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.8 0.0 0.0 1.0
+      diffuse 0.8 0.0 0.0 1.0
+      specular 0.8 0.0 0.0 1.0
+      emissive 0.0 0.0 0.0 1.0
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+material robotera/DarkGray
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient  0.3 0.3 0.3 1.0
+      diffuse  0.3 0.3 0.3 1.0
+      specular 0.3 0.3 0.3 1.0
+      emissive 0.0 0.0 0.0 1.0
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/Black
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient  0.0 0.0 0.0 1.0
+      diffuse  0.0 0.0 0.0 1.0
+      specular 0.0 0.0 0.0 1.0
+      emissive 0.0 0.0 0.0 1.0
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+
+material robotera/Wood
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.8 0.45 0.0 1.000
+      diffuse 0.9 0.45 0.0 1.000
+      specular 0.8 0.45 0.0 1.000
+      emissive 0.000 0.0 0.000 1.000
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+
+material robotera/Wall
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.95 0.95 0.95 1.0
+      diffuse 0.95 0.95 0.95 1.0
+      specular 0 0 0 0
+      emissive 0 0 0 0
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/Silver
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient  0.88 0.85 0.85 1.000
+      diffuse  0.88 0.85 0.85 1.000
+      specular 0.88 0.85 0.85 1.000
+      emissive 0.45 0.45 0.45 1.0
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/Gold
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.450 0.45 0.000 1.000
+      diffuse 0.450 0.45 0.000 1.000
+      specular 0.450 0.45 0.000 1.000
+      emissive 0.000 0.0 0.000 1.000
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/Orange
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 1.000 0.45 0.000 1.000
+      diffuse 1.000 0.45 0.000 1.000
+      specular 1.000 0.45 0.000 1.000
+      emissive 0.000 0.0 0.000 1.000
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/Red: Gazebo/Red
+{
+
+}
+
+
+material robotera/CondominiumRAL1003
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.95 0.68 0.12 1.0
+      diffuse 0.95 0.68 0.12 1.0
+      specular 0.95 0.68 0.12 1.0
+      emissive 0.000 0.0 0.000 1.000
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/CondominiumRAL2003
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.94 0.50 0.25 1.0
+      diffuse 0.94 0.50 0.25 1.0
+      specular 0.94 0.50 0.25 1.0
+      emissive 0.000 0.0 0.000 1.000
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/DomesticRAL5012
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.01 0.47 0.64 1.0
+      diffuse 0.01 0.47 0.64 1.0
+      specular 0.01 0.47 0.64 1.0
+      emissive 0.000 0.0 0.000 1.000
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+material robotera/OutdoorGreen
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.20 0.51 0.47 1.0
+      diffuse 0.20 0.51 0.47 1.0
+      specular 0.20 0.51 0.47 1.0
+      emissive 0.000 0.0 0.000 1.000
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+material robotera/OutdoorDarkGreen
+{
+  receive_shadows on
+  lighting on
+  technique
+  {
+    pass
+    {
+      ambient 0.12 0.40 0.24 1.0
+      diffuse  0.12 0.40 0.24 1.0
+      specular 0.12 0.40 0.24 1.0
+      emissive 0.000 0.0 0.000 1.000
+      shading gouraud
+      lighting on
+    }
+  }
+}
+
+
+
+material robotera/KotoWood
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.0
+      diffuse 0.4 0.4 0.4 1.0
+      specular 0.1 0.1 0.1 1.0 12.5
+
+      texture_unit
+      {
+        texture koto.jpg
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material robotera/DecimeterGrid
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.95 0.95 0.95 1.0
+      diffuse 0.95 0.95 0.95 1.0
+      specular 0.2 0.2 0.2 1.0 10.5
+
+      texture_unit
+      {
+        texture grid-100x50.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+

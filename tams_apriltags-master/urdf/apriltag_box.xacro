@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<robot name="apriltag_box_definition" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+  <!-- a box of given size with one apriltag centered on top of it -->
+
+  <xacro:include filename="$(find tams_apriltags)/urdf/apriltag_marker.xacro" />
+
+  <xacro:macro name="atag_easy_box" params="name sx sy sz color gazebo_color" >
+    <link name="${name}">
+      <inertial>
+        <!-- center of mass near the bottom for stability -->
+        <origin xyz="0 0 ${sz*0.2}" />
+        <mass value="0.2" />
+        <inertia  ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+      </inertial>
+      <visual>
+        <material name="${color}" />
+        <origin xyz="0 0 ${sz/2}" />
+        <geometry>
+          <box size="${sx} ${sy} ${sz}" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 ${sz/2}" />
+        <geometry>
+          <box size="${sx} ${sy} ${sz}" />
+        </geometry>
+      </collision>
+    </link>
+    <gazebo reference="${name}">
+      <material>${gazebo_color}</material>
+      <turnGravityOff>false</turnGravityOff>
+      <selfCollide>false</selfCollide>
+      <!-- kp: stiffness kd: damping mu1, mu2: friction -->
+      <mu1>100.0</mu1>
+      <mu2>100.0</mu2>
+      <kp>1000000.0</kp>
+      <kd>1.0</kd>
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:macro name="apriltag_box" params="name sx sy sz color gazebo_color ID">
+    <xacro:atag_easy_box name="${name}" sx="${sx}" sy="${sy}" sz="${sz}" 
+           color="${color}" gazebo_color="${gazebo_color}" />
+
+    <xacro:apriltag_marker namespace="" name="apriltag_${ID}" parent="${name}"
+           family="36h11" ID="${ID}" size="0.025">
+           <origin xyz="0 0 ${sz+0.0001}" rpy="0 0 0" />
+    </xacro:apriltag_marker>
+  </xacro:macro>
+
+
+</robot>

@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<robot name="hand_brush" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+  <!-- a small hand brush with wooden handle, with an apriltag marker on top of it -->
+  <!-- we approximate the shape from three pieces: a yellow box with "squishy"
+       Gazebo material for the brush hairs, a box as the main body where the hairs 
+       are glued-in, and another box for the handle (which in reality has a more
+       complex shape).
+       The apriltag marker sits on top of the main body.
+
+       2015.01.14 fnh 
+  -->
+
+  <xacro:include filename="$(find tams_apriltags)/urdf/apriltag_marker.xacro" />
+  <xacro:include filename="$(find tams_apriltags)/urdf/utilities.xacro" />
+
+  <link name="hand_brush" >
+    <default_inertial_with_mass mass="0.001" inertial="1" />
+  </link>
+
+  <!-- the main body of this hand brush has size 0.15*0.04*0.016 meters -->
+  <xacro:tams_box
+         name="hand_brush_body" parent="hand_brush"
+         sx="0.15" sy="0.04" sz="0.016" mass="0.1" inertial="0.01"
+         material="koto_wood" gmaterial="robotera/KotoWood" >
+     <origin xyz="0 0 ${0.055+0.016/2}" rpy=" 0 0 0" />
+  </xacro:tams_box>
+
+  <!-- we model the hairs as two boxes with size 0.013*0.02*0.055 meters -->
+  <xacro:tams_box
+         name="hand_brush_hairs1" parent="hand_brush"
+         sx="0.13" sy="0.01" sz="0.055" mass="0.1" inertial="0.01"
+         material="yellow" gmaterial="Gazebo/Yellow" >
+     <origin xyz="0 -0.01 ${0.055/2}" rpy="-0.1 0 0" />
+  </xacro:tams_box>
+
+  <xacro:tams_box
+         name="hand_brush_hairs2" parent="hand_brush"
+         sx="0.13" sy="0.01" sz="0.055" mass="0.1" inertial="0.01"
+         material="orange" gmaterial="Gazebo/Orange" >
+     <origin xyz="0 0.01 ${0.055/2}" rpy="0.1 0 0" />
+  </xacro:tams_box>
+
+  <!-- the long handle, 0.12*0.024*0.016 -->
+  <xacro:tams_box
+         name="hand_brush_handle" parent="hand_brush"
+         sx="0.12" sy="0.024" sz="0.016" mass="0.02" inertial="0.01"
+         material="koto_wood" gmaterial="robotera/KotoWood" >
+     <origin xyz="-${0.15/2} 0 ${0.055+0.016/2}" rpy=" 0 0 0" />
+  </xacro:tams_box>
+
+  <!-- the apriltag on top for easy recognition -->
+  <xacro:apriltag_marker namespace="" name="hand_brush_apriltag_151" parent="hand_brush"
+           family="36h11" ID="151" size="0.025">
+     <origin xyz="0 0 ${0.055+0.016}" rpy="0 0 0" />
+  </xacro:apriltag_marker>
+
+
+</robot>

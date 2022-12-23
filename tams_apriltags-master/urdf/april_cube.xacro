@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<robot name="april_cube" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+  <!-- a foam cube of given size with one centered apriltag of given 
+       marker_size centered on each of the six faces.
+
+       Note that our apriltag textures include the white border around
+       the actual pattern (100x100 pixels total, with 80x80 pixels pattern).
+       For example, our demo cubes are 70x70x70 mm diameter, and this
+       needs to be specified here for marker_size. The apriltags node
+       instead want the "internal" size, which is 0.056 (0.07*80/100)  
+       in this case.
+
+       2016.08.12 - fnh - rename links to simply pose reconstruction
+       2016.07.14 - fnh - created
+  -->
+
+  <xacro:include filename="$(find tams_apriltags)/urdf/utilities.xacro" />
+  <xacro:include filename="$(find tams_apriltags)/urdf/apriltag_marker.xacro" />
+
+
+  <xacro:macro name="april_cube" params="name size marker_size id_top id_front id_right id_back id_left id_bottom" >
+    <link name="${name}">
+      <inertial>
+        <!-- center of mass near the bottom for stability -->
+        <origin xyz="0 0 0" />
+        <mass value="0.03" />
+        <inertia  ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+      </inertial>
+      <visual>
+        <material name="white" /> 
+        <origin xyz="0 0 0" />
+        <geometry>
+          <box size="${size} ${size} ${size}" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" />
+        <geometry>
+          <box size="${size} ${size} ${size}" />
+        </geometry>
+      </collision>
+    </link>
+    <gazebo reference="${name}">
+      <!--<material>Gazebo/White</material>-->
+      <turnGravityOff>false</turnGravityOff>
+      <selfCollide>false</selfCollide>
+      <!-- kp: stiffness kd: damping mu1, mu2: friction -->
+      <mu1>100.0</mu1>
+      <mu2>100.0</mu2>
+      <kp>1000000.0</kp>
+      <kd>1.0</kd>
+    </gazebo>
+
+    <!-- top -->
+    <xacro:apriltag_marker namespace="" name="${name}_tag_${id_top}" parent="${name}"  
+           family="36h11" ID="${id_top}" size="${marker_size}">
+           <origin xyz="0 0 ${size/2+0.001}" rpy="0 0 0" />
+    </xacro:apriltag_marker>
+
+    <!-- bottom -->
+    <xacro:apriltag_marker namespace="" name="${name}_tag_${id_bottom}" parent="${name}"
+           family="36h11" ID="${id_bottom}" size="${marker_size}">
+           <origin xyz="0 0 -${size/2+0.001}" rpy="3.1415 0 0" />
+    </xacro:apriltag_marker>
+
+    <!-- front -->
+    <xacro:apriltag_marker namespace="" name="${name}_tag_${id_front}" parent="${name}"
+           family="36h11" ID="${id_front}" size="${marker_size}">
+           <origin xyz="0 ${-size/2-0.001} 0" rpy="1.571 0 0" />
+    </xacro:apriltag_marker>
+
+    <!-- back -->
+    <xacro:apriltag_marker namespace="" name="${name}_tag_${id_back}" parent="${name}"
+           family="36h11" ID="${id_back}" size="${marker_size}">
+           <origin xyz="0 ${size/2+0.001} 0" rpy="-1.571 3.141 0" />
+    </xacro:apriltag_marker>
+
+    <!-- right -->
+    <xacro:apriltag_marker namespace="" name="${name}_tag_${id_right}" parent="${name}"
+           family="36h11" ID="${id_right}" size="${marker_size}">
+           <origin xyz="${size/2+0.001} 0 0" rpy="1.571 0 1.571" />
+    </xacro:apriltag_marker>
+
+    <!-- left -->
+    <xacro:apriltag_marker namespace="" name="${name}_tag_${id_left}" parent="${name}"
+           family="36h11" ID="${id_left}" size="${marker_size}">
+           <origin xyz="-${size/2+0.001} 0 0" rpy="1.571 0 -1.571" />
+    </xacro:apriltag_marker>
+
+  </xacro:macro>
+
+</robot>

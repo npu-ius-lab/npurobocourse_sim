@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="apriltag_marker">
+
+  <!-- ROS xacro/urdf model of one apriltag marker with given
+       tag-family, ID, and size of the mesh. Optionally, apriltag_size can be 
+       specified to calculate from it the size of the mesh. In this case, the 
+       parameter "size" will be ignored. The marker is modeled as 
+       a simple box with outer xy diameter as specified, and z 1mm thickness.
+       The marker is centered and can be added to other xacro/urdf
+       models. 
+       The mesh of the model contains one bit wide white borders. Therefore,
+       the actual size of the apriltag will be:
+       8/10*size in case of 36h11
+       6/8 *size in case of 16h5
+       This is due to the usage of the white border in the 
+       apriltag detection algorithm, even though its size
+       does not have a convention.
+
+       2019.10.10 - fix Collada rotation, ooops
+       2019.05.22 - switch to textured Collada meshes, needs Jade or higher
+       2014.11.24 - created
+       2021.11.10 - added include_borders parameter 
+       (C) 2014 fnh, hendrich@informatik.uni-hamburg.de
+
+       Usage:
+       size - size of the mesh 
+       apriltag_size - size of the apriltag. If this parameter is set, the size 
+       of the mesh will be re-calculated as mentioned above
+
+       <xacro:apriltag_marker namespace="doro/" name="apriltag13" parent="base_link" 
+              family="36h11" ID="00013" size="0.33" >
+         <origin xyz="0.2 0.3 05" rpy="0 0 3.14" />
+
+       <xacro:apriltag_marker namespace="doro/" name="apriltag14" parent="base_link" 
+              family="36h11" ID="00014" apriltag_size="0.05">
+         <origin xyz="0.2 0.3 05" rpy="0 0 3.14" />
+       </xacro:apriltag_marker>
+
+       The following definition does not make much sense and will produce the same result
+       as the one above with ID=00014, because the mesh is predefined and the size of the 
+       border will not be recalculated.
+       <xacro:apriltag_marker namespace="doro/" name="apriltag14" parent="base_link" 
+              family="36h11" ID="00014" size="0.33" apriltag_size="0.05">
+         <origin xyz="0.2 0.3 05" rpy="0 0 3.14" />
+       </xacro:apriltag_marker>
+   -->
+
+  <xacro:macro name="apriltag_marker" params="namespace name parent family ID size:=0 apriltag_size:=0 *origin" >
+    
+    <!-- Check in which way the size was specified -->
+    <xacro:if value="${apriltag_size == 0}">
+      <xacro:property name="mesh_size" value="${size}" />
+    </xacro:if>
+    <xacro:if value="${apriltag_size != 0}">
+      <xacro:if value="${family == '36h11'}">
+        <xacro:property name="mesh_size" value="${apriltag_size/8*10}" />
+      </xacro:if>
+      <xacro:if value="${family == '16h5'}">
+        <xacro:property name="mesh_size" value="${apriltag_size/6*8}" />
+      </xacro:if>
+    </xacro:if>
+    
+    
+    <link name="${namespace}${name}">
+      <inertial>
+        <mass value="0.001" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <inertia ixx="0.00001" ixy="0" ixz="0" iyy="0.00001" iyz="0" izz="0.00002" />
+      </inertial>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="${mesh_size} ${mesh_size} 0.001" />
+        </geometry>
+      </collision>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <!-- use Python str to convert family name and to generate leading zeros -->
+          <mesh filename="package://tams_apriltags/meshes/tag${str(family).replace( 'h', '_' )}_${str(ID).zfill(5)}.dae" scale="${10*mesh_size} ${10*mesh_size} 1"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <!-- we use Gazebo material to put the texture onto the marker. Note mu1=mu2=0 for no friction. -->
+    <gazebo reference="${namespace}${name}">
+      <!-- <material>Gazebo/Red</material> -->
+      <turnGravityOff>false</turnGravityOff>
+      <selfCollide>false</selfCollide>
+      <mu1>0</mu1>
+      <mu2>0</mu2>
+      <kp>1000000.0</kp>
+      <kd>1.0</kd>
+    </gazebo>
+    <joint name="${namespace}${name}_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${namespace}${parent}" />
+      <child link="${namespace}${name}" />
+    </joint>
+  </xacro:macro>
+
+</robot>

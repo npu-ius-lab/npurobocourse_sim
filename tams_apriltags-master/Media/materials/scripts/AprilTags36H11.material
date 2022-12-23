@@ -1,0 +1,11153 @@
+material apriltag_36h11/tag36h11_0
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00000.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_1
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00001.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_2
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00002.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_3
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00003.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_4
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00004.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_5
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00005.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_6
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00006.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_7
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00007.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_8
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00008.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_9
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00009.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_10
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00010.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_11
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00011.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_12
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00012.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_13
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00013.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_14
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00014.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_15
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00015.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_16
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00016.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_17
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00017.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_18
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00018.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_19
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00019.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_20
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00020.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_21
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00021.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_22
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00022.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_23
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00023.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_24
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00024.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_25
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00025.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_26
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00026.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_27
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00027.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_28
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00028.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_29
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00029.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_30
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00030.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_31
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00031.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_32
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00032.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_33
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00033.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_34
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00034.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_35
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00035.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_36
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00036.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_37
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00037.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_38
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00038.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_39
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00039.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_40
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00040.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_41
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00041.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_42
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00042.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_43
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00043.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_44
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00044.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_45
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00045.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_46
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00046.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_47
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00047.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_48
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00048.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_49
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00049.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_50
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00050.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_51
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00051.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_52
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00052.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_53
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00053.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_54
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00054.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_55
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00055.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_56
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00056.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_57
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00057.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_58
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00058.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_59
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00059.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_60
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00060.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_61
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00061.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_62
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00062.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_63
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00063.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_64
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00064.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_65
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00065.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_66
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00066.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_67
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00067.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_68
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00068.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_69
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00069.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_70
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00070.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_71
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00071.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_72
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00072.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_73
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00073.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_74
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00074.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_75
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00075.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_76
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00076.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_77
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00077.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_78
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00078.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_79
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00079.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_80
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00080.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_81
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00081.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_82
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00082.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_83
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00083.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_84
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00084.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_85
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00085.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_86
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00086.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_87
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00087.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_88
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00088.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_89
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00089.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_90
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00090.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_91
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00091.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_92
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00092.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_93
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00093.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_94
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00094.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_95
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00095.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_96
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00096.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_97
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00097.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_98
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00098.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_99
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00099.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_100
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00100.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_101
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00101.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_102
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00102.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_103
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00103.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_104
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00104.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_105
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00105.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_106
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00106.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_107
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00107.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_108
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00108.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_109
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00109.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_110
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00110.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_111
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00111.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_112
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00112.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_113
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00113.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_114
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00114.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_115
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00115.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_116
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00116.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_117
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00117.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_118
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00118.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_119
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00119.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_120
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00120.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_121
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00121.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_122
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00122.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_123
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00123.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_124
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00124.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_125
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00125.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_126
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00126.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_127
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00127.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_128
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00128.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_129
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00129.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_130
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00130.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_131
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00131.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_132
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00132.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_133
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00133.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_134
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00134.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_135
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00135.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_136
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00136.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_137
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00137.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_138
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00138.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_139
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00139.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_140
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00140.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_141
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00141.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_142
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00142.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_143
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00143.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_144
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00144.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_145
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00145.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_146
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00146.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_147
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00147.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_148
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00148.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_149
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00149.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_150
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00150.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_151
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00151.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_152
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00152.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_153
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00153.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_154
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00154.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_155
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00155.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_156
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00156.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_157
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00157.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_158
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00158.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_159
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00159.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_160
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00160.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_161
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00161.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_162
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00162.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_163
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00163.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_164
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00164.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_165
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00165.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_166
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00166.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_167
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00167.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_168
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00168.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_169
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00169.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_170
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00170.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_171
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00171.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_172
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00172.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_173
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00173.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_174
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00174.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_175
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00175.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_176
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00176.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_177
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00177.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_178
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00178.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_179
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00179.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_180
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00180.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_181
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00181.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_182
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00182.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_183
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00183.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_184
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00184.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_185
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00185.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_186
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00186.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_187
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00187.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_188
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00188.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_189
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00189.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_190
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00190.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_191
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00191.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_192
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00192.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_193
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00193.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_194
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00194.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_195
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00195.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_196
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00196.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_197
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00197.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_198
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00198.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_199
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00199.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_200
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00200.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_201
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00201.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_202
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00202.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_203
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00203.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_204
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00204.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_205
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00205.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_206
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00206.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_207
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00207.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_208
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00208.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_209
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00209.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_210
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00210.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_211
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00211.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_212
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00212.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_213
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00213.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_214
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00214.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_215
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00215.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_216
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00216.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_217
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00217.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_218
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00218.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_219
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00219.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_220
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00220.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_221
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00221.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_222
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00222.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_223
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00223.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_224
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00224.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_225
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00225.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_226
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00226.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_227
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00227.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_228
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00228.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_229
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00229.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_230
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00230.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_231
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00231.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_232
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00232.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_233
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00233.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_234
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00234.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_235
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00235.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_236
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00236.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_237
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00237.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_238
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00238.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_239
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00239.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_240
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00240.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_241
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00241.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_242
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00242.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_243
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00243.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_244
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00244.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_245
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00245.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_246
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00246.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_247
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00247.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_248
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00248.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_249
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00249.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_250
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00250.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_251
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00251.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_252
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00252.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_253
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00253.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_254
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00254.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_255
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00255.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_256
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00256.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_257
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00257.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_258
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00258.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_259
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00259.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_260
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00260.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_261
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00261.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_262
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00262.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_263
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00263.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_264
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00264.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_265
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00265.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_266
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00266.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_267
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00267.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_268
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00268.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_269
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00269.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_270
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00270.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_271
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00271.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_272
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00272.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_273
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00273.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_274
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00274.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_275
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00275.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_276
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00276.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_277
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00277.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_278
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00278.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_279
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00279.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_280
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00280.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_281
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00281.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_282
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00282.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_283
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00283.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_284
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00284.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_285
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00285.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_286
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00286.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_287
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00287.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_288
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00288.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_289
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00289.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_290
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00290.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_291
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00291.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_292
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00292.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_293
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00293.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_294
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00294.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_295
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00295.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_296
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00296.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_297
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00297.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_298
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00298.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_299
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00299.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_300
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00300.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_301
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00301.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_302
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00302.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_303
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00303.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_304
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00304.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_305
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00305.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_306
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00306.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_307
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00307.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_308
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00308.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_309
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00309.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_310
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00310.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_311
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00311.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_312
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00312.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_313
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00313.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_314
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00314.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_315
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00315.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_316
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00316.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_317
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00317.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_318
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00318.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_319
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00319.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_320
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00320.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_321
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00321.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_322
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00322.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_323
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00323.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_324
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00324.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_325
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00325.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_326
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00326.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_327
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00327.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_328
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00328.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_329
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00329.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_330
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00330.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_331
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00331.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_332
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00332.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_333
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00333.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_334
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00334.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_335
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00335.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_336
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00336.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_337
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00337.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_338
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00338.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_339
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00339.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_340
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00340.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_341
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00341.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_342
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00342.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_343
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00343.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_344
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00344.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_345
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00345.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_346
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00346.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_347
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00347.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_348
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00348.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_349
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00349.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_350
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00350.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_351
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00351.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_352
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00352.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_353
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00353.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_354
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00354.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_355
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00355.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_356
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00356.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_357
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00357.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_358
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00358.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_359
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00359.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_360
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00360.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_361
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00361.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_362
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00362.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_363
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00363.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_364
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00364.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_365
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00365.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_366
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00366.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_367
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00367.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_368
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00368.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_369
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00369.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_370
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00370.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_371
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00371.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_372
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00372.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_373
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00373.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_374
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00374.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_375
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00375.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_376
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00376.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_377
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00377.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_378
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00378.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_379
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00379.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_380
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00380.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_381
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00381.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_382
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00382.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_383
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00383.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_384
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00384.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_385
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00385.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_386
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00386.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_387
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00387.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_388
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00388.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_389
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00389.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_390
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00390.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_391
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00391.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_392
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00392.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_393
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00393.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_394
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00394.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_395
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00395.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_396
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00396.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_397
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00397.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_398
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00398.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_399
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00399.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_400
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00400.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_401
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00401.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_402
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00402.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_403
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00403.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_404
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00404.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_405
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00405.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_406
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00406.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_407
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00407.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_408
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00408.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_409
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00409.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_410
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00410.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_411
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00411.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_412
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00412.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_413
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00413.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_414
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00414.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_415
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00415.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_416
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00416.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_417
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00417.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_418
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00418.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_419
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00419.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_420
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00420.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_421
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00421.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_422
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00422.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_423
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00423.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_424
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00424.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_425
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00425.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_426
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00426.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_427
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00427.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_428
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00428.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_429
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00429.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_430
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00430.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_431
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00431.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_432
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00432.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_433
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00433.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_434
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00434.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_435
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00435.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_436
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00436.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_437
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00437.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_438
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00438.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_439
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00439.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_440
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00440.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_441
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00441.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_442
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00442.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_443
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00443.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_444
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00444.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_445
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00445.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_446
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00446.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_447
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00447.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_448
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00448.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_449
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00449.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_450
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00450.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_451
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00451.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_452
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00452.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_453
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00453.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_454
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00454.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_455
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00455.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_456
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00456.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_457
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00457.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_458
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00458.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_459
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00459.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_460
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00460.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_461
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00461.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_462
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00462.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_463
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00463.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_464
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00464.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_465
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00465.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_466
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00466.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_467
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00467.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_468
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00468.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_469
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00469.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_470
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00470.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_471
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00471.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_472
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00472.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_473
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00473.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_474
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00474.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_475
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00475.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_476
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00476.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_477
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00477.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_478
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00478.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_479
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00479.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_480
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00480.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_481
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00481.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_482
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00482.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_483
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00483.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_484
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00484.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_485
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00485.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_486
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00486.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_487
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00487.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_488
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00488.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_489
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00489.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_490
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00490.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_491
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00491.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_492
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00492.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_493
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00493.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_494
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00494.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_495
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00495.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_496
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00496.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_497
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00497.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_498
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00498.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_499
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00499.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_500
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00500.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_501
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00501.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_502
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00502.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_503
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00503.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_504
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00504.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_505
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00505.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_506
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00506.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_507
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00507.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_508
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00508.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_509
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00509.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_510
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00510.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_511
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00511.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_512
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00512.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_513
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00513.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_514
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00514.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_515
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00515.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_516
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00516.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_517
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00517.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_518
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00518.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_519
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00519.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_520
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00520.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_521
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00521.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_522
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00522.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_523
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00523.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_524
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00524.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_525
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00525.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_526
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00526.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_527
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00527.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_528
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00528.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_529
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00529.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_530
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00530.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_531
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00531.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_532
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00532.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_533
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00533.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_534
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00534.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_535
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00535.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_536
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00536.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_537
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00537.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_538
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00538.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_539
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00539.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_540
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00540.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_541
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00541.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_542
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00542.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_543
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00543.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_544
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00544.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_545
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00545.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_546
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00546.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_547
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00547.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_548
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00548.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_549
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00549.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_550
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00550.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_551
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00551.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_552
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00552.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_553
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00553.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_554
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00554.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_555
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00555.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_556
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00556.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_557
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00557.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_558
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00558.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_559
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00559.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_560
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00560.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_561
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00561.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_562
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00562.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_563
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00563.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_564
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00564.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_565
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00565.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_566
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00566.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_567
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00567.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_568
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00568.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_569
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00569.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_570
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00570.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_571
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00571.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_572
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00572.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_573
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00573.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_574
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00574.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_575
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00575.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_576
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00576.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_577
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00577.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_578
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00578.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_579
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00579.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_580
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00580.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_581
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00581.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_582
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00582.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_583
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00583.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_584
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00584.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_585
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00585.png
+        filtering none
+      }
+    }
+  }
+}
+
+material apriltag_36h11/tag36h11_586
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1.0
+      diffuse 0.9 0.9 0.9 1.0
+      specular 0.2 0.2 0.2 1.0
+      emissive 0.1 0.1 0.1 1.0
+      texture_unit
+      {
+        texture tag36h11/tag36_11_00586.png
+        filtering none
+      }
+    }
+  }
+}
+

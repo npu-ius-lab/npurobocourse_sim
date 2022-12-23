@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="apriltag_demo">
+
+  <xacro:include filename="$(find tams_apriltgas)/urdf/apriltag_marker.xacro" />
+  <xacro:include filename="$(find tams_apriltgas)/urdf/apriltag_disk.xacro" />
+  <xacro:include filename="$(find tams_apriltgas)/urdf/materials.xacro" />
+
+  <xacro:macro name="easyjoint" params="parent child xyz rpy" >
+    <joint name="${parent}_${child}_fixed_joint" type="fixed">
+      <parent link="${parent}" />
+      <child  link="${child}" />
+      <origin xyz="${xyz}" rpy="${rpy}" />
+    </joint>
+  </xacro:macro>
+
+  <link name="world" />
+
+  <xacro:apriltag_marker namespace="" name="apriltag3" parent="world" family="36h11" ID="3" size="0.1"> 
+    <origin xyz="0 0 0" rpy=" 0 0 0.8" />
+  </xacro:apriltag_marker>
+
+
+  <xacro:apriltag_disk name="disk_103" diameter="0.03" length="0.03" color="red"    ID="103" gazebo_color="Gazebo/Red" />
+  <xacro:apriltag_disk name="disk_104" diameter="0.04" length="0.03" color="orange" ID="104" gazebo_color="Gazebo/Orange" />
+  <xacro:apriltag_disk name="disk_105" diameter="0.05" length="0.03" color="yellow" ID="105" gazebo_color="Gazebo/Yellow" />
+  <xacro:apriltag_disk name="disk_106" diameter="0.06" length="0.03" color="blue"   ID="106" gazebo_color="Gazebo/Blue" />
+  <xacro:apriltag_disk name="disk_107" diameter="0.07" length="0.03" color="green"  ID="107" gazebo_color="Gazebo/Green" />
+  <xacro:apriltag_disk name="disk_108" diameter="0.08" length="0.03" color="red"    ID="108" gazebo_color="Gazebo/Red" />
+
+  <xacro:apriltag_disk name="disk_118" diameter="0.08" length="0.08" color="silver" ID="118" gazebo_color="Gazebo/Silver" />
+
+  <xacro:easyjoint parent="world" child="disk_103" xyz="0.3 0 0.0" rpy="0 0 0" />
+  <xacro:easyjoint parent="world" child="disk_104" xyz="0.4 0 0.0" rpy="0 0 0" />
+  <xacro:easyjoint parent="world" child="disk_105" xyz="0.5 0 0.0" rpy="0 0 0" />
+  <xacro:easyjoint parent="world" child="disk_106" xyz="0.6 0 0.0" rpy="0 0 0" />
+  <xacro:easyjoint parent="world" child="disk_107" xyz="0.7 0 0.0" rpy="0 0 0" />
+  <xacro:easyjoint parent="world" child="disk_108" xyz="0.8 0 0.0" rpy="0 0 0" />
+
+  <xacro:easyjoint parent="world" child="disk_118" xyz="0.8 0.2 0.0" rpy="0 0 0.5" />
+
+</robot>

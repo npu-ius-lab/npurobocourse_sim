@@ -1,0 +1,102 @@
+
+
+material thiago/Coke
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.95 0.95 0.95 1.0
+      diffuse 0.95 0.95 0.95 1.0
+      specular 0.2 0.2 0.2 1.0 10.5
+
+      texture_unit
+      {
+        texture coke-logo.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+
+material thiago/Bacardi
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.95 0.95 0.95 1.0
+      diffuse 0.95 0.95 0.95 1.0
+      specular 0.2 0.2 0.2 1.0 10.5
+
+      texture_unit
+      {
+        texture bacardi-logo.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+
+material thiago/Fanta
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.95 0.95 0.95 1.0
+      diffuse 0.95 0.95 0.95 1.0
+      specular 0.2 0.2 0.2 1.0 10.5
+
+      texture_unit
+      {
+        texture fanta-logo.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+
+material thiago/Reset
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.95 0.95 0.95 1.0
+      diffuse 0.95 0.95 0.95 1.0
+      specular 0.2 0.2 0.2 1.0 10.5
+
+      texture_unit
+      {
+        texture reset-logo.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+
+material robotera/DecimeterGrid
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.95 0.95 0.95 1.0
+      diffuse 0.95 0.95 0.95 1.0
+      specular 0.2 0.2 0.2 1.0 10.5
+
+      texture_unit
+      {
+        texture grid-100x50.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<robot name="brush_round" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+  <!-- a small round brush with wooden handle, with an apriltag marker on top of it -->
+  <!-- we approximate the shape from four pieces: a yellow cylinder with "squishy"
+       Gazebo material for the brush hairs, a cylinder where the hairs are glued-in,
+       and a sphere as the handle. The apriltag marker is on top of the sphere.
+
+       2015.01.14 fnh 
+  -->
+
+  <xacro:include filename="$(find tams_apriltags)/urdf/apriltag_marker.xacro" />
+  <xacro:include filename="$(find tams_apriltags)/urdf/utilities.xacro" />
+
+  <link name="round_brush" >
+    <default_inertial_with_mass mass="0.001" inertial="1" />
+  </link>
+
+  <!-- our brush has circumference 0.144 m at the sphere/handle part -->
+  <!-- total height is 0.08m from the hairs to the handle (and apriltag) -->
+  <xacro:tams_sphere 
+         name="round_brush_handle" parent="round_brush"
+         radius="0.023" mass="0.05" inertial="0.001"
+         material="koto_wood" gmaterial="robotera/KotoWood" >
+     <origin xyz="0 0 0.057" rpy=" 0 0 0" />
+  </xacro:tams_sphere>
+
+
+  <!-- the cylinder that holds the hairs, circumference 0.15m, length 1.5cm -->
+  <xacro:tams_cylinder
+         name="round_brush_disk" parent="round_brush"
+         radius="0.025" length="0.016" mass="0.05" inertial="0.01"
+         material="koto_wood" gmaterial="robotera/KotoWood" >
+     <origin xyz="0 0 0.028" rpy=" 0 0 0" />
+  </xacro:tams_cylinder>
+
+  <!-- squishy cylinder for the hairs, length 1.3cm" -->
+  <xacro:tams_cylinder
+         name="round_brush_hairs" parent="round_brush"
+         radius="0.023" length="0.02" mass="0.1" inertial="0.01"
+         material="yellow" gmaterial="Gazebo/Yellow" >
+     <origin xyz="0 0 0.01" rpy=" 0 0 0" />
+  </xacro:tams_cylinder>
+
+  <!-- a small box that "visually" holds the marker -->
+  <xacro:tams_box
+         name="round_brush_tag_holder" parent="round_brush"
+         sx="0.025" sy="0.025" sz="0.002" mass="0.01" inertial="0.01"
+         material="koto_wood" gmaterial="robotera/KotoWood" >
+     <origin xyz="0 0 0.079" rpy=" 0 0 0" />
+  </xacro:tams_box>
+
+  <!-- the apriltag on top for easy recognition -->
+  <xacro:apriltag_marker namespace="" name="round_brush_apriltag_150" parent="round_brush"
+           family="36h11" ID="150" size="0.025">
+     <origin xyz="0 0 0.08" rpy="0 0 0" />
+  </xacro:apriltag_marker>
+
+
+</robot>

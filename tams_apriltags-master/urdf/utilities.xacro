@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="utilities">
+
+<!-- idea and easy_box borrowed from B21.xacro, 
+     <url>http://ros.org/wiki/b21_description</url>, BSD license 
+
+  (C) 2012 fnh, hendrich@informatik.uni-hamburg.de
+-->
+
+
+<xacro:macro name="default_inertia" params="">
+  <inertial>
+    <mass value="1"/>
+    <!-- XXX <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/> -->
+    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    <origin/>
+  </inertial>
+</xacro:macro>
+
+
+<xacro:macro name="default_inertia_mass_inertial" params="mass inertial">
+  <inertial>
+    <mass value="${mass}"/>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <inertia ixx="${inertial}" ixy="0" ixz="0" iyy="${inertial}" iyz="0" izz="${inertial}"/>
+  </inertial>
+</xacro:macro>
+
+
+
+<xacro:macro name="tams_fixedjoint" params="name parent child *origin">
+<joint name="${name}" type="fixed">
+  <xacro:insert_block name="origin" />
+  <parent link="${parent}"/>
+  <child link="${child}"/>
+</joint>
+</xacro:macro>
+
+
+<xacro:macro name="tams_cylinder" params="name radius length parent material gmaterial mass inertial *origin">
+  <link name="${name}">
+    <xacro:default_inertia_mass_inertial  mass="${mass}" inertial="${inertial}" />
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="${radius}" length="${length}" />
+      </geometry>
+      <material name="${material}" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="${radius}" length="${length}" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="${name}">
+    <turnGravityOff>false</turnGravityOff>
+    <selfCollide>false</selfCollide>
+    <material>${gmaterial}</material> 
+    <mu1>50.0</mu1>
+    <mu2>50.0</mu2>
+    <kp>1000000.0</kp>
+    <kd>1.0</kd>
+  </gazebo>
+  <xacro:tams_fixedjoint name="${name}_fixedjoint" parent="${parent}" child="${name}" >
+    <xacro:insert_block name="origin" /> 
+  </xacro:tams_fixedjoint>
+</xacro:macro>
+
+
+<xacro:macro name="simple_box" params="name sx sy sz material gmaterial mass inertial mu1 mu2">
+  <link name="${name}">
+    <xacro:default_inertia_mass_inertial  mass="${mass}" inertial="${inertial}" />
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="${sx} ${sy} ${sz}" />
+      </geometry>
+      <material name="${material}" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="${sx} ${sy} ${sz}" />
+      </geometry>  
+    </collision>
+  </link>
+  <gazebo reference="${name}">
+    <material>${gmaterial}</material> 
+    <!-- higher values for mu1/mu2 increase friction -->
+    <mu1>${mu1}</mu1>
+    <mu2>${mu2}0</mu2>
+    <kp>1000000.0</kp>
+    <kd>1.0</kd>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+</xacro:macro>
+
+
+<xacro:macro name="tams_box" params="name sx sy sz material gmaterial parent mass inertial *origin">
+  <xacro:simple_box name="${name}"
+         sx="${sx}" sy="${sy}" sz="${sz}" mass="${mass}" inertial="${inertial}"
+         mu1="50" mu2="50"
+         material="${material}" gmaterial="${gmaterial}" />
+  <xacro:tams_fixedjoint name="${name}_fixedjoint" parent="${parent}" child="${name}" >
+    <xacro:insert_block name="origin" />
+  </xacro:tams_fixedjoint>
+</xacro:macro>
+
+
+<xacro:macro name="simple_sphere" params="name radius material gmaterial mass inertial mu1 mu2">
+  <link name="${name}">
+    <xacro:default_inertia_mass_inertial  mass="${mass}" inertial="${inertial}" />
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="${radius}" />
+      </geometry>
+      <material name="${material}" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="${radius}" />
+      </geometry>  
+    </collision>
+  </link>
+  <gazebo reference="${name}">
+    <material>${gmaterial}</material> 
+    <!-- higher values for mu1/mu2 increase friction -->
+    <mu1>${mu1}</mu1>
+    <mu2>${mu2}0</mu2>
+    <kp>1000000.0</kp>
+    <kd>1.0</kd>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+</xacro:macro>
+
+
+<xacro:macro name="tams_sphere" params="name radius material gmaterial parent mass inertial *origin">
+  <xacro:simple_sphere name="${name}"
+         radius="${radius}" mass="${mass}" inertial="${inertial}"
+         mu1="50" mu2="50"
+         material="${material}" gmaterial="${gmaterial}" />
+  <xacro:tams_fixedjoint name="${name}_fixedjoint" parent="${parent}" child="${name}" >
+    <xacro:insert_block name="origin" />
+  </xacro:tams_fixedjoint>
+</xacro:macro>
+
+
+</robot>

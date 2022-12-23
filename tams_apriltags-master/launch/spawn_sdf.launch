@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- launches the given xacro object in Gazebo. Use "model_name:=nescafe" ... 
+       to select the object/namespace of the robot model,
+       and use "x:=3.14" ... "yaw:=3.14" to specify initial object pose.
+       This file expects that Gazebo is already running (or maybe paused).
+       Due to limitations in roslaunch (no nested substitutions), we need
+       the absolute pathname of the object SDF file, unless you specify
+       models from the tams_gazebo_models package (tams:=true, default).
+
+       Example commandline:
+       roslaunch tams_3d_models spawn_sdf sdf_file:=nescafe x:1.1 model_name:=nescafe13
+       roslaunch tams_3d_models spawn_sdf tams:=false sdf_file:=/home/hendrich/.gazebo/models/tams_fanta_can/model.sdf x:=1.2 model_name:=fanta
+
+       2015.01.15 fnh new file
+  -->
+
+  <arg name="tams" default="true" />  <!-- tams==true: use model from tams_gazebo_models, false: absolute filename.sdf -->
+  <arg name="sdf_file" default="nescafe" />  <!-- without prefix and model.sdf suffix -->
+  <!-- <arg name="sdf_file" default="/home/hendrich/.gazebo/models/nescafe/model.sdf" /> -->
+
+  <arg name="model_name" default="nescafe" />
+  <arg name="x" default="0" />
+  <arg name="y" default="0" />
+  <arg name="z" default="0.01" />
+  <arg name="roll" default="0" />
+  <arg name="pitch" default="0" />
+  <arg name="yaw" default="0" />
+
+
+  <!-- upload the robot xacro/urdf to the param server -->
+  <!-- this checks whether using an absolute or tams_gazebo_models sdf name -->
+
+  <group if="$(arg tams)" >
+  <param name="$(arg model_name)_description" textfile="$(find tams_gazebo_models)/$(arg sdf_file)/model.sdf" />
+  </group>
+
+  <group unless="$(arg tams)" >
+    <param name="$(arg model_name)_description" textfile="$(arg sdf_file)" />
+  </group>
+
+  <!-- spawn the robot at given xyz position and RPY orientation -->
+  <node name="spawn_$(arg model_name)" pkg="gazebo_ros" type="spawn_model" 
+        args="-sdf -param $(arg model_name)_description 
+-x $(arg x) -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw) 
+-model $(arg model_name)"
+        respawn="false" output="screen" />
+
+</launch>
