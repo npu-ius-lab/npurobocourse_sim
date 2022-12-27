@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="apriltag_demo">
+
+  <xacro:include filename="$(find tianbot_mini)/urdf/tianbot_mini_run.urdf.xacro" />
+
+
+  <!--<link name="world" />
+  <link name="doro/world" />
+  <joint name="hugo" type="fixed">
+    <parent link="world" />
+    <child  link="doro/world" />
+  </joint> -->
+
+  <!--<xacro:apriltag_marker namespace="doro/" name="apriltag1" parent="world" family="36_11" ID="333" size="0.5"> 
+    <origin xyz="1 1 1" rpy=" 0 0 0" />
+  </xacro:apriltag_marker>
+
+  <xacro:apriltag_marker namespace="doro/" name="apriltag2" parent="world" family="16_05" ID="2" size="0.1"> 
+    <origin xyz="0.5 1 1" rpy=" 0 0 0" />
+  </xacro:apriltag_marker>
+
+  <xacro:apriltag_marker namespace="doro/" name="apriltag3" parent="world" family="36_11" ID="586" size="0.1"> 
+    <origin xyz="0.5 0.5 1" rpy=" 0 0 0.8" />
+  </xacro:apriltag_marker>-->
+
+  <xacro:apriltag_marker namespace="tianbot_mini/" name="apriltag" parent="world" family="36_11" ID="8" size="0.1"> 
+    <origin xyz="0.25 0.25 0.0" rpy=" 0 0 0" />
+  </xacro:apriltag_marker>
+
+</robot>

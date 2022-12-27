@@ -1,0 +1,508 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="apriltag_marker">
+
+  <!-- ROS xacro/urdf model of one apriltag marker with given
+       tag-family, ID, and size of the mesh. Optionally, apriltag_size can be 
+       specified to calculate from it the size of the mesh. In this case, the 
+       parameter "size" will be ignored. The marker is modeled as 
+       a simple box with outer xy diameter as specified, and z 1mm thickness.
+       The marker is centered and can be added to other xacro/urdf
+       models. 
+       The mesh of the model contains one bit wide white borders. Therefore,
+       the actual size of the apriltag will be:
+       8/10*size in case of 36h11
+       6/8 *size in case of 16h5
+       This is due to the usage of the white border in the 
+       apriltag detection algorithm, even though its size
+       does not have a convention.
+
+       2019.10.10 - fix Collada rotation, ooops
+       2019.05.22 - switch to textured Collada meshes, needs Jade or higher
+       2014.11.24 - created
+       2021.11.10 - added include_borders parameter 
+       (C) 2014 fnh, hendrich@informatik.uni-hamburg.de
+
+       Usage:
+       size - size of the mesh 
+       apriltag_size - size of the apriltag. If this parameter is set, the size 
+       of the mesh will be re-calculated as mentioned above
+
+       <xacro:apriltag_marker namespace="doro/" name="apriltag13" parent="base_link" 
+              family="36h11" ID="00013" size="0.33" >
+         <origin xyz="0.2 0.3 05" rpy="0 0 3.14" />
+
+       <xacro:apriltag_marker namespace="doro/" name="apriltag14" parent="base_link" 
+              family="36h11" ID="00014" apriltag_size="0.05">
+         <origin xyz="0.2 0.3 05" rpy="0 0 3.14" />
+       </xacro:apriltag_marker>
+
+       The following definition does not make much sense and will produce the same result
+       as the one above with ID=00014, because the mesh is predefined and the size of the 
+       border will not be recalculated.
+       <xacro:apriltag_marker namespace="doro/" name="apriltag14" parent="base_link" 
+              family="36h11" ID="00014" size="0.33" apriltag_size="0.05">
+         <origin xyz="0.2 0.3 05" rpy="0 0 3.14" />
+       </xacro:apriltag_marker>
+   -->
+
+  <xacro:macro name="apriltag_marker" params="namespace name parent family ID size:=0 apriltag_size:=0 *origin" >
+    
+    <!-- Check in which way the size was specified -->
+    <xacro:if value="${apriltag_size == 0}">
+      <xacro:property name="mesh_size" value="${size}" />
+    </xacro:if>
+    <xacro:if value="${apriltag_size != 0}">
+      <xacro:if value="${family == '36h11'}">
+        <xacro:property name="mesh_size" value="${apriltag_size/8*10}" />
+      </xacro:if>
+      <xacro:if value="${family == '16h5'}">
+        <xacro:property name="mesh_size" value="${apriltag_size/6*8}" />
+      </xacro:if>
+    </xacro:if>
+    
+    <link name="${tf_prefix}base_link"/>
+
+    <link name="${tf_prefix}chassis">
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/base_link.STL" />
+        </geometry>
+        <material
+          name="">
+          <color
+            rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/base_link.STL" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="base_link_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="${tf_prefix}base_link" />
+      <child link="${tf_prefix}chassis" />
+    </joint>
+
+  <link name="${tf_prefix}chassis_inertia">
+    <inertial>
+        <origin
+          xyz="0.024853469830173 2.97664242950762E-05 0.0250543140056088"
+          rpy="0 0 0" />
+        <mass
+          value="1" />
+        <inertia
+          ixx="6.9553958488565E-04"
+          ixy="-1.99945013904458E-08"
+          ixz="1.43938674591944E-05"
+          iyy="7.30544716315262E-04"
+          iyz="4.63385578966379E-09"
+          izz="0.0011040368246549" />
+      </inertial>
+      </link>
+
+      <joint name="chassis_inertia_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="${tf_prefix}chassis" />
+      <child link="${tf_prefix}chassis_inertia" />
+      </joint>
+
+
+    <link
+      name="${tf_prefix}left_wheel_link">
+      <inertial>
+        <origin
+          xyz="2.32078430192871E-05 0.00382855825620403 8.27449320089935E-07"
+          rpy="0 0 0" />
+        <mass
+          value="0.0141097430532149" />
+        <inertia
+          ixx="2.40384090487514E-05"
+          ixy="9.21491839222917E-12"
+          ixz="1.16650464760408E-11"
+          iyy="4.21578178329362E-05"
+          iyz="2.56744598636029E-11"
+          izz="2.40355678533584E-05" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/left_wheel_link.STL" />
+        </geometry>
+        <material
+          name="">
+          <color
+            rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/left_wheel_link.STL" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint
+      name="left_wheel_joint"
+      type="continuous">
+      <origin
+        xyz="-3.1502E-05 0.0539 0"
+        rpy="0 0 0" />
+      <parent
+        link="${tf_prefix}chassis" />
+      <child
+        link="${tf_prefix}left_wheel_link" />
+      <axis
+        xyz="0 1 0" />
+    </joint>
+
+    <link
+      name="${tf_prefix}right_wheel_link">
+      <inertial>
+        <origin
+          xyz="2.32417232655761E-05 0.00382871766815113 7.46876650276063E-07"
+          rpy="0 0 0" />
+        <mass
+          value="0.0141106473315115" />
+        <inertia
+          ixx="2.40403731664504E-05"
+          ixy="1.93558318570861E-11"
+          ixz="-1.9701375781678E-11"
+          iyy="4.21599888385316E-05"
+          iyz="3.15208827782047E-12"
+          izz="2.4035775665164E-05" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/right_wheel_link.STL" />
+        </geometry>
+        <material
+          name="">
+          <color
+            rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/right_wheel_link.STL" />
+        </geometry>
+      </collision>
+    </link>
+
+
+    <joint
+      name="right_wheel_joint"
+      type="continuous">
+      <origin
+        xyz="3.1502E-05 -0.0539 0"
+        rpy="0 0 0" />
+      <parent
+        link="${tf_prefix}chassis" />
+      <child
+        link="${tf_prefix}right_wheel_link" />
+      <axis
+        xyz="0 1 0" />
+    </joint>
+    
+    
+    
+    <link
+      name="${tf_prefix}caster_wheel_link">
+      <inertial>
+        <origin
+          xyz="-0.00165835255684716 -0.00180060938974309 -0.0149394143750132"
+          rpy="0 0 0" />
+        <mass
+          value="0.05" />
+        <inertia
+          ixx="2.16626931623885E-05"
+          ixy="3.83541263603009E-07"
+          ixz="3.99373843702272E-08"
+          iyy="2.24557422869881E-05"
+          iyz="4.38381740576403E-08"
+          izz="3.40995008598664E-05" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/caster_wheel_link.STL" />
+        </geometry>
+        <material
+          name="">
+          <color
+            rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/caster_wheel_link.STL" />
+        </geometry>
+      </collision>
+    </link>
+    <joint
+      name="caster_wheel_joint"
+      type="continuous">
+      <origin
+        xyz="0.0669 0 0.013198"
+        rpy="0 0 0" />
+      <parent
+        link="${tf_prefix}chassis" />
+      <child
+        link="${tf_prefix}caster_wheel_link" />
+      <axis
+        xyz="0 0 -1" />
+    </joint>
+    <link
+      name="${tf_prefix}casterball_link">
+      <inertial>
+        <origin
+          xyz="7.28361031825109E-06 -6.78424244432776E-06 -2.7116678312511E-08"
+          rpy="0 0 0" />
+        <mass
+          value="0.01" />
+        <inertia
+          ixx="6.55220382676576E-06"
+          ixy="-4.99341078806011E-09"
+          ixz="-1.46699518378004E-11"
+          iyy="6.54388662358904E-06"
+          iyz="-1.76446657793141E-11"
+          izz="6.4985337868168E-06" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/casterball_link.STL" />
+        </geometry>
+        <material
+          name="">
+          <color
+            rgba="0.556862745098039 0.556862745098039 0.556862745098039 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/casterball_link.STL" />
+        </geometry>
+      </collision>
+    </link>
+    <joint
+      name="casterball_joint"
+      type="continuous">
+      <origin
+        xyz="0.0067192 0.0074065 -0.0223"
+        rpy="0 0 0" />
+      <parent
+        link="${tf_prefix}caster_wheel_link" />
+      <child
+        link="${tf_prefix}casterball_link" />
+      <axis
+        xyz="0.73589 -0.6771 0" />
+    </joint>
+    <link
+      name="${tf_prefix}laser">
+      <inertial>
+        <origin
+          xyz="0.00488456324855697 0.0002034775126721 -0.00678164110191608"
+          rpy="0 0 0" />
+        <mass
+          value="0.1" />
+        <inertia
+          ixx="2.13845745300745E-04"
+          ixy="6.16395629669164E-08"
+          ixz="7.73241537389749E-06"
+          iyy="4.15001411959707E-04"
+          iyz="4.01928352675467E-09"
+          izz="4.77132234847934E-04" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/lidar_Link.dae" />
+        </geometry>
+        <material
+          name="">
+          <color
+            rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://tianbot_mini/meshes/lidar_Link.STL" />
+        </geometry>
+      </collision>
+    </link>
+    <joint
+      name="lidar_joint"
+      type="fixed">
+      <origin
+        xyz="0.026633 -0.00020608 0.067612"
+        rpy="0 0 0" />
+      <parent
+        link="${tf_prefix}base_link" />
+      <child
+        link="${tf_prefix}laser" />
+      <axis
+        xyz="0 0 0" />
+    </joint>
+
+
+    <link name="${namespace}${name}">
+      <inertial>
+        <mass value="0.001" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <inertia ixx="0.00001" ixy="0" ixz="0" iyy="0.00001" iyz="0" izz="0.00002" />
+      </inertial>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="${mesh_size} ${mesh_size} 0.001" />
+        </geometry>
+      </collision>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <!-- use Python str to convert family name and to generate leading zeros -->
+          <mesh filename="package://tams_apriltags/meshes/tag${str(family).replace( 'h', '_' )}_${str(ID).zfill(5)}.dae" scale="${10*mesh_size} ${10*mesh_size} 1"/>
+        </geometry>
+      </visual>
+    </link>
+    <joint
+      name="apriltag_joint"
+      type="fixed">
+      <origin
+        xyz="0.0 0 0.059"
+        rpy="0 1.57 0" />
+      <parent link="${tf_prefix}laser" />
+      <child link="${namespace}${name}" />
+      <axis
+        xyz="0 0 0" />
+    </joint>   
+
+
+    <gazebo reference="${tf_prefix}base_link">
+      <material>Gazebo/Grey</material>
+    </gazebo>
+    <gazebo reference="${tf_prefix}chassis"> 
+      <material>Gazebo/LightGrey </material>
+      <maxVel>0.0</maxVel>
+      <minDepth>0.001</minDepth>
+    </gazebo>
+    <gazebo reference="${tf_prefix}right_wheel_link"> 
+      <mu1>0.1</mu1>
+      <mu2>0.1</mu2>
+      <kp>500000.0</kp>
+      <kd>10.0</kd>
+      <material>Gazebo/DarkGrey</material>
+      <maxVel>0.1</maxVel>
+      <minDepth>0.001</minDepth>
+      <fdir1>1 0 0</fdir1>
+    </gazebo>
+    <gazebo reference="${tf_prefix}left_wheel_link">
+      <mu1>0.1</mu1>
+      <mu2>0.1</mu2>
+      <kp>500000.0</kp>
+      <kd>10.0</kd>
+      <material>Gazebo/DarkGrey </material>
+      <maxVel>0.1</maxVel>
+      <minDepth>0.001</minDepth>
+      <fdir1>1 0 0</fdir1>
+    </gazebo>
+    <gazebo reference="${tf_prefix}caster_wheel_link"> 
+      <material>Gazebo/DarkGrey </material>
+      <maxVel>0.0</maxVel>
+      <minDepth>0.001</minDepth>
+    </gazebo>
+  
+  <!-- controller -->
+    <gazebo>
+      <plugin name="differential_drive_controller" 
+              filename="libgazebo_ros_diff_drive.so">
+        <rosDebugLevel>Error</rosDebugLevel>
+        <publishWheelTF>false</publishWheelTF>
+        <robotNamespace>/</robotNamespace>
+        <publishTf>true</publishTf>
+        <publishOdomTF>true</publishOdomTF>
+        <publishWheelJointState>false</publishWheelJointState>
+        <updateRate>50</updateRate>
+        <legacyMode>false</legacyMode>
+        <leftJoint>left_wheel_joint</leftJoint>
+        <rightJoint>right_wheel_joint</rightJoint>
+        <wheelSeparation>0.1</wheelSeparation>
+        <wheelDiameter>0.043</wheelDiameter>
+        <broadcastTF>1</broadcastTF>
+        <wheelTorque>20</wheelTorque>
+        <wheelAcceleration>1.0</wheelAcceleration>
+        <commandTopic>${tf_prefix}cmd_vel</commandTopic>
+        <odometryFrame>${tf_prefix}odom</odometryFrame> 
+        <odometryTopic>${tf_prefix}odom</odometryTopic> 
+        <odometrySource>world</odometrySource> 
+        <robotBaseFrame>${tf_prefix}base_link</robotBaseFrame>
+      </plugin>
+    </gazebo> 
+
+
+    <!-- we use Gazebo material to put the texture onto the marker. Note mu1=mu2=0 for no friction. -->
+    <gazebo reference="${namespace}${name}">
+      <!-- <material>Gazebo/Red</material> -->
+      <turnGravityOff>false</turnGravityOff>
+      <selfCollide>false</selfCollide>
+      <mu1>0</mu1>
+      <mu2>0</mu2>
+      <kp>1000000.0</kp>
+      <kd>1.0</kd>
+    </gazebo>
+  <!--   <joint name="apriltag_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${tf_prefix}laser" />
+      <child link="${namespace}${name}" />
+    </joint>  -->
+  </xacro:macro>
+
+</robot>
