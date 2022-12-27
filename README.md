@@ -4,12 +4,12 @@
 
 仿真环境建立在开源项目[hector_quadrotor](https://github.com/RAFALAMAO/hector-quadrotor-noetic)和[tianbot_mini](https://github.com/tianbot/tianbot_mini)基础上。
 
-测试环境：Ubuntu 20.04/ROS Noetic
+测试环境：Ubuntu 20.04/ROS Noetic。
 
 启动gazebo仿真环境，一个无人机，一个小车：
 
 ```
-cd your_ws/src
+cd your_ws
 source devel/setup.bash
 roslaunch hector_quadrotor_demo outdoor_flight_gazebo.launch
 ```
