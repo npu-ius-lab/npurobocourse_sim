@@ -1,33 +1,60 @@
-####启动gazebo仿真环境，一个无人机，一个小车#####
-1.cd your_ws/src
-2.source devel/setup.bash
-3.roslaunch hector_quadrotor_demo outdoor_flight_gazebo.launch
+# 智能无人系统综合设计仿真环境
 
-####小车建图####只提供gmapping
-1.bash
-2.source devel/setup.bash
-3.roslaunch tibot_slam gmapping.launch
+![sim.jpg](sim.jpg)
 
-####小车导航####DWA
-1.bash
-2.soure devel/setup.bash
-3.roslaunch tianbot_nav navigation_demo.launch
+仿真环境建立在开源项目[hector_quadrotor](https://github.com/RAFALAMAO/hector-quadrotor-noetic)和[tianbot_mini](https://github.com/tianbot/tianbot_mini)基础上。
 
+测试环境：Ubuntu 20.04/ROS Noetic
 
-####小车跟随无人机（无避障）#######
-1.bash
-2.soure devel/setup.bash
-3.rosrun hector_quadrotor_demo turtle_tf2_listener.py
+启动gazebo仿真环境，一个无人机，一个小车：
 
-####小车跟随无人机（避障）#########
-1.bash
-2.soure devel/setup.bash
-3.rosrun hector_quadrotor_demo mini_track_drone.py
+```
+cd your_ws/src
+source devel/setup.bash
+roslaunch hector_quadrotor_demo outdoor_flight_gazebo.launch
+```
 
-#####无人机跟踪小车二维码#######
-1.bash
-2.soure devel/setup.bash
-3.rosrun teleop_twist_keyboard teleop_twist_keyboard.py ##启动无人机键盘遥控节点，使相机对准二维码
-4.roslaunch rmtt_apriltag detection.launch   #开新终端
-5.roslaunch rmtt_tracker rmtt_tag_tracker.launch   #开新终端
+小车gmapping建图：
 
+```
+bash
+source devel/setup.bash
+roslaunch tianbot_slam gmapping.launch
+```
+
+小车导航，DWA：
+
+```
+bash
+soure devel/setup.bash
+roslaunch tianbot_nav navigation_demo.launch
+```
+
+小车跟随无人机（无避障）：
+
+```
+bash
+soure devel/setup.bash
+rosrun hector_quadrotor_demo turtle_tf2_listener.py
+```
+
+小车跟随无人机（避障）：
+
+```
+bash
+soure devel/setup.bash
+rosrun hector_quadrotor_demo mini_track_drone.py
+```
+
+无人机跟踪小车二维码：
+
+```
+bash
+soure devel/setup.bash
+##启动无人机键盘遥控节点，使相机对准二维码
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+##打开新终端
+roslaunch rmtt_apriltag detection.launch
+##打开新终端
+roslaunch rmtt_tracker rmtt_tag_tracker.launch
+```
