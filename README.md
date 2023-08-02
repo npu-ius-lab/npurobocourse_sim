@@ -6,7 +6,7 @@
 
 测试环境：Ubuntu 20.04/ROS Noetic。
 
-## Build & Run
+## Usage
 
 启动gazebo仿真环境，一个无人机，一个小车：
 
