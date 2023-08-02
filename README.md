@@ -6,6 +6,8 @@
 
 测试环境：Ubuntu 20.04/ROS Noetic。
 
+## Build & Run
+
 启动gazebo仿真环境，一个无人机，一个小车：
 
 ```
@@ -58,3 +60,7 @@ roslaunch rmtt_apriltag detection.launch
 ##打开新终端
 roslaunch rmtt_tracker rmtt_tag_tracker.launch
 ```
+
+## Copyright
+
+Please check [here](LICENSE.txt).
