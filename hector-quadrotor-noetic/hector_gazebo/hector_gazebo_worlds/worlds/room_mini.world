@@ -20,7 +20,7 @@
         <visual name="visual">
           <geometry>
             <cylinder>
-              <radius>0.5</radius>
+              <radius>0.8</radius>
               <length>0.001</length>
             </cylinder>
           </geometry>
@@ -32,7 +32,7 @@
         <collision name="collision">
           <geometry>
             <cylinder>
-              <radius>0.5</radius>
+              <radius>0.8</radius>
               <length>0.001</length>
             </cylinder>
           </geometry>
@@ -46,7 +46,7 @@
         <visual name="visual">
           <geometry>
             <cylinder>
-              <radius>0.35</radius>
+              <radius>0.56</radius>
               <length>0.002</length>
             </cylinder>
           </geometry>
@@ -60,7 +60,7 @@
         <collision name="collision">
           <geometry>
             <cylinder>
-              <radius>0.35</radius>
+              <radius>0.56</radius>
               <length>0.002</length>
             </cylinder>
           </geometry>
