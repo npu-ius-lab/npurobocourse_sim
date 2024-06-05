@@ -13,6 +13,60 @@
       </attenuation>
       <direction>-0.5 0.1 -0.9</direction>
     </light>
+    <model name="circular_ring_0">
+      <pose>-8 -6.5 0 0 0 0</pose>
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>0.001</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient> <!-- Set ambient color to blue -->
+            <diffuse>0 0 1 1</diffuse> <!-- Set diffuse color to blue -->
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>0.001</length>
+            </cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="circular_ring_1">
+      <pose>-8 -6.5 0.001 0 0 0</pose>
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.35</radius>
+              <length>0.002</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.35</radius>
+              <length>0.002</length>
+            </cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
