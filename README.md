@@ -62,7 +62,7 @@ roslaunch rmtt_tracker rmtt_tag_tracker.launch
 ```
 ## Competition
 
-比赛中的无人机摄像头需要改成垂直向下，修改npu_simulator/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_description/urdf/quadrotor_hokuyo_utm30lx.urdf.xacro第22行，将摄像头角度改成：
+如果无人机摄像头需要改成垂直向下，修改npu_simulator/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_description/urdf/quadrotor_hokuyo_utm30lx.urdf.xacro第22行，将摄像头角度改成：
 ```
 <origin xyz="0.05 -0.0 -0.25" rpy="0 ${M_PI*90/180} 0"/>
 ```
