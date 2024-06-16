@@ -14,13 +14,13 @@
       <direction>-0.5 0.1 -0.9</direction>
     </light>
     <model name="circular_ring_0">
-      <pose>-8 -6.5 0 0 0 0</pose>
+      <pose>-1 4.3 0 0 0 0</pose>
       <static>true</static>
       <link name="link">
         <visual name="visual">
           <geometry>
             <cylinder>
-              <radius>0.8</radius>
+              <radius>0.6</radius>
               <length>0.001</length>
             </cylinder>
           </geometry>
@@ -40,13 +40,13 @@
       </link>
     </model>
     <model name="circular_ring_1">
-      <pose>-8 -6.5 0.001 0 0 0</pose>
+      <pose>-1 4.3 0.001 0 0 0</pose>
       <static>true</static>
       <link name="link">
         <visual name="visual">
           <geometry>
             <cylinder>
-              <radius>0.56</radius>
+              <radius>0.42</radius>
               <length>0.002</length>
             </cylinder>
           </geometry>
