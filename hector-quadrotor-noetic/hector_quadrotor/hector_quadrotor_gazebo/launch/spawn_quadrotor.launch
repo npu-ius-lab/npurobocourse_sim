@@ -45,6 +45,7 @@
     <param name="frame_id" value="/$(arg world_frame)" />
     <param name="tf_prefix" value="$(arg tf_prefix)" if="$(arg use_ground_truth_for_tf)" />
     <param name="tf_prefix" value="$(arg tf_prefix)/ground_truth" unless="$(arg use_ground_truth_for_tf)" />
+    <remap from="/ground_truth_to_tf/pose" to="pose" />
   </node>
   <group if="$(arg use_pose_estimation)">
     <node name="pose_estimation" pkg="hector_quadrotor_pose_estimation" type="hector_quadrotor_pose_estimation" output="screen">
