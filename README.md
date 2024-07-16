@@ -10,51 +10,46 @@
 
 ## Usage
 
+编译：
+
+```
+catkin_make_isolated
+```
+
 启动gazebo仿真环境，一个无人机，一个小车：
 
 ```
-cd your_ws
-source devel/setup.bash
 roslaunch hector_quadrotor_demo outdoor_flight_gazebo.launch
 ```
 
 小车gmapping建图：
 
 ```
-bash
-source devel/setup.bash
-roslaunch tianbot_slam gmapping.launch
+roslaunch tianbot_mini slam.launch
 ```
 
-小车导航，DWA：
+小车amcl定位导航：
 
 ```
-bash
-soure devel/setup.bash
-roslaunch tianbot_nav navigation_demo.launch
+roslaunch tianbot_mini amcl.launch
 ```
 
 小车跟随无人机（无避障）：
 
 ```
-bash
-soure devel/setup.bash
 rosrun hector_quadrotor_demo turtle_tf2_listener.py
 ```
 
 小车跟随无人机（避障）：
 
 ```
-bash
-soure devel/setup.bash
-rosrun hector_quadrotor_demo mini_track_drone.py
+roslaunch tianbot_mini amcl.launch
+rosrun rmtt_tracker pub_goal.py
 ```
 
 无人机跟踪小车二维码：
 
 ```
-bash
-soure devel/setup.bash
 ##启动无人机键盘遥控节点，使相机对准二维码
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ##打开新终端
@@ -62,6 +57,7 @@ roslaunch rmtt_apriltag detection.launch
 ##打开新终端
 roslaunch rmtt_tracker rmtt_tag_tracker.launch
 ```
+
 ## Competition
 
 如果无人机摄像头需要改成垂直向下，修改npu_simulator/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_description/urdf/quadrotor_hokuyo_utm30lx.urdf.xacro第22行，将摄像头角度改成：

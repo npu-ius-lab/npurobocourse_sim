@@ -29,6 +29,8 @@
       <param name="frame_id" value="$(arg robot_name)/map" />
     </node>
 
+    <!-- <node pkg="tf" type="static_transform_publisher" name="map_odom_broadcaster" args="0 0 0 0 0 0 /map /tianbot_mini/odom 100" /> -->
+
     <!-- AMCL蒙特卡罗定位算法，估算机器人的位置 -->
     <node pkg="amcl" type="amcl" name="amcl">
       <param name="use_map_topic"             value="true"/>

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 # 上面两行不可省略，第一行是：告诉操作系统执行这个脚本的时候，调用 /usr/bin 下的 python 解释器。第二行是：定义编码格式 "UTF-8-" 支持中文
 
@@ -8,6 +8,7 @@ import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from gazebo_msgs.srv import *
 def send_goals_python():
+    
     client = actionlib.SimpleActionClient('move_base',MoveBaseAction)
     client.wait_for_server()
     #定义发送目标点的对象
@@ -31,7 +32,7 @@ def send_goals_python():
 
         client.send_goal(goal)
 
-        wait = client.wait_for_result(rospy.Duration.from_sec(10.0))  # 发送完毕目标点之后，根据action 的机制，等待反馈执行的状态，等待时长是：30 s.
+        wait = client.wait_for_result(rospy.Duration.from_sec(1.0))  # 发送完毕目标点之后，根据action 的机制，等待反馈执行的状态，等待时长是：30 s.
         if not wait:
             str_log="The Goal Planning Failed for some reasons" 
             rospy.loginfo(str_log)

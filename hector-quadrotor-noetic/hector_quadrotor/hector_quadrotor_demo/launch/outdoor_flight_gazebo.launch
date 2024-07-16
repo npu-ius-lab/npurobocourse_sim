@@ -6,9 +6,13 @@
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
-  <arg name="x" default="0.5"/>
+  <arg name="x" default="0.0"/>
   <arg name="y" default="0.0"/>
   <arg name="z" default="0.0"/>
+  <arg name="drone_x" default="0.5"/>
+  <arg name="drone_y" default="0.0"/>
+  <arg name="drone_z" default="0.0"/>
+
   <!-- Start Gazebo with wg world running in (max) realtime -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find hector_gazebo_worlds)/worlds/room_mini.world"/>
@@ -18,12 +22,16 @@
     <arg name="headless" value="$(arg headless)"/>
     <arg name="debug" value="$(arg debug)"/>
   </include>
+
   <!-- Spawn simulated quadrotor uav -->
   <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch" >
 
     <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor_hokuyo_utm30lx.gazebo.xacro"/> 
-    
+    <arg name="x" default="$(arg drone_x)"/>
+    <arg name="y" default="$(arg drone_y)"/>
+    <arg name="z" default="$(arg drone_z)"/>   
   </include>
+
   <!-- spawn tianbot_mini --> 
   <arg name="robot_name" default="tianbot_mini" />
   <!-- 加载机器人模型描述参数 -->
@@ -47,7 +55,10 @@
            -y $(arg y)
            -z $(arg z)"/>
   </group>
+
+  <!-- Connect world and robot odom -->
   <node pkg="hector_quadrotor_demo" type="statictf.py" name="groundtruthtf" />
+  
   <!-- Start rviz visualization with preset config -->
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hector_quadrotor_demo)/rviz_cfg/outdoor_flight.rviz"/>
 
