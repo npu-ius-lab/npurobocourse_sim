@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # Copyright 2017 HyphaROS Workshop.
 # Developer: HaoChih, LIN (hypha.ros@gmail.com)
 #

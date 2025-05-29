@@ -18,7 +18,7 @@
   <arg name="odom_frame_id" default="$(arg robot_name)/odom" />
 
   <!-- map file -->
-  <arg name="map" default="$(find tianbot_mini)/maps/map.yaml" />
+  <arg name="map" default="$(find tianbot_mini)/maps/easy.yaml" />
 
   <!-- Rviz -->
   <arg name="use_rviz" default="true" />

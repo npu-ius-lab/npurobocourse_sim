@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="name" default="quadrotor"/>
-  <arg name="model" default="$(find hector_quadrotor_description)/urdf/quadrotor.gazebo.xacro"/>
+  <arg name="name" default="tello"/>
+  <arg name="model" default="$(find hector_quadrotor_description)/urdf/tello.gazebo.xacro"/>
   <arg name="tf_prefix" default="$(optenv ROS_NAMESPACE)"/>
   <arg name="controller_definition" default="$(find hector_quadrotor_controller)/launch/controller.launch"/>
 
   <arg name="x" default="0.0"/>
   <arg name="y" default="0.0"/>
-  <arg name="z" default="0.3"/>
+  <arg name="z" default="0.0"/>
 
   <arg name="use_ground_truth_for_tf" default="true" />
   <arg name="use_ground_truth_for_control" default="true" />
@@ -17,8 +17,6 @@
 
   <arg name="world_frame" default="world"/> <!-- This should actually be "/world". See https://github.com/ros-simulation/gazebo_ros_pkgs/pull/324 -->
   <arg name="base_link_frame" default="$(arg tf_prefix)/base_link"/>
-  <arg name="base_footprint_frame" default="$(arg tf_prefix)/base_footprint"/>
-  <arg name="base_stabilized_frame" default="$(arg tf_prefix)/base_stabilized"/>
 
   <!-- send the robot XML to param server -->
   <param name="robot_description" command="$(find xacro)/xacro '$(arg model)' base_link_frame:=$(arg base_link_frame) world_frame:=$(arg world_frame)" />
@@ -45,12 +43,13 @@
   <node name="ground_truth_to_tf" pkg="message_to_tf" type="message_to_tf" output="screen">
     <param name="odometry_topic" value="ground_truth/state" />
     <param name="frame_id" value="/$(arg world_frame)" />
-    <param name="footprint_frame_id" value="/$(arg base_footprint_frame)" />
-    <param name="stabilized_frame_id" value="/$(arg base_stabilized_frame)" />
     <param name="child_frame_id" value="/$(arg base_link_frame)" />
     <param name="tf_prefix" value="$(arg tf_prefix)" if="$(arg use_ground_truth_for_tf)" />
     <param name="tf_prefix" value="$(arg tf_prefix)/ground_truth" unless="$(arg use_ground_truth_for_tf)" />
-    <remap from="/ground_truth_to_tf/pose" to="pose" />
+    <param name="publish_pose" value="true" />
+    <param name="publish_pose_topic" value="/ground_truth_to_tf/pose" />
+    <param name="publish_euler" value="true" />
+    <param name="publish_euler_topic" value="/ground_truth_to_tf/euler" />
   </node>
   <group if="$(arg use_pose_estimation)">
     <node name="pose_estimation" pkg="hector_quadrotor_pose_estimation" type="hector_quadrotor_pose_estimation" output="screen">
