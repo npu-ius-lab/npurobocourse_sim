@@ -1,4 +1,4 @@
-2025-05-29:  加入sim2real
+2025-05-29：支持仿真测试和虚实结合测试
 
 2024-06-16：无人机位姿话题重映射为 /pose。
 
@@ -20,20 +20,18 @@ catkin_make_isolated
 
 启动gazebo仿真环境，一个无人机，一个小车：
 
-###### 仿真环境
+## 仿真环境
 
 ```
 roslaunch hector_quadrotor_demo sim.launch
 ```
 
-###### 虚实结合环境
+## 虚实结合环境
 
 ```
 roslaunch hector_quadrotor_demo sim_real.launch
 ```
-
-
-
+ 
 小车gmapping建图：
 
 ```
