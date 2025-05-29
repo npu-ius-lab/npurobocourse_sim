@@ -26,7 +26,7 @@ catkin_make_isolated
 roslaunch hector_quadrotor_demo sim.launch
 ```
 
-### 虚实结合环境
+### 虚实结合
 
 ```
 roslaunch hector_quadrotor_demo sim_real.launch
