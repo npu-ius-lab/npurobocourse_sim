@@ -37,7 +37,7 @@ class Rise(smach.State):
     def execute(self, userdata):
         global height, mission
         rospy.loginfo('Executing state Rise')  
-        if height > 2.5:
+        if height > 3.0:
             zero_twist = Twist()
             pub.publish(zero_twist)
             mission = 3
