@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="rmtt_tracker" name="position_track" type="position_track" output="screen"/>
+</launch>

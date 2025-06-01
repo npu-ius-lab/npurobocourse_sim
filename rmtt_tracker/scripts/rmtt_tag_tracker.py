@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#红x绿y蓝z
+
 import numpy as np
 from simple_pid import PID
 
@@ -75,9 +75,9 @@ if __name__ == '__main__':
     rospy.init_node('tag_tracker')
 
     # params
-    tag_id = rospy.get_param('~tag_id', '8')
+    tag_id = rospy.get_param('~tag_id', '5')
     tag_name = "tag_" + str(tag_id)
-    track_distance = rospy.get_param("~track_distance", 0.5)
+    track_distance = rospy.get_param("~track_distance", 0.8)
 
     # sub and pub
     tag_sub = rospy.Subscriber('/tag_detections', AprilTagDetectionArray, tag_callback, queue_size=1)
@@ -95,16 +95,14 @@ if __name__ == '__main__':
     target_frame = tag_name + "_target"
     static_transformStamped.child_frame_id = target_frame
 
-    static_transformStamped.transform.translation.y += 0
+    static_transformStamped.transform.translation.y += track_distance*np.tan(np.deg2rad(15))
     static_transformStamped.transform.translation.z += track_distance 
 
-    quat = quaternion_from_euler(np.deg2rad(-90), np.deg2rad(0), np.deg2rad(90))
+    quat = quaternion_from_euler(np.deg2rad(-90), np.deg2rad(90), 0)
     static_transformStamped.transform.rotation.x = quat[0]
     static_transformStamped.transform.rotation.y = quat[1]
     static_transformStamped.transform.rotation.z = quat[2]
     static_transformStamped.transform.rotation.w = quat[3]
-
-
     broadcaster.sendTransform(static_transformStamped)
 
     # tf listener
@@ -119,7 +117,6 @@ if __name__ == '__main__':
             try:
                 trans = tfBuffer.lookup_transform(target_frame, (rospy.get_namespace()+'base_link').strip("/"), rospy.Time(), rospy.Duration(0.2))
                 vel = Twist()
-                print(trans)
                 vel.linear.x = pid_x(trans.transform.translation.x)
                 vel.linear.y = pid_y(trans.transform.translation.y)
                 # vel.linear.z = pid_z(trans.transform.translation.z)

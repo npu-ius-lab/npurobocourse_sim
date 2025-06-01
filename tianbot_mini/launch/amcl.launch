@@ -1,9 +1,9 @@
 <launch>
 
   <!-- AMCL定位算法，基础参数(机器人初始位置) -->
-  <arg name="initial_pose_x"  default="0.0"/>
-  <arg name="initial_pose_y"  default="0.0"/>
-  <arg name="initial_pose_a"  default="0.0"/>
+  <arg name="initial_pose_x"  default="2.5"/>
+  <arg name="initial_pose_y"  default="-1.5"/>
+  <arg name="initial_pose_a"  default="0.05"/>
 
   <!-- 迷你机器人，基础参数 -->
   <arg name="robot_name" default="tianbot_mini" />

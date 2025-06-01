@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name = "drone_name" default="$(optenv RMTT_NAMESPACE /)" />
+  <arg name = "tag_id" default="$(optenv RMTT_TAG_ID 5)" />
+  <group ns="$(arg drone_name)">
+    <!-- <node pkg="rmtt_tracker" type="rmtt_tag_tracker.py" name="tag_tracker" output="screen" respawn="true">
+      <param name="tag_id" value="$(arg tag_id)"/>
+    </node> -->
+    <node pkg="rmtt_tracker" type="mission_full.py" name="smach_to_pass" output="screen" respawn="true">
+    </node>
+    <node pkg="rmtt_tracker" type="rmtt_circle_detection.py" name="circle_get" output="screen" respawn="true">
+    </node>
+    <node pkg="rmtt_tracker" type="rmtt_circle_tracking.py" name="circle_track" output="screen" respawn="true">
+    </node>
+    <node pkg="rmtt_tracker" type="go2pose.py" name="go2pose" output="screen" respawn="true">
+    </node>
+    <!-- <node pkg="rmtt_tracker" type="stanley_pf.py" name="stanley" output="screen" respawn="true"/>
+    <node pkg="rmtt_tracker" type="score.py" name="score" output="screen" respawn="true"/> -->
+  </group>
+</launch> 

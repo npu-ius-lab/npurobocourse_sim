@@ -70,7 +70,7 @@ if __name__ == '__main__':
 
     bridge = CvBridge()
     rospy.init_node('circle_tracker', anonymous=True)
-    sub = rospy.Subscriber('/image_raw', Image, callback)
+    sub = rospy.Subscriber('/front_cam/camera/image', Image, callback)
     pub = rospy.Publisher('/circle_msg', ROI, queue_size=1)
     
     rospy.spin()

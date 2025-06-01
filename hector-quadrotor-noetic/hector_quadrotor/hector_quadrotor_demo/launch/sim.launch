@@ -6,11 +6,11 @@
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
-  <arg name="x" default="0.1"/>
-  <arg name="y" default="0.1"/>
+  <arg name="x" default="2.5"/>
+  <arg name="y" default="-1.5"/>
   <arg name="z" default="0.05"/>
-  <arg name="drone_x" default="1.0"/>
-  <arg name="drone_y" default="0.0"/>
+  <arg name="drone_x" default="6.0"/>
+  <arg name="drone_y" default="-1.5"/>
   <arg name="drone_z" default="0.05"/>
 
   <!-- Start Gazebo with wg world running in (max) realtime -->

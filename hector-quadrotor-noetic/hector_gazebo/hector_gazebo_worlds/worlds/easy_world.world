@@ -130,10 +130,10 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>1587 202000000</sim_time>
-      <real_time>159 842101052</real_time>
-      <wall_time>1748491194 725248556</wall_time>
-      <iterations>155854</iterations>
+      <sim_time>1818 702000000</sim_time>
+      <real_time>235 574469494</real_time>
+      <wall_time>1748585657 872093223</wall_time>
+      <iterations>231500</iterations>
       <model name='RoboCup 09 SPL Field'>
         <pose>-0.016501 0.009346 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -339,10 +339,10 @@
         </link>
       </model>
       <model name='hoop_red'>
-        <pose>4.39292 -3.36018 0 0 -0 0</pose>
+        <pose>3.51054 -1.68621 0 0 0 -1.59145</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>4.39292 -3.36018 -1.07934 0 -0 0</pose>
+          <pose>3.51054 -1.68621 -1.07934 0 0 -1.59145</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -354,7 +354,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>8.21403 1.30105 3.61403 0 0.392817 3.12748</pose>
+        <pose>10.0524 1.94348 8.81331 0 0.892817 -2.3877</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
