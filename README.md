@@ -4,7 +4,9 @@
 
 ![sim.jpg](sim.jpg)
 
-仿真环境建立在开源项目[hector_quadrotor](https://github.com/RAFALAMAO/hector-quadrotor-noetic)和[tianbot_mini](https://github.com/tianbot/tianbot_mini)基础上。
+西北工业大学[智能无人系统综合设计](https://github.com/cavayangtao/npurobocourse)课程仿真环境
+
+仿真建立在开源项目[hector_quadrotor](https://github.com/RAFALAMAO/hector-quadrotor-noetic)和[tianbot_mini](https://github.com/tianbot/tianbot_mini)基础上。
 
 测试环境：Ubuntu 20.04/ROS Noetic。
 
@@ -64,6 +66,17 @@ roslaunch rmtt_tracker rmtt_tag_tracker.launch
 ```
 <origin xyz="0.05 -0.0 -0.25" rpy="0 ${M_PI*90/180} 0"/>
 ```
+
+## 引用
+
+    @ARTICLE{yt23jygc,
+        author={杨韬, 常晓飞, 张通, 付斌, 符文星},
+        journal={教育观察}, 
+        title={面向“人工智能+无人系统”的课程建设——以智能无人系统综合设计课程为例}, 
+        year={2023},
+        volume={12},
+        number={22},
+        pages={56-60}}
 
 ## Copyright
 
