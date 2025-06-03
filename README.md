@@ -32,7 +32,6 @@ roslaunch hector_quadrotor_demo sim.launch
 
 ```
 roslaunch rmtt_tracker rmtt_smach_to_pass.launch
-
 ```
 
 小车gmapping建图：
