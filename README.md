@@ -28,14 +28,11 @@ catkin_make_isolated
 roslaunch hector_quadrotor_demo sim.launch
 ```
 
-空地协同：
+无人机穿越圆环，并飞行至指定航点：
 
 ```
-##无人机穿越圆环，并飞行至指定航点：
 roslaunch rmtt_tracker rmtt_smach_to_pass.launch
-##小车开启定位，跟随无人机并避障：
-roslaunch tianbot_mini amcl.launch
-rosrun rmtt_tracker pub_goal.py
+
 ```
 
 小车gmapping建图：
@@ -54,6 +51,13 @@ roslaunch tianbot_mini amcl.launch
 
 ```
 rosrun hector_quadrotor_demo turtle_tf2_listener.py
+```
+
+小车跟随无人机（避障）：
+
+```
+roslaunch tianbot_mini amcl.launch
+rosrun rmtt_tracker pub_goal.py
 ```
 
 无人机跟踪小车二维码：
