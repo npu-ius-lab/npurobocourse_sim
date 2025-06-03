@@ -1,3 +1,5 @@
+2025-05-29：支持仿真测试和[虚实结合测试](https://github.com/npu-ius-lab/npurobocourse_sim/tree/sim2real)
+
 2024-06-16：无人机位姿话题重映射为 /pose。
 
 # 智能无人系统综合设计仿真环境
@@ -18,7 +20,7 @@
 catkin_make_isolated
 ```
 
-启动gazebo仿真环境，一个无人机，一个小车：
+启动Gazebo仿真环境，一个无人机，一个小车：
 
 ```
 roslaunch hector_quadrotor_demo outdoor_flight_gazebo.launch
@@ -60,9 +62,9 @@ roslaunch rmtt_apriltag detection.launch
 roslaunch rmtt_tracker rmtt_tag_tracker.launch
 ```
 
-## Competition
+## 调节无人机相机朝向
 
-如果无人机摄像头需要改成垂直向下，修改npu_simulator/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_description/urdf/quadrotor_hokuyo_utm30lx.urdf.xacro第22行，将摄像头角度改成：
+如果无人机相机需要改成垂直向下，修改npu_simulator/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_description/urdf/quadrotor_hokuyo_utm30lx.urdf.xacro第22行，将相机角度改成：
 ```
 <origin xyz="0.05 -0.0 -0.25" rpy="0 ${M_PI*90/180} 0"/>
 ```
