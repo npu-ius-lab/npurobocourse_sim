@@ -1,0 +1,38 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/tianbot/sim_ws/devel_isolated/hector_pose_estimation_core/include/**",
+        "/home/tianbot/sim_ws/devel_isolated/geographic_msgs/include/**",
+        "/home/tianbot/sim_ws/devel_isolated/uuid_msgs/include/**",
+        "/home/tianbot/sim_ws/devel_isolated/rmtt_tracker/include/**",
+        "/home/tianbot/sim_ws/devel_isolated/hector_uav_msgs/include/**",
+        "/home/tianbot/sim_ws/devel_isolated/hector_gazebo_plugins/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/geographic_info/geodesy/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/hector-quadrotor-noetic/hector_gazebo/hector_gazebo_plugins/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/hector-quadrotor-noetic/hector_gazebo/hector_gazebo_thermal_camera/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/hector-quadrotor-noetic/hector_localization/hector_pose_estimation/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/hector-quadrotor-noetic/hector_localization/hector_pose_estimation_core/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_controller/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_controller_gazebo/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_gazebo_plugins/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_model/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_pose_estimation/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/hector-quadrotor-noetic/hector_quadrotor/hector_uav_msgs/include/**",
+        "/home/tianbot/sim_ws/src/npurobocourse_sim/unique_identifier/unique_id/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

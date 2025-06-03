@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-
-<launch>
-   
-    <node pkg="rmtt_tracker" type="turtle_tf2_listener.py" name="turtle_tf2_listenr" output="screen"/>
-
-    <node pkg="tf" type="static_transform_publisher" name="map_tf" args="0 0 0 0 0 0 map tianbot_mini/map 100"/>
-
-</launch>

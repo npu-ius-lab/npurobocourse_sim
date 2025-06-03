@@ -110,34 +110,11 @@ class Cross_circle(smach.State):
 # define state Go2pose
 class Go2pose(smach.State):
     def __init__(self):
-        smach.State.__init__(self, outcomes=['next','stay'])
+        smach.State.__init__(self, outcomes=['stay'])
  
     def execute(self, userdata):
         global rho, mission,target_vel
         rospy.loginfo('Executing state go2pose')
-        # !!!we need to know if the drone gets to the target pose!!!
-        if rho <= 0.5:
-        # if target_vel.linear.x <= 0.1 and target_vel.angular.z <= 0.1:
-            mission = 7
-            return 'next'
-        else:
-            return 'stay'
-
-# define state Stanley
-class Stanley(smach.State):
-    def __init__(self):
-        smach.State.__init__(self, outcomes=['stay'])
-
-    def execute(self, userdata):
-        global stanley_vel, rho_final
-        rospy.loginfo('Executing stanley')
-        # !!!we need to know if the drone gets to the target pose!!!
-        # if stanley_vel.linear.x <= 0.01 and stanley_vel.angular.z <= 0.01:
-        # if rho_final <= 0.2:
-        #     zero_twist = Twist()
-        #     pub.publish(zero_twist)
-        # else:
-        #     return 'stay'
         return 'stay'
 
 def callback_cmd_tag(msg):
@@ -187,12 +164,6 @@ def callback_pose(msg):
 
     rho = np.hypot(x_diff, y_diff)
     rho_final = np.hypot(x_goal, y_goal)
-
-def callback_stanley_speed(msg):
-    global stanley_vel, mission
-    stanley_vel = msg
-    if mission == 7:
-        pub.publish(stanley_vel)
     
 if __name__ == '__main__':
     mission = 2
@@ -216,7 +187,7 @@ if __name__ == '__main__':
     rospy.Subscriber("/circle_msg", ROI, callback_radius_circle)
     rospy.Subscriber("/cmd_vel_circle", Twist, callback_cmd_vel_circle)
     rospy.Subscriber("/cmd_vel_go2pose", Twist, callback_go2pose_speed)
-    rospy.Subscriber("/cmd_vel_stanley", Twist, callback_stanley_speed)
+    # rospy.Subscriber("/cmd_vel_stanley", Twist, callback_stanley_speed)
     pub = rospy.Publisher("/cmd_vel", Twist, queue_size=1)
 
     # rate
@@ -239,9 +210,7 @@ if __name__ == '__main__':
         smach.StateMachine.add('CROSS_CIRCLE', Cross_circle(),
                                transitions={'next':'GO2POSE', 'stay':'CROSS_CIRCLE'})
         smach.StateMachine.add('GO2POSE', Go2pose(),
-                               transitions={'next':'STANLEY','stay':'GO2POSE'})
-        smach.StateMachine.add('STANLEY', Stanley(),
-                               transitions={'stay':'STANLEY'})
+                               transitions={'stay':'GO2POSE'})
 
     # Create and start the introspection server
     # sis = smach_ros.IntrospectionServer('my_smach_introspection_server', sm, '/SM_ROOT')

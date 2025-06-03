@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/tianbot/sim_ws/devel_isolated/geodesy/lib/python3/dist-packages",
+        "/home/tianbot/sim_ws/devel_isolated/unique_id/lib/python3/dist-packages",
+        "/home/tianbot/sim_ws/devel_isolated/geographic_msgs/lib/python3/dist-packages",
+        "/home/tianbot/sim_ws/devel_isolated/uuid_msgs/lib/python3/dist-packages",
+        "/home/tianbot/sim_ws/devel_isolated/rmtt_tracker/lib/python3/dist-packages",
+        "/home/tianbot/sim_ws/devel_isolated/hector_uav_msgs/lib/python3/dist-packages",
+        "/home/tianbot/sim_ws/devel_isolated/hector_gazebo_plugins/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/tianbot/.ros1/lib/python/site-packages",
+        "/usr/lib/python3/dist-packages"
+    ]
+}
