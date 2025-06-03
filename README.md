@@ -4,7 +4,7 @@
 
 ![sim.jpg](sim.jpg)
 
-西北工业大学[智能无人系统综合设计](https://github.com/cavayangtao/npurobocourse)课程仿真环境
+西北工业大学[智能无人系统综合设计](https://github.com/cavayangtao/npurobocourse)课程仿真环境。
 
 仿真建立在开源项目[hector_quadrotor](https://github.com/RAFALAMAO/hector-quadrotor-noetic)和[tianbot_mini](https://github.com/tianbot/tianbot_mini)基础上。
 
