@@ -1,4 +1,4 @@
-2025-05-29：支持仿真测试和[虚实结合测试](https://github.com/npu-ius-lab/npurobocourse_sim/tree/sim2real)
+2025-05-29：支持仿真测试和[虚实结合测试](https://github.com/npu-ius-lab/npurobocourse_sim/tree/sim2real)。
 
 2024-06-16：无人机位姿话题重映射为 /pose。
 
