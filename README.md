@@ -72,6 +72,8 @@ roslaunch rmtt_tracker rmtt_tag_tracker.launch
 
 ### 虚实结合
 
+仿真中无人机位姿同步显示为实物无人机在定位毯上的位姿：
+
 ```
 roslaunch hector_quadrotor_demo sim_real.launch
 ```
