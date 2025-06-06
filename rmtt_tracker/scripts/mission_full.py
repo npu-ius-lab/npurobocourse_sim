@@ -183,7 +183,7 @@ if __name__ == '__main__':
     # rospy.Subscriber('/mission_pad_id', UInt8, callback_mission_pad)
     rospy.Subscriber('/pose', PoseStamped, callback_pose)
     rospy.Subscriber("/cmd_vel_tag", Twist, callback_cmd_tag)
-    # rospy.Subscriber('/tof_btm', Range, callback_tof_btm)
+    rospy.Subscriber('/tof_btm', Range, callback_tof_btm)
     rospy.Subscriber("/circle_msg", ROI, callback_radius_circle)
     rospy.Subscriber("/cmd_vel_circle", Twist, callback_cmd_vel_circle)
     rospy.Subscriber("/cmd_vel_go2pose", Twist, callback_go2pose_speed)
