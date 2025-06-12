@@ -130,10 +130,10 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>1818 702000000</sim_time>
-      <real_time>235 574469494</real_time>
-      <wall_time>1748585657 872093223</wall_time>
-      <iterations>231500</iterations>
+      <sim_time>2112 152000000</sim_time>
+      <real_time>113 191435969</real_time>
+      <wall_time>1749742657 134775564</wall_time>
+      <iterations>110252</iterations>
       <model name='RoboCup 09 SPL Field'>
         <pose>-0.016501 0.009346 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -249,13 +249,13 @@
         </link>
       </model>
       <model name='cardboard_box_clone_0'>
-        <pose>0.98697 1.13346 0.159 0 -0 0</pose>
+        <pose>0.343474 1.59413 0.159 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.98697 1.13346 0.159 0 -0 0</pose>
+          <pose>0.343474 1.59413 0.159 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -1.9e-05 0 0.000128 -2e-06 0</acceleration>
-          <wrench>-1e-06 -3.8e-05 1e-06 0 -0 0</wrench>
+          <acceleration>0 1.9e-05 -0 -0.000128 2e-06 0</acceleration>
+          <wrench>1e-06 3.8e-05 -1e-06 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_clone_1'>
@@ -339,10 +339,10 @@
         </link>
       </model>
       <model name='hoop_red'>
-        <pose>3.51054 -1.68621 0 0 0 -1.59145</pose>
+        <pose>-1.46647 -1.94031 0 0 0 -3.12579</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>3.51054 -1.68621 -1.07934 0 0 -1.59145</pose>
+          <pose>-1.46647 -1.94031 -1.07934 0 0 -3.12579</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -354,7 +354,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>10.0524 1.94348 8.81331 0 0.892817 -2.3877</pose>
+        <pose>0.447546 -7.3778 7.91926 0 0.89682 1.54749</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

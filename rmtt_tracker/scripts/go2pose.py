@@ -128,8 +128,8 @@ if __name__ == '__main__':
     # x_goal = 1.5 - 3 * random()
     # y_goal = 1.5 - 3 * random()
     # theta_goal = 2 * np.pi * random() - np.pi
-    x_goal = -1.2
-    y_goal = 1.2
+    x_goal = 0
+    y_goal = 0
     theta_goal = np.pi/2.0
 
     rospy.init_node('go2pos', anonymous=True)
