@@ -61,6 +61,6 @@
   <node pkg="hector_quadrotor_demo" type="statictf.py" name="groundtruthtf" />
   
   <!-- Start rviz visualization with preset config -->
-  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hector_quadrotor_demo)/rviz_cfg/virtuality_reality.rviz"/>
+  <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hector_quadrotor_demo)/rviz_cfg/virtuality_reality.rviz"/> -->
 
 </launch>
