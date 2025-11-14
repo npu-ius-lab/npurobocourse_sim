@@ -1,6 +1,6 @@
-image: /home/tyang/ns_ws/src/npurobocourse_sim/tianbot_mini/maps/map.pgm
+image: /media/xiaoshuu/KINGSTON/code/npurobocourse_sim-main/src/tianbot_mini/maps/map.pgm
 resolution: 0.025000
-origin: [-13.000000, -12.200000, 0.000000]
+origin: [-13.800000, -12.200000, 0.000000]
 negate: 0
 occupied_thresh: 0.65
 free_thresh: 0.196
