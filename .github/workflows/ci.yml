@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-24.04
+    container: osrf/ros:jazzy-desktop
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update rosdep database
+        run: rosdep update
+
+      - name: Resolve and install dependencies
+        run: rosdep install --from-paths src --ignore-src -r -y
+
+      - name: Build workspace
+        run: colcon build --symlink-install --event-handlers console_direct+
+
+      - name: Run tests
+        run: |
+          colcon test --event-handlers console_direct+
+          colcon test-result --verbose
+
+      - name: Verify setup file
+        run: test -f install/setup.bash

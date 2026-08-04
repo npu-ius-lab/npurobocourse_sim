@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>npu_sim_description</name>
+  <version>0.1.0</version>
+  <description>Course world, model, sensor, and camera preset assets for the NPU ROS 2 simulation environment.</description>
+  <maintainer email="npu-ius-lab@users.noreply.github.com">NPU IUS Lab</maintainer>
+  <license>YOLO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_cmake_pytest</test_depend>
+  <test_depend>python3-pytest</test_depend>
+  <test_depend>python3-yaml</test_depend>
+  <test_depend>ros_gz_sim</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

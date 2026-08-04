@@ -1,0 +1,43 @@
+mission:
+  ros__parameters:
+    # Target altitude above the world floor after takeoff.
+    takeoff_height: 1.0
+    # Hover points before and after the vertical ring at (-1, 4.3).
+    ring_approach: [-1.0, 2.8, 1.0]
+    ring_exit: [-1.0, 5.8, 1.0]
+    # Flat list of xyz triplets visited after the ring traverse.
+    waypoints: [2.5, 2.0, 1.0]
+    position_tolerance: 0.25
+    cruise_speed: 0.8
+    vertical_speed: 0.5
+    yaw_rate_limit: 0.8
+    approach_distance_gain: 1.0
+    state_timeout_sec: 120.0
+
+follow_drone_tf:
+  ros__parameters:
+    # Desired distance between robot and drone while following.
+    follow_distance: 1.5
+    # Stop band around the offset target.
+    goal_tolerance: 0.15
+    max_linear: 0.5
+    max_angular: 1.0
+    linear_gain: 0.8
+    angular_gain: 1.5
+    pose_timeout_sec: 1.0
+    tf_timeout_sec: 1.0
+    # Static world -> npu_robot/odom transform (robot spawn pose in world).
+    world_to_odom: [2.5, -1.5, 0.0]
+
+publish_follow_goal:
+  ros__parameters:
+    # Nav target stops this far short of the drone (keeps goal cells clear
+    # of the drone body and nearby obstacle inflation).
+    follow_distance: 1.5
+    # Minimum target displacement that justifies a replacement goal.
+    target_update_distance: 0.3
+    # Rate limit between two NavigateToPose submissions.
+    goal_update_interval_sec: 2.0
+    # Backoff after a rejected or aborted goal.
+    goal_retry_delay_sec: 2.0
+    pose_timeout_sec: 1.0

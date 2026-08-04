@@ -1,0 +1,14 @@
+external_pose_display_adapter:
+  ros__parameters:
+    # Virtual-real display: external localization pose drives the
+    # npu_drone_display entity through the simulator entity-pose service.
+    external_pose_topic: /npu/external/drone_pose
+    world_frame: world
+    world_name: course_world
+    entity_name: npu_drone_display
+    external_pose_timeout_sec: 1.0
+    update_rate_hz: 20.0
+    service_timeout_ms: 500
+    bounds_x: [-12.0, 12.0]
+    bounds_y: [-12.0, 12.0]
+    bounds_z: [0.0, 6.0]

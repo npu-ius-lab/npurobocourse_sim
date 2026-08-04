@@ -1,0 +1,34 @@
+/**/apriltag_detector:
+  ros__parameters:
+    image_transport: raw
+    family: 36h11
+    # Black-square edge length of the robot-mounted tag36h11 id-8 marker
+    # (0.1 m plate, black border covers 80%).
+    size: 0.08
+    max_hamming: 0
+    qos_profile: sensor_data
+    pose_estimation_method: pnp
+    detector:
+      threads: 2
+      decimate: 1.0
+      blur: 0.0
+      refine: true
+    tag:
+      ids: [8]
+      frames: [marker]
+      sizes: [0.08]
+
+detection_adapter:
+  ros__parameters:
+    image_topic: /npu/drone/camera/image_raw
+    camera_info_topic: /npu/drone/camera/camera_info
+    detections_topic: /npu/drone/detections
+    drone_pose_topic: /npu/drone/pose
+    # Marker-selection rule: publish the pose of this tag id only.
+    marker_id: 8
+    marker_frame: marker
+    camera_frame: npu_drone/front_cam
+    base_frame: npu_drone/base_link
+    world_frame: world
+    pose_timeout_sec: 1.0
+    tf_timeout_sec: 1.0

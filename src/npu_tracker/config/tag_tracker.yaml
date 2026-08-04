@@ -1,0 +1,14 @@
+tag_tracker:
+  ros__parameters:
+    # Marker-hover tracking parameters.
+    hover_height: 1.2          # hover this far above the marker (m)
+    position_tolerance: 0.15   # deadband around the hover target (m)
+    max_linear_xy: 0.8         # horizontal speed limit (m/s)
+    max_vertical: 0.5          # vertical speed limit (m/s)
+    yaw_rate_limit: 0.8        # yaw rate limit (rad/s)
+    distance_gain: 1.0         # proportional gain on horizontal distance
+    face_marker_distance: 0.5  # yaw toward the marker beyond this distance (m)
+    pose_timeout_sec: 1.0      # input freshness timeout (s)
+    marker_topic: /npu/marker/pose
+    drone_pose_topic: /npu/drone/pose
+    world_frame: world

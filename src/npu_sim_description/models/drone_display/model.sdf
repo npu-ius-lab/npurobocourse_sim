@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!--
+  npu_drone_display: static, visual-only quadrotor for the virtual-real
+  display scene (sim_real.launch.py). It carries no physics, sensors, or
+  plugins; external_pose_display_adapter teleports it through the simulator
+  entity-pose service using the external localization pose.
+-->
+<sdf version="1.9">
+  <model name="npu_drone_display">
+    <static>true</static>
+    <link name="base_link">
+      <visual name="body">
+        <geometry>
+          <box>
+            <size>0.25 0.25 0.05</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1 0.2 0.6 1</ambient>
+          <diffuse>0.1 0.2 0.6 1</diffuse>
+        </material>
+      </visual>
+      <visual name="rotor_0">
+        <pose>0.18 0.18 0.03 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.14</radius>
+            <length>0.005</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.3 0.4 0.7 0.7</ambient>
+          <diffuse>0.3 0.4 0.7 0.7</diffuse>
+        </material>
+      </visual>
+      <visual name="rotor_1">
+        <pose>-0.18 -0.18 0.03 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.14</radius>
+            <length>0.005</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.3 0.4 0.7 0.7</ambient>
+          <diffuse>0.3 0.4 0.7 0.7</diffuse>
+        </material>
+      </visual>
+      <visual name="rotor_2">
+        <pose>0.18 -0.18 0.03 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.14</radius>
+            <length>0.005</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.3 0.4 0.7 0.7</ambient>
+          <diffuse>0.3 0.4 0.7 0.7</diffuse>
+        </material>
+      </visual>
+      <visual name="rotor_3">
+        <pose>-0.18 0.18 0.03 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.14</radius>
+            <length>0.005</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.3 0.4 0.7 0.7</ambient>
+          <diffuse>0.3 0.4 0.7 0.7</diffuse>
+        </material>
+      </visual>
+      <visual name="leg_front">
+        <pose>0.12 0 -0.175 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.20 0.30</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+        </material>
+      </visual>
+      <visual name="leg_rear">
+        <pose>-0.12 0 -0.175 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.20 0.30</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

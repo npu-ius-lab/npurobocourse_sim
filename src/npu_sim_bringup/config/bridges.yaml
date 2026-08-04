@@ -1,0 +1,82 @@
+# ros_gz_bridge configuration for the course joint simulation.
+# Only the bridges declared in this file are started by sim.launch.py.
+# Schema: ros_topic_name, gz_topic_name, ros_type_name, gz_type_name,
+# direction (BIDIRECTIONAL|GZ_TO_ROS|ROS_TO_GZ), optional qos_profile,
+# publisher_queue/subscriber_queue, lazy.
+
+# Simulation clock, required before any sim-time-dependent node starts.
+- ros_topic_name: /clock
+  gz_topic_name: /clock
+  ros_type_name: rosgraph_msgs/msg/Clock
+  gz_type_name: gz.msgs.Clock
+  direction: GZ_TO_ROS
+  qos_profile: CLOCK
+
+# Drone state in the world frame.
+- ros_topic_name: /npu/drone/odom
+  gz_topic_name: /model/npu_drone/odometry
+  ros_type_name: nav_msgs/msg/Odometry
+  gz_type_name: gz.msgs.Odometry
+  direction: GZ_TO_ROS
+
+# Validated drone body-frame velocity command, produced by drone_adapter only.
+- ros_topic_name: /npu/drone/cmd_vel_gz
+  gz_topic_name: /model/npu_drone/gazebo/command/twist
+  ros_type_name: geometry_msgs/msg/Twist
+  gz_type_name: gz.msgs.Twist
+  direction: ROS_TO_GZ
+
+# Arms the MulticopterVelocityControl system.
+- ros_topic_name: /npu/drone/enable
+  gz_topic_name: /model/npu_drone/enable
+  ros_type_name: std_msgs/msg/Bool
+  gz_type_name: gz.msgs.Boolean
+  direction: ROS_TO_GZ
+
+# Drone down/forward camera.
+- ros_topic_name: /npu/drone/camera/image_raw
+  gz_topic_name: /npu/drone/camera/image_raw
+  ros_type_name: sensor_msgs/msg/Image
+  gz_type_name: gz.msgs.Image
+  direction: GZ_TO_ROS
+  qos_profile: SENSOR_DATA
+- ros_topic_name: /npu/drone/camera/camera_info
+  gz_topic_name: /npu/drone/camera/camera_info
+  ros_type_name: sensor_msgs/msg/CameraInfo
+  gz_type_name: gz.msgs.CameraInfo
+  direction: GZ_TO_ROS
+
+# Drone IMU declared by the model SDF.
+- ros_topic_name: /npu/drone/imu
+  gz_topic_name: /npu/drone/imu
+  ros_type_name: sensor_msgs/msg/Imu
+  gz_type_name: gz.msgs.IMU
+  direction: GZ_TO_ROS
+  qos_profile: SENSOR_DATA
+
+# Mobile robot velocity command (direct follower or Nav2 output).
+- ros_topic_name: /npu/robot/cmd_vel
+  gz_topic_name: /model/npu_robot/cmd_vel
+  ros_type_name: geometry_msgs/msg/Twist
+  gz_type_name: gz.msgs.Twist
+  direction: ROS_TO_GZ
+
+# Mobile robot odometry, owns the npu_robot/odom -> npu_robot/base_link TF.
+- ros_topic_name: /npu/robot/odom
+  gz_topic_name: /model/npu_robot/odometry
+  ros_type_name: nav_msgs/msg/Odometry
+  gz_type_name: gz.msgs.Odometry
+  direction: GZ_TO_ROS
+- ros_topic_name: /tf
+  gz_topic_name: /model/npu_robot/tf
+  ros_type_name: tf2_msgs/msg/TFMessage
+  gz_type_name: gz.msgs.Pose_V
+  direction: GZ_TO_ROS
+
+# Mobile robot lidar scan.
+- ros_topic_name: /npu/robot/scan
+  gz_topic_name: /npu/robot/scan
+  ros_type_name: sensor_msgs/msg/LaserScan
+  gz_type_name: gz.msgs.LaserScan
+  direction: GZ_TO_ROS
+  qos_profile: SENSOR_DATA

@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<!--
+  Vertical course ring: the drone traverses the opening along the world
+  Y axis. Ring circle radius 0.49 m with 0.07 m tube, giving the 0.42 m
+  inner / 0.56 m outer radii from the course layout. Ring center is 1.0 m
+  above the model origin, matching the takeoff/mission pass height.
+  Built from box segments because Gazebo Harmonic cannot render a
+  torus visual and DART has no torus collision primitive.
+-->
+<sdf version="1.9">
+  <model name="ring">
+    <static>true</static>
+    <link name="link">
+      <visual name="segment_0">
+        <pose>0.490000 0 1.000000 0 -1.570796 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+      <collision name="segment_0">
+        <pose>0.490000 0 1.000000 0 -1.570796 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="segment_1">
+        <pose>0.346482 0 1.346482 0 -2.356194 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+      <collision name="segment_1">
+        <pose>0.346482 0 1.346482 0 -2.356194 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="segment_2">
+        <pose>0.000000 0 1.490000 0 -3.141593 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+      <collision name="segment_2">
+        <pose>0.000000 0 1.490000 0 -3.141593 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="segment_3">
+        <pose>-0.346482 0 1.346482 0 -3.926991 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+      <collision name="segment_3">
+        <pose>-0.346482 0 1.346482 0 -3.926991 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="segment_4">
+        <pose>-0.490000 0 1.000000 0 -4.712389 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+      <collision name="segment_4">
+        <pose>-0.490000 0 1.000000 0 -4.712389 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="segment_5">
+        <pose>-0.346482 0 0.653518 0 -5.497787 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+      <collision name="segment_5">
+        <pose>-0.346482 0 0.653518 0 -5.497787 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="segment_6">
+        <pose>-0.000000 0 0.510000 0 -6.283185 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+      <collision name="segment_6">
+        <pose>-0.000000 0 0.510000 0 -6.283185 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="segment_7">
+        <pose>0.346482 0 0.653518 0 -7.068583 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+      <collision name="segment_7">
+        <pose>0.346482 0 0.653518 0 -7.068583 0</pose>
+        <geometry>
+          <box>
+            <size>0.4050 0.1400 0.1400</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
