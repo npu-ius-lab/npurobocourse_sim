@@ -156,9 +156,28 @@ class PublishFollowGoalNode(Node):
     def _on_cancel_done(self, future, goal_handle) -> None:
         if self._goal_handle is goal_handle:
             self._goal_handle = None
+        response = future.result()
+        if response is None:
+            self.get_logger().warn('cancel request failed: no response')
+            self._pending_target = None
+            self._replacer.on_rejected_or_failed(self._wall_now())
+            return
+        accepted = any(bytes(info.goal_id.uuid) == bytes(goal_handle.goal_id.uuid)
+                       for info in response.goals_canceling)
         pending, self._pending_target = self._pending_target, None
-        if pending is not None:
-            self._send_goal(pending)
+        if pending is None:
+            return
+        if not accepted:
+            self.get_logger().warn(
+                f'cancel rejected (return_code {response.return_code}), '
+                'backing off before retrying')
+            self._replacer.on_rejected_or_failed(self._wall_now())
+            return
+        if self._fresh_drone_xy() is None or self._robot_xy is None:
+            self.get_logger().warn('poses went stale during cancel, dropping pending goal')
+            self._replacer.on_rejected_or_failed(self._wall_now())
+            return
+        self._send_goal(pending)
 
     def _on_goal_response(self, future) -> None:
         goal_handle = future.result()

@@ -15,14 +15,25 @@ jobs:
       - name: Update rosdep database
         run: rosdep update
 
+      - name: Add OSRF Gazebo apt repository
+        run: |
+          curl -sSL https://packages.osrfoundation.org/gazebo.gpg -o /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
+          echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable $(. /etc/os-release && echo "$VERSION_CODENAME") main" > /etc/apt/sources.list.d/gazebo-stable.list
+
       - name: Resolve and install dependencies
-        run: rosdep install --from-paths src --ignore-src -r -y
+        run: |
+          apt-get update
+          apt-get install -y python3-gz-transport13 python3-gz-msgs10
+          rosdep install --from-paths src --ignore-src -r -y
 
       - name: Build workspace
-        run: colcon build --symlink-install --event-handlers console_direct+
+        run: |
+          source /opt/ros/jazzy/setup.bash
+          colcon build --symlink-install --event-handlers console_direct+
 
       - name: Run tests
         run: |
+          source /opt/ros/jazzy/setup.bash
           colcon test --event-handlers console_direct+
           colcon test-result --verbose
 

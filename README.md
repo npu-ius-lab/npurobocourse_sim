@@ -26,6 +26,12 @@ rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 ```
 
+`external_pose_display_adapter` 还需要 Gazebo 的 Python 绑定（rosdep 暂无对应规则，需手动安装）：
+
+```bash
+sudo apt install python3-gz-transport13 python3-gz-msgs10
+```
+
 ## 构建
 
 ```bash

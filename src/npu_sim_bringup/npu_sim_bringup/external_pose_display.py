@@ -4,9 +4,14 @@ from rclpy.node import Node
 from diagnostic_msgs.msg import DiagnosticArray, DiagnosticStatus, KeyValue
 from geometry_msgs.msg import PoseStamped
 
-from gz.transport13 import Node as GzNode
-from gz.msgs10.boolean_pb2 import Boolean
-from gz.msgs10.pose_pb2 import Pose as GzPose
+try:
+    from gz.transport13 import Node as GzNode
+    from gz.msgs10.boolean_pb2 import Boolean
+    from gz.msgs10.pose_pb2 import Pose as GzPose
+except ImportError as exc:
+    raise ImportError(
+        'Gazebo Python bindings not found; install them with: '
+        'sudo apt install python3-gz-transport13 python3-gz-msgs10') from exc
 
 from npu_sim_bringup.display_logic import DisplayConfig, validate_external_pose
 
