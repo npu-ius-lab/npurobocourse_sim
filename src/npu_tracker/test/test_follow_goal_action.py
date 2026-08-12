@@ -26,6 +26,8 @@ class MockNav2Server(Node):
     def __init__(self):
         super().__init__('mock_nav2_server')
         self.accept_goals = True
+        self.reject_cancels = False
+        self.cancel_response_delay = 0.0
         self.goal_requests = []
         self.cancel_requests = 0
         self._server = ActionServer(
@@ -42,7 +44,9 @@ class MockNav2Server(Node):
 
     def _on_cancel(self, _goal_handle):
         self.cancel_requests += 1
-        return CancelResponse.ACCEPT
+        if self.cancel_response_delay > 0.0:
+            time.sleep(self.cancel_response_delay)
+        return CancelResponse.REJECT if self.reject_cancels else CancelResponse.ACCEPT
 
     def _execute(self, goal_handle):
         while rclpy.ok():
@@ -57,11 +61,14 @@ class FollowGoalProbe(Node):
     def __init__(self):
         super().__init__('follow_goal_probe')
         self.drone_xy = (5.0, 5.0)
+        self.publish_enabled = True
         self._pose_pub = self.create_publisher(PoseStamped, '/npu/drone/pose', 10)
         self._tf_pub = tf2_ros.TransformBroadcaster(self)
         self.create_timer(0.05, self._publish)
 
     def _publish(self):
+        if not self.publish_enabled:
+            return
         pose = PoseStamped()
         pose.header.stamp = self.get_clock().now().to_msg()
         pose.header.frame_id = 'world'
@@ -158,6 +165,52 @@ class TestPublishFollowGoal(unittest.TestCase):
             self._wait_for(lambda: len(self.server.goal_requests) > rejected_count,
                            timeout=5.0),
             'rejected goal was never retried after goal_retry_delay_sec')
+
+        # Cancel rejection: a refused cancel drops the pending replacement
+        # and backs off before resubmitting instead of thrashing goals.
+        self.server.accept_goals = True
+        goals_before = len(self.server.goal_requests)
+        self.assertTrue(
+            self._wait_for(lambda: len(self.server.goal_requests) > goals_before,
+                           timeout=5.0),
+            'no goal submitted after re-enabling acceptance')
+        time.sleep(0.3)  # let the new goal be accepted and become active
+        self.server.reject_cancels = True
+        cancels_before = self.server.cancel_requests
+        self.probe.drone_xy = (16.0, 5.0)
+        self.assertTrue(
+            self._wait_for(lambda: self.server.cancel_requests > cancels_before,
+                           timeout=5.0),
+            'replacement cancel was never requested')
+        goals_after_cancel = len(self.server.goal_requests)
+        time.sleep(0.8)
+        self.assertEqual(len(self.server.goal_requests), goals_after_cancel,
+                         'goal resubmitted during cancel-rejection backoff')
+        self.assertTrue(
+            self._wait_for(lambda: len(self.server.goal_requests) > goals_after_cancel,
+                           timeout=5.0),
+            'goal never resubmitted after cancel-rejection backoff')
+
+        # Poses stale during cancel: the pending replacement is dropped and
+        # a fresh goal is submitted once poses recover.
+        self.server.reject_cancels = False
+        self.server.cancel_response_delay = 2.5
+        cancels_before = self.server.cancel_requests
+        self.probe.drone_xy = (20.0, 5.0)
+        self.assertTrue(
+            self._wait_for(lambda: self.server.cancel_requests > cancels_before,
+                           timeout=5.0),
+            'stale-phase replacement cancel was never requested')
+        self.probe.publish_enabled = False
+        goals_before = len(self.server.goal_requests)
+        time.sleep(3.0)
+        self.assertEqual(len(self.server.goal_requests), goals_before,
+                         'pending goal was submitted while poses were stale')
+        self.probe.publish_enabled = True
+        self.assertTrue(
+            self._wait_for(lambda: len(self.server.goal_requests) > goals_before,
+                           timeout=10.0),
+            'node never recovered after poses came back')
 
 
 if __name__ == '__main__':
