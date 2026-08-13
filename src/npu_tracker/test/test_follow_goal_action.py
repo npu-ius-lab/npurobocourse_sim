@@ -94,6 +94,7 @@ class TestPublishFollowGoal(unittest.TestCase):
         cls.probe = FollowGoalProbe()
         cls.node = PublishFollowGoalNode(
             parameter_overrides=[
+                Parameter('use_sim_time', value=False),
                 Parameter('target_update_distance', value=0.3),
                 Parameter('goal_update_interval_sec', value=1.0),
                 Parameter('goal_retry_delay_sec', value=1.5),

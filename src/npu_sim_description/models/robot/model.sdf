@@ -221,18 +221,18 @@
       </sensor>
     </link>
 
-    <!-- AprilTag marker plate, rigidly welded above the lidar, facing +X -->
+    <!-- AprilTag marker plate, rigidly welded above the lidar, facing +Z (up) -->
     <include>
       <uri>model://marker</uri>
       <name>marker</name>
-      <pose>0.0 0 0.114 0 1.5707963 0</pose>
+      <pose>0.0 0 0.114 0 0 0</pose>
     </include>
 
     <joint name="left_wheel_joint" type="revolute">
       <parent>base_link</parent>
       <child>left_wheel_link</child>
       <axis>
-        <xyz>0 1 0</xyz>
+        <xyz expressed_in="__model__">0 1 0</xyz>
         <limit>
           <lower>-1e16</lower>
           <upper>1e16</upper>
@@ -244,7 +244,7 @@
       <parent>base_link</parent>
       <child>right_wheel_link</child>
       <axis>
-        <xyz>0 1 0</xyz>
+        <xyz expressed_in="__model__">0 1 0</xyz>
         <limit>
           <lower>-1e16</lower>
           <upper>1e16</upper>

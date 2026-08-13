@@ -60,11 +60,11 @@ def _camera_pose(rendered_sdf):
 
 def test_presets_declare_expected_mount():
     translation, rpy = _load_preset('forward')
-    assert translation == pytest.approx([0.05, 0.0, -0.25])
+    assert translation == pytest.approx([0.16, 0.0, -0.25])
     assert rpy == pytest.approx([0.0, math.radians(15), 0.0])
 
     translation, rpy = _load_preset('down')
-    assert translation == pytest.approx([0.05, 0.0, -0.25])
+    assert translation == pytest.approx([0.16, 0.0, -0.25])
     assert rpy == pytest.approx([0.0, math.radians(90), 0.0])
 
 

@@ -1,4 +1,5 @@
 # Camera mount preset: straight down.
 # Supported replacement for editing the ROS 1 Xacro line by hand.
-translation: [0.05, 0.0, -0.25]
+# x=0.16 keeps the lens ahead of the leg_front plate (x in [0.11, 0.13]).
+translation: [0.16, 0.0, -0.25]
 rpy: [0.0, 1.5707963, 0.0]

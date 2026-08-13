@@ -3,6 +3,7 @@ import math
 import rclpy
 from rclpy.action import ActionClient
 from rclpy.node import Node
+from rclpy.parameter import Parameter
 from rclpy.time import Time
 
 from action_msgs.msg import GoalStatus
@@ -22,6 +23,14 @@ class PublishFollowGoalNode(Node):
 
     def __init__(self, **kwargs):
         super().__init__('publish_follow_goal', **kwargs)
+
+        # Simulation-only workspace: default to sim time so bare `ros2 run`
+        # matches the launch-file behavior (README interface convention).
+        # rclpy's TimeSource already declared use_sim_time (default False);
+        # an explicit override (launch file, tests) always wins.
+        if 'use_sim_time' not in getattr(self, '_parameter_overrides', {}):
+            self.set_parameters(
+                [Parameter('use_sim_time', Parameter.Type.BOOL, True)])
 
         self.declare_parameter('follow_distance', 1.5)
         self.declare_parameter('target_update_distance', 0.3)

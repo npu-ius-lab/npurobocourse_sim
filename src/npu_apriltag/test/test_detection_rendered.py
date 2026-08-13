@@ -164,8 +164,8 @@ class TestRenderedCameraDetection(unittest.TestCase):
         # Tag face fills ~410 px of the 512 px image at fx=500, size 0.08 m,
         # so the marker sits ~0.098 m along the optical axis. With the drone
         # at the world origin and the forward 15-degree mount at
-        # (0.05, 0, -0.25), the world marker pose is deterministic.
-        self.assertAlmostEqual(p.x, 0.1446, delta=0.03)
+        # (0.16, 0, -0.25), the world marker pose is deterministic.
+        self.assertAlmostEqual(p.x, 0.2547, delta=0.03)
         self.assertAlmostEqual(p.y, 0.0, delta=0.02)
         self.assertAlmostEqual(p.z, -0.2753, delta=0.03)
 

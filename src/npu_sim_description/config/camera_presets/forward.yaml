@@ -1,4 +1,5 @@
 # Camera mount preset: forward-looking with a 15 deg downward tilt.
 # Matches the ROS 1 course default (quadrotor_hokuyo_utm30lx.urdf.xacro).
-translation: [0.05, 0.0, -0.25]
+# x=0.16 keeps the lens ahead of the leg_front plate (x in [0.11, 0.13]).
+translation: [0.16, 0.0, -0.25]
 rpy: [0.0, 0.2617994, 0.0]

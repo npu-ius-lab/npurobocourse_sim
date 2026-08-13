@@ -2,6 +2,7 @@ import math
 
 import rclpy
 from rclpy.node import Node
+from rclpy.parameter import Parameter
 from rclpy.time import Time
 
 from diagnostic_msgs.msg import DiagnosticArray, DiagnosticStatus
@@ -17,6 +18,14 @@ class FollowDroneTfNode(Node):
 
     def __init__(self):
         super().__init__('follow_drone_tf')
+
+        # Simulation-only workspace: default to sim time so bare `ros2 run`
+        # matches the launch-file behavior (README interface convention).
+        # rclpy's TimeSource already declared use_sim_time (default False);
+        # an explicit override (launch file, tests) always wins.
+        if 'use_sim_time' not in getattr(self, '_parameter_overrides', {}):
+            self.set_parameters(
+                [Parameter('use_sim_time', Parameter.Type.BOOL, True)])
 
         self.declare_parameter('follow_distance', 1.5)
         self.declare_parameter('goal_tolerance', 0.15)
