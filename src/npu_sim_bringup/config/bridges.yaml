@@ -54,8 +54,8 @@
   direction: GZ_TO_ROS
   qos_profile: SENSOR_DATA
 
-# Mobile robot velocity command (direct follower or Nav2 output).
-- ros_topic_name: /npu/robot/cmd_vel
+# Mobile robot velocity command after the timeout gate.
+- ros_topic_name: /npu/robot/cmd_vel_gz
   gz_topic_name: /model/npu_robot/cmd_vel
   ros_type_name: geometry_msgs/msg/Twist
   gz_type_name: gz.msgs.Twist

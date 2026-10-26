@@ -69,9 +69,7 @@ def generate_launch_description():
         package='rviz2',
         executable='rviz2',
         name='rviz2',
-        arguments=['-d', os.path.join(
-            get_package_share_directory('slam_toolbox'),
-            'config', 'slam_toolbox_default.rviz')],
+        arguments=['-d', os.path.join(pkg_share, 'config', 'slam.rviz')],
         parameters=[{'use_sim_time': use_sim_time}],
     )
 
@@ -81,7 +79,7 @@ def generate_launch_description():
             description='Use simulation time from /clock.'),
         DeclareLaunchArgument(
             'rviz', default_value='false',
-            description='Open RViz with the slam_toolbox default view.'),
+            description='Open RViz with the course SLAM view.'),
         robot_tf,
         slam,
         configure_event,

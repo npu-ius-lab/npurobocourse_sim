@@ -46,14 +46,21 @@ def _render_drone_model(preset_name):
     return out
 
 
-def _spawn_action(model_file, spec):
+def _spawn_action(model_file, spec, attempts=60):
     return ExecuteProcess(
         cmd=[
             'bash', '-c',
-            'for i in $(seq 1 60); do '
+            'created=0; '
+            f'for i in $(seq 1 {attempts}); do '
             'ros2 run ros_gz_sim create '
             f'-world {WORLD_NAME} -file {model_file} -name {spec["name"]} '
-            f'-x {spec["x"]} -y {spec["y"]} -z {spec["z"]} && exit 0; '
+            f'-x {spec["x"]} -y {spec["y"]} -z {spec["z"]} '
+            '&& created=1 && break; '
+            'sleep 1; done; '
+            '[ "$created" -eq 1 ] || exit 1; '
+            f'for i in $(seq 1 {attempts}); do '
+            f'pose=$(gz model -m {spec["name"]} --pose 2>/dev/null) && '
+            '[[ "$pose" == *Pose* ]] && exit 0; '
             'sleep 1; done; exit 1',
         ],
         name=f'spawn_{spec["name"]}',
@@ -119,9 +126,17 @@ def _setup(context, *args, **kwargs):
         parameters=[{'use_sim_time': use_sim_time}],
     )
 
+    robot_adapter = Node(
+        package='npu_sim_bringup',
+        executable='robot_adapter',
+        name='robot_adapter',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}],
+    )
+
     def on_clock_wait_exit(event, _context):
         if event.returncode == 0:
-            return [drone_adapter]
+            return [drone_adapter, robot_adapter]
         return [
             LogInfo(msg='fatal: /clock unavailable, shutting down bringup'),
             EmitEvent(event=Shutdown(reason='clock_wait_failed')),

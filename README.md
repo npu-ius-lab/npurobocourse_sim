@@ -132,7 +132,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/np
 ros2 launch npu_mobile_robot amcl.launch.py
 ```
 
-加载项目默认地图（`src/npu_mobile_robot/maps/course_map.yaml`，可用 `map:=<路径>` 替换），启动 AMCL 与 Nav2 导航栈，追加 `rviz:=true` 可打开 RViz。之后可在 RViz 中下发导航目标。
+加载项目默认地图（`src/npu_mobile_robot/maps/course_map.yaml`，可用 `map:=<路径>` 替换），启动 AMCL 与 Nav2 导航栈，追加 `rviz:=true` 可打开 RViz。之后可在 RViz 中下发导航目标。RViz 可查看 `/particlecloud` 粒子云、`/plan` 规划路径和 `/npu/robot/odom` 实际运动轨迹。
 
 ### 5. 小车跟随无人机（无避障）
 
@@ -156,7 +156,7 @@ ros2 run npu_tracker follow_drone_tf
 ros2 run npu_tracker publish_follow_goal
 ```
 
-通过 Nav2 `NavigateToPose` action 周期下发跟随目标，由导航栈负责避障；不直接发布速度命令。
+通过 Nav2 `NavigateToPose` action 周期下发跟随目标，由导航栈负责避障；不直接发布速度命令。RViz 中的 Path 显示规划路径，Odometry 历史轨迹用于核对实际运动过程。
 
 ### 7. 无人机跟踪小车标记
 

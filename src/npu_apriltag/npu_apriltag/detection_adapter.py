@@ -79,7 +79,6 @@ class DetectionAdapter(Node):
             self.get_parameter('drone_pose_topic').value,
             self._on_drone_pose, 10)
 
-        self.create_timer(0.05, self._relay_drone_tf)
         self.create_timer(0.1, self._tick)
         self.create_timer(1.0, self._publish_diagnostics)
 
@@ -120,19 +119,14 @@ class DetectionAdapter(Node):
             return
         self._last_drone_pose = msg
         self._last_drone_pose_wall = self._wall_now()
-
-    def _relay_drone_tf(self) -> None:
-        if not self._fresh(self._last_drone_pose, self._last_drone_pose_wall,
-                           self._pose_timeout):
-            return
         transform = TransformStamped()
-        transform.header.stamp = self.get_clock().now().to_msg()
+        transform.header.stamp = msg.header.stamp
         transform.header.frame_id = self._world_frame
         transform.child_frame_id = self._base_frame
-        transform.transform.translation.x = self._last_drone_pose.pose.position.x
-        transform.transform.translation.y = self._last_drone_pose.pose.position.y
-        transform.transform.translation.z = self._last_drone_pose.pose.position.z
-        transform.transform.rotation = self._last_drone_pose.pose.orientation
+        transform.transform.translation.x = msg.pose.position.x
+        transform.transform.translation.y = msg.pose.position.y
+        transform.transform.translation.z = msg.pose.position.z
+        transform.transform.rotation = msg.pose.orientation
         self._tf_broadcaster.sendTransform(transform)
 
     def _fresh(self, msg, wall_stamp, timeout) -> bool:
@@ -167,13 +161,14 @@ class DetectionAdapter(Node):
         try:
             marker_tf = self._tf_buffer.lookup_transform(
                 self._camera_frame, self._marker_frame, Time())
+            stamp = Time.from_msg(marker_tf.header.stamp)
+            # 世界系查询沿用检测时间，与 camera->marker 对齐。
             transform = self._tf_buffer.lookup_transform(
-                self._world_frame, self._marker_frame, Time())
+                self._world_frame, self._marker_frame, stamp)
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException,
                 tf2_ros.ExtrapolationException) as exc:
             self._failure = f'marker TF unavailable: {exc}'
             return
-        stamp = Time.from_msg(marker_tf.header.stamp)
         age = (self.get_clock().now() - stamp).nanoseconds * 1e-9
         if age > self._tf_timeout:
             self._failure = f'marker TF stale ({age:.1f}s old)'

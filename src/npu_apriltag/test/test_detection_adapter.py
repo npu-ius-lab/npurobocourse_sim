@@ -4,7 +4,7 @@ os.environ.setdefault('ROS_DOMAIN_ID', '37')
 
 import rclpy
 
-from geometry_msgs.msg import PoseStamped
+from geometry_msgs.msg import PoseStamped, TransformStamped
 from sensor_msgs.msg import CameraInfo
 
 from npu_apriltag.detection_adapter import DetectionAdapter
@@ -65,17 +65,40 @@ def test_fresh_drone_pose_advances_past_pose_check():
         fixture.destroy()
 
 
-def test_relay_skips_stale_drone_pose():
+def test_drone_pose_callback_preserves_source_stamp():
     rclpy.init()
     fixture = _DetectionAdapterFixture()
     try:
         sent = []
         fixture.node._tf_broadcaster.sendTransform = sent.append
-        fixture.send_drone_pose()
-        fixture.node._relay_drone_tf()
+        pose = PoseStamped()
+        pose.header.frame_id = 'world'
+        pose.header.stamp.sec = 12
+        pose.header.stamp.nanosec = 345000000
+        fixture.node._on_drone_pose(pose)
         assert len(sent) == 1
-        fixture.now[0] += 5.0
-        fixture.node._relay_drone_tf()
-        assert len(sent) == 1
+        assert sent[0].header.stamp == pose.header.stamp
+    finally:
+        fixture.destroy()
+
+
+def test_world_lookup_uses_marker_detection_stamp():
+    rclpy.init()
+    fixture = _DetectionAdapterFixture()
+    try:
+        fixture.node._check_inputs = lambda: None
+        marker_tf = TransformStamped()
+        marker_tf.header.stamp = fixture.node.get_clock().now().to_msg()
+        queries = []
+
+        def lookup_transform(target, source, stamp):
+            queries.append((target, source, stamp))
+            return marker_tf if target == fixture.node._camera_frame else TransformStamped()
+
+        fixture.node._tf_buffer.lookup_transform = lookup_transform
+        fixture.node._pose_pub.publish = lambda msg: None
+        fixture.node._tick()
+        assert queries[1][:2] == ('world', 'marker')
+        assert queries[1][2].to_msg() == marker_tf.header.stamp
     finally:
         fixture.destroy()

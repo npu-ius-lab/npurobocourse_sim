@@ -28,6 +28,24 @@ def _console_scripts(pkg_dir):
     return scripts
 
 
+def _ament_share_directory(pkg):
+    try:
+        from ament_index_python.packages import get_package_share_directory
+        return get_package_share_directory(pkg)
+    except Exception:
+        return None
+
+
+def _has_installed_executable(pkg, executable):
+    try:
+        from ament_index_python.packages import get_package_prefix
+        prefix = get_package_prefix(pkg)
+    except Exception:
+        return False
+    candidate = os.path.join(prefix, 'lib', pkg, executable)
+    return os.path.isfile(candidate) and os.access(candidate, os.X_OK)
+
+
 def validate_readme_commands(readme_path, src_dir):
     """Check that every ros2 launch/run command referenced in the README
     resolves to an existing package, launch file, and executable.
@@ -40,38 +58,37 @@ def validate_readme_commands(readme_path, src_dir):
     problems = []
     packages = _workspace_packages(src_dir)
 
-    def package_known(pkg):
-        if pkg in packages:
-            return True
-        try:
-            from ament_index_python.packages import get_package_share_directory
-            get_package_share_directory(pkg)
-            return True
-        except Exception:
-            return False
-
     for match in LAUNCH_RE.finditer(text):
         pkg, launch_file = match.group(1), match.group(2)
-        if not package_known(pkg):
-            problems.append(f'ros2 launch: unknown package {pkg!r} ({launch_file})')
-            continue
         if pkg in packages:
             candidate = os.path.join(packages[pkg], 'launch', launch_file)
-            if not os.path.isfile(candidate):
+        else:
+            share_dir = _ament_share_directory(pkg)
+            if share_dir is None:
                 problems.append(
-                    f'ros2 launch: {pkg!r} has no launch file {launch_file!r}')
+                    f'ros2 launch: unknown package {pkg!r} ({launch_file})')
+                continue
+            candidate = os.path.join(share_dir, 'launch', launch_file)
+        if not os.path.isfile(candidate):
+            problems.append(
+                f'ros2 launch: {pkg!r} has no launch file {launch_file!r}')
 
     for match in RUN_RE.finditer(text):
         pkg, executable = match.group(1), match.group(2)
-        if not package_known(pkg):
+        if pkg not in packages and _ament_share_directory(pkg) is None:
             problems.append(f'ros2 run: unknown package {pkg!r} ({executable})')
             continue
         if pkg in packages:
             scripts = _console_scripts(packages[pkg])
-            if scripts and executable not in scripts:
-                problems.append(
-                    f'ros2 run: {pkg!r} has no executable {executable!r} '
-                    f'(declared: {sorted(scripts)})')
+            if scripts:
+                if executable not in scripts:
+                    problems.append(
+                        f'ros2 run: {pkg!r} has no executable {executable!r} '
+                        f'(declared: {sorted(scripts)})')
+                continue
+        if not _has_installed_executable(pkg, executable):
+            problems.append(
+                f'ros2 run: {pkg!r} has no executable {executable!r}')
 
     return problems
 

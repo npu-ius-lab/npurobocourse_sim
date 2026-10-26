@@ -2,6 +2,7 @@ import math
 
 import rclpy
 from rclpy.node import Node
+from rclpy.parameter import Parameter
 
 from geometry_msgs.msg import PoseStamped
 
@@ -13,8 +14,12 @@ class MockPosePublisher(Node):
     /npu/external/drone_pose, replacing a real localization mat or drone
     during virtual-real display acceptance."""
 
-    def __init__(self):
-        super().__init__('publish_mock_pose')
+    def __init__(self, **kwargs):
+        super().__init__('publish_mock_pose', **kwargs)
+
+        if 'use_sim_time' not in getattr(self, '_parameter_overrides', {}):
+            self.set_parameters(
+                [Parameter('use_sim_time', Parameter.Type.BOOL, True)])
 
         self.declare_parameter('mode', 'loop')
         self.declare_parameter('rate_hz', 20.0)
@@ -50,7 +55,7 @@ class MockPosePublisher(Node):
 
         self._pub = self.create_publisher(
             PoseStamped, self.get_parameter('topic').value, 10)
-        self._start_time = self.get_clock().now()
+        self._start_time = None
         self.create_timer(1.0 / rate_hz, self._tick)
 
         self.get_logger().info(
@@ -58,10 +63,14 @@ class MockPosePublisher(Node):
             f'rate={rate_hz}Hz start={self._config.start}')
 
     def _tick(self) -> None:
-        elapsed = (self.get_clock().now() - self._start_time).nanoseconds * 1e-9
+        now = self.get_clock().now()
+        if self._start_time is None:
+            # 首次计时从当前时刻起算，避免 /clock 未就绪时轨迹跳变。
+            self._start_time = now
+        elapsed = (now - self._start_time).nanoseconds * 1e-9
         x, y, z, yaw = sample(self._config, elapsed)
         msg = PoseStamped()
-        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.header.stamp = now.to_msg()
         msg.header.frame_id = self._frame_id
         msg.pose.position.x = x
         msg.pose.position.y = y

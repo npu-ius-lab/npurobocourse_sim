@@ -10,6 +10,7 @@ install(
 
 if(BUILD_TESTING)
   find_package(ament_cmake_pytest REQUIRED)
+  ament_add_pytest_test(rviz_config test/test_rviz_config.py)
   ament_add_pytest_test(slam_launch test/test_slam_launch.py TIMEOUT 600)
   ament_add_pytest_test(amcl_nav2_launch test/test_amcl_nav2_launch.py TIMEOUT 900)
   set_tests_properties(slam_launch amcl_nav2_launch PROPERTIES RUN_SERIAL TRUE)

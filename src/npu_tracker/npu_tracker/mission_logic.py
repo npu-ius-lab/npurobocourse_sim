@@ -94,6 +94,9 @@ class Mission:
             self._waypoint_index += 1
             if self._waypoint_index >= len(self.config.waypoints):
                 self._enter(COMPLETE, now)
+            else:
+                # 每个航点单独计时，避免上一航点耗时导致下一航点误超时。
+                self._enter(APPROACH_WAYPOINT, now)
 
     def update(
         self,

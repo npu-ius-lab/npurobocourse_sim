@@ -35,6 +35,7 @@ setup(
     entry_points={
         'console_scripts': [
             'drone_adapter = npu_sim_bringup.drone_adapter:main',
+            'robot_adapter = npu_sim_bringup.robot_adapter:main',
             'wait_for_clock = npu_sim_bringup.wait_for_clock:main',
             'external_pose_display_adapter = npu_sim_bringup.external_pose_display:main',
         ],

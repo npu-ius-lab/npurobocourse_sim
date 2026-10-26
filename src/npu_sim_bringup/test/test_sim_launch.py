@@ -63,6 +63,10 @@ class ProbeNode(Node):
         self._cmd_pub = self.create_publisher(Twist, '/npu/drone/cmd_vel', 10)
         self._cmd_gz_sub = self.create_subscription(
             Twist, '/npu/drone/cmd_vel_gz', self._make_cb('/npu/drone/cmd_vel_gz'), 10)
+        self._robot_cmd_pub = self.create_publisher(Twist, '/npu/robot/cmd_vel', 10)
+        self._robot_cmd_gz_sub = self.create_subscription(
+            Twist, '/npu/robot/cmd_vel_gz',
+            self._make_cb('/npu/robot/cmd_vel_gz'), 10)
         self._enable_sub = self.create_subscription(
             Bool, '/npu/drone/enable', self._make_cb('/npu/drone/enable'), 10)
         self.tf_buffer = Buffer()
@@ -127,6 +131,28 @@ class TestSimLaunch(unittest.TestCase):
             if msg is not None and abs(msg.linear.x - 0.5) < 1e-6:
                 return
         self.fail('validated command 0.5 not observed on /npu/drone/cmd_vel_gz')
+
+    def test_robot_command_gate(self):
+        self.probe.wait_for('/npu/robot/odom')
+        command = Twist()
+        command.linear.x = 0.1
+        deadline = time.monotonic() + 30.0
+        while time.monotonic() < deadline:
+            self.probe._robot_cmd_pub.publish(command)
+            rclpy.spin_once(self.probe, timeout_sec=0.2)
+            msg = self.probe.received.get('/npu/robot/cmd_vel_gz')
+            if msg is not None and abs(msg.linear.x - 0.1) < 1e-6:
+                break
+        else:
+            self.fail('robot command did not pass through the timeout gate')
+
+        deadline = time.monotonic() + 5.0
+        while time.monotonic() < deadline:
+            rclpy.spin_once(self.probe, timeout_sec=0.2)
+            msg = self.probe.received.get('/npu/robot/cmd_vel_gz')
+            if msg is not None and abs(msg.linear.x) < 1e-6:
+                return
+        self.fail('robot command did not time out to zero')
 
     def test_robot_interfaces(self):
         odom = self.probe.wait_for('/npu/robot/odom')

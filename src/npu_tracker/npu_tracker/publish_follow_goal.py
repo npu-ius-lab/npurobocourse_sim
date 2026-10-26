@@ -19,6 +19,12 @@ from npu_tracker.follow_goal_logic import (
 )
 
 
+IDLE = 'IDLE'
+SENDING = 'SENDING'
+ACTIVE = 'ACTIVE'
+CANCELING = 'CANCELING'
+
+
 class PublishFollowGoalNode(Node):
 
     def __init__(self, **kwargs):
@@ -37,6 +43,7 @@ class PublishFollowGoalNode(Node):
         self.declare_parameter('goal_update_interval_sec', 2.0)
         self.declare_parameter('goal_retry_delay_sec', 2.0)
         self.declare_parameter('pose_timeout_sec', 1.0)
+        self.declare_parameter('tf_timeout_sec', 1.0)
         self.declare_parameter('world_frame', 'world')
         self.declare_parameter('base_frame', 'npu_robot/base_link')
 
@@ -49,6 +56,7 @@ class PublishFollowGoalNode(Node):
         self._replacer = GoalReplacer(config)
         self._follow_distance = config.follow_distance
         self._pose_timeout = self.get_parameter('pose_timeout_sec').value
+        self._tf_timeout = self.get_parameter('tf_timeout_sec').value
         self._world_frame = self.get_parameter('world_frame').value
         self._base_frame = self.get_parameter('base_frame').value
 
@@ -56,7 +64,9 @@ class PublishFollowGoalNode(Node):
         self._last_pose_wall = None
         self._robot_xy = None
         self._tf_error = ''
+        self._phase = IDLE
         self._goal_handle = None
+        self._result_pending = None
         self._pending_target = None
         self._canceling_handles = set()
         self._last_result = 'none'
@@ -96,13 +106,18 @@ class PublishFollowGoalNode(Node):
         return (self._last_pose.pose.position.x, self._last_pose.pose.position.y)
 
     def _update_robot_xy(self) -> None:
+        self._robot_xy = None
         try:
             transform = self._tf_buffer.lookup_transform(
                 self._world_frame, self._base_frame, Time())
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException,
                 tf2_ros.ExtrapolationException) as exc:
-            self._robot_xy = None
             self._tf_error = f'robot TF unavailable: {exc}'
+            return
+        stamp = Time.from_msg(transform.header.stamp)
+        age = (self.get_clock().now() - stamp).nanoseconds * 1e-9
+        if age > self._tf_timeout:
+            self._tf_error = f'robot TF stale ({age:.1f}s old)'
             return
         self._tf_error = ''
         self._robot_xy = (
@@ -111,10 +126,17 @@ class PublishFollowGoalNode(Node):
         )
 
     def _tick(self) -> None:
+        if self._phase in (ACTIVE, CANCELING):
+            self._request_result(self._goal_handle)
         drone_xy = self._fresh_drone_xy()
         self._update_robot_xy()
         if drone_xy is None or self._robot_xy is None:
+            if self._phase == ACTIVE:
+                self.get_logger().warn(
+                    'cancelling active goal: drone pose or robot pose unavailable')
             self._cancel_active_goal()
+            return
+        if self._phase in (SENDING, CANCELING):
             return
         if not self._action_client.server_is_ready():
             return
@@ -124,29 +146,37 @@ class PublishFollowGoalNode(Node):
         if approved is None:
             return
 
-        if self._pending_target is not None:
-            return
-        if self._goal_handle is not None:
+        if self._phase == ACTIVE:
             self._pending_target = approved
-            goal_handle = self._goal_handle
-            self._canceling_handles.add(bytes(goal_handle.goal_id.uuid))
-            goal_handle.cancel_goal_async().add_done_callback(
-                lambda future, gh=goal_handle: self._on_cancel_done(future, gh))
-        else:
+            self._cancel_active_goal()
+        elif self._phase == IDLE:
             self._send_goal(approved)
 
     def _cancel_active_goal(self) -> None:
         goal_handle = self._goal_handle
-        if goal_handle is None or self._pending_target is not None:
+        if self._phase != ACTIVE or goal_handle is None:
             return
-        self._goal_handle = None
-        self._canceling_handles.add(bytes(goal_handle.goal_id.uuid))
-        self.get_logger().warn(
-            'cancelling active goal: drone pose or robot pose unavailable')
-        goal_handle.cancel_goal_async().add_done_callback(
-            lambda future, gh=goal_handle: self._on_cancel_done(future, gh))
+        self._phase = CANCELING
+        # 取消期间保留原句柄，result 到达前不能让新 goal 接管。
+        goal_id = bytes(goal_handle.goal_id.uuid)
+        self._canceling_handles.add(goal_id)
+        try:
+            goal_handle.cancel_goal_async().add_done_callback(
+                lambda future, gh=goal_handle: self._on_cancel_done(future, gh))
+        except Exception as exc:
+            self._cancel_failed(goal_handle, f'cancel request failed: {exc}')
+
+    def _cancel_failed(self, goal_handle, message: str) -> None:
+        if self._goal_handle is not goal_handle:
+            return
+        self._phase = ACTIVE
+        self._pending_target = None
+        self._canceling_handles.discard(bytes(goal_handle.goal_id.uuid))
+        self._replacer.on_rejected_or_failed(self._wall_now())
+        self.get_logger().warn(message)
 
     def _send_goal(self, target) -> None:
+        self._phase = SENDING
         goal = NavigateToPose.Goal()
         goal.pose.header.frame_id = self._world_frame
         goal.pose.header.stamp = self.get_clock().now().to_msg()
@@ -159,63 +189,112 @@ class PublishFollowGoalNode(Node):
         self._replacer.on_sent(target, self._wall_now())
         self.get_logger().info(
             f'submitting NavigateToPose goal ({target[0]:.2f}, {target[1]:.2f})')
-        self._action_client.send_goal_async(goal).add_done_callback(
-            self._on_goal_response)
+        try:
+            self._action_client.send_goal_async(goal).add_done_callback(
+                self._on_goal_response)
+        except Exception as exc:
+            self._phase = IDLE
+            self._last_result = 'send failed'
+            self._replacer.on_rejected_or_failed(self._wall_now())
+            self.get_logger().warn(f'goal request failed: {exc}')
 
     def _on_cancel_done(self, future, goal_handle) -> None:
-        if self._goal_handle is goal_handle:
-            self._goal_handle = None
-        response = future.result()
+        if self._goal_handle is not goal_handle or self._phase != CANCELING:
+            return
+        try:
+            response = future.result()
+        except Exception as exc:
+            self._cancel_failed(goal_handle, f'cancel request failed: {exc}')
+            return
         if response is None:
-            self.get_logger().warn('cancel request failed: no response')
-            self._pending_target = None
-            self._replacer.on_rejected_or_failed(self._wall_now())
+            self._cancel_failed(goal_handle, 'cancel request failed: no response')
             return
         accepted = any(bytes(info.goal_id.uuid) == bytes(goal_handle.goal_id.uuid)
                        for info in response.goals_canceling)
-        pending, self._pending_target = self._pending_target, None
-        if pending is None:
-            return
         if not accepted:
-            self.get_logger().warn(
+            self._cancel_failed(
+                goal_handle,
                 f'cancel rejected (return_code {response.return_code}), '
                 'backing off before retrying')
+            return
+        # 取消接受不等于旧 goal 已结束，替换必须等待它的 result。
+        return
+
+    def _request_result(self, goal_handle) -> None:
+        # 结果请求可以重试，但结果未知时始终保留活动句柄。
+        if (goal_handle is None or self._goal_handle is not goal_handle
+                or self._result_pending is goal_handle
+                or self._replacer.in_backoff(self._wall_now())):
+            return
+        try:
+            future = goal_handle.get_result_async()
+            self._result_pending = goal_handle
+            future.add_done_callback(
+                lambda result_future, gh=goal_handle: self._on_result(result_future, gh))
+        except Exception as exc:
+            self._result_pending = None
+            self._last_result = 'result request failed'
             self._replacer.on_rejected_or_failed(self._wall_now())
+            self.get_logger().warn(f'result request failed: {exc}')
+
+    def _on_goal_response(self, future) -> None:
+        try:
+            goal_handle = future.result()
+        except Exception as exc:
+            self._phase = IDLE
+            self._last_result = 'goal response failed'
+            self._replacer.on_rejected_or_failed(self._wall_now())
+            self.get_logger().warn(f'goal response failed: {exc}')
+            return
+        if goal_handle is None or not goal_handle.accepted:
+            self._phase = IDLE
+            self._last_result = 'rejected'
+            self.get_logger().warn('NavigateToPose goal rejected')
+            self._replacer.on_rejected_or_failed(self._wall_now())
+            return
+        self._goal_handle = goal_handle
+        self._phase = ACTIVE
+        self._request_result(goal_handle)
+
+    def _on_result(self, future, goal_handle) -> None:
+        if self._goal_handle is not goal_handle:
+            return
+        self._result_pending = None
+        goal_id = bytes(goal_handle.goal_id.uuid)
+        replaced = goal_id in self._canceling_handles
+        pending = self._pending_target if self._phase == CANCELING else None
+        try:
+            status = future.result().status
+        except Exception as exc:
+            self._last_result = 'result failed'
+            self._replacer.on_rejected_or_failed(self._wall_now())
+            self.get_logger().warn(f'NavigateToPose result failed: {exc}')
+            return
+        # 原 goal 的 result 才释放句柄，之后才能提交待替换目标。
+        self._goal_handle = None
+        self._pending_target = None
+        self._phase = IDLE
+        self._canceling_handles.discard(goal_id)
+        if status == GoalStatus.STATUS_SUCCEEDED:
+            self._last_result = 'succeeded'
+        elif replaced:
+            self._last_result = 'replaced' if pending is not None else 'cancelled (input stale)'
+        else:
+            self._last_result = f'failed (status {status})'
+            self.get_logger().warn(
+                f'NavigateToPose goal ended with status {status}')
+            self._replacer.on_rejected_or_failed(self._wall_now())
+        if pending is None:
+            if replaced:
+                self._replacer.on_rejected_or_failed(self._wall_now())
+            return
+        if status != GoalStatus.STATUS_SUCCEEDED and not replaced:
             return
         if self._fresh_drone_xy() is None or self._robot_xy is None:
             self.get_logger().warn('poses went stale during cancel, dropping pending goal')
             self._replacer.on_rejected_or_failed(self._wall_now())
             return
         self._send_goal(pending)
-
-    def _on_goal_response(self, future) -> None:
-        goal_handle = future.result()
-        if not goal_handle.accepted:
-            self._last_result = 'rejected'
-            self.get_logger().warn('NavigateToPose goal rejected')
-            self._replacer.on_rejected_or_failed(self._wall_now())
-            return
-        self._goal_handle = goal_handle
-        goal_handle.get_result_async().add_done_callback(
-            lambda future, gh=goal_handle: self._on_result(future, gh))
-
-    def _on_result(self, future, goal_handle) -> None:
-        status = future.result().status
-        if self._goal_handle is goal_handle:
-            self._goal_handle = None
-        replaced = bytes(goal_handle.goal_id.uuid) in self._canceling_handles
-        self._canceling_handles.discard(bytes(goal_handle.goal_id.uuid))
-        if status == GoalStatus.STATUS_SUCCEEDED:
-            self._last_result = 'succeeded'
-        elif replaced:
-            # Nav2 terminates the preempted goal as ABORTED or CANCELED when
-            # we replace it; that is expected, not a failure.
-            self._last_result = 'replaced'
-        else:
-            self._last_result = f'failed (status {status})'
-            self.get_logger().warn(
-                f'NavigateToPose goal ended with status {status}')
-            self._replacer.on_rejected_or_failed(self._wall_now())
 
     def _publish_diagnostics(self) -> None:
         array = DiagnosticArray()
@@ -227,7 +306,7 @@ class PublishFollowGoalNode(Node):
         now = self._wall_now()
         if self._fresh_drone_xy() is None:
             status.level = DiagnosticStatus.WARN
-            status.message = 'drone pose missing or stale, active goal cancelled'
+            status.message = 'drone pose missing or stale'
         elif self._tf_error:
             status.level = DiagnosticStatus.WARN
             status.message = self._tf_error

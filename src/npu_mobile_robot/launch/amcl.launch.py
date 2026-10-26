@@ -16,7 +16,8 @@ NAV2_NODES = [
     ('nav2_controller', 'controller_server', 'controller_server',
      {'/cmd_vel': '/npu/robot/cmd_vel'}),
     ('nav2_planner', 'planner_server', 'planner_server', {}),
-    ('nav2_behaviors', 'behavior_server', 'behavior_server', {}),
+    ('nav2_behaviors', 'behavior_server', 'behavior_server',
+     {'/cmd_vel': '/npu/robot/cmd_vel'}),
     ('nav2_bt_navigator', 'bt_navigator', 'bt_navigator', {}),
 ]
 
@@ -62,8 +63,7 @@ def generate_launch_description():
         package='rviz2',
         executable='rviz2',
         name='rviz2',
-        arguments=['-d', os.path.join(
-            get_package_share_directory('nav2_bringup'), 'rviz', 'nav2_default_view.rviz')],
+        arguments=['-d', os.path.join(pkg_share, 'config', 'amcl.rviz')],
         parameters=[{'use_sim_time': use_sim_time}],
     )
 
@@ -76,7 +76,7 @@ def generate_launch_description():
             description='Full path to the occupancy map YAML served by map_server.'),
         DeclareLaunchArgument(
             'rviz', default_value='false',
-            description='Open RViz with the Nav2 default view.'),
+            description='Open RViz with the course AMCL view.'),
         robot_tf,
         *nav2_nodes,
         lifecycle_manager,

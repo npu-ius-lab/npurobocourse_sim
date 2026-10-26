@@ -1,8 +1,10 @@
 import math
 
 import rclpy
+from rclpy.duration import Duration
 from rclpy.node import Node
 from rclpy.parameter import Parameter
+from rclpy.signals import SignalHandlerOptions
 from rclpy.time import Time
 
 from diagnostic_msgs.msg import DiagnosticArray, DiagnosticStatus
@@ -173,13 +175,27 @@ class FollowDroneTfNode(Node):
 
 
 def main(args=None):
-    rclpy.init(args=args)
+    # 保留有效的退出 context，最终零命令才能发布并等待订阅确认。
+    rclpy.init(args=args, signal_handler_options=SignalHandlerOptions.NO)
     node = FollowDroneTfNode()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
     finally:
+        try:
+            node._cmd_pub.publish(Twist())
+        except Exception as exc:
+            node.get_logger().error(f'failed to publish final zero command: {exc}')
+        try:
+            acknowledged = node._cmd_pub.wait_for_all_acked(
+                Duration(seconds=0.2))
+            if not acknowledged:
+                node.get_logger().error(
+                    'final zero command was not acknowledged within 0.2 seconds')
+        except Exception as exc:
+            node.get_logger().error(
+                f'failed to acknowledge final zero command: {exc}')
         try:
             node.destroy_node()
         except Exception:

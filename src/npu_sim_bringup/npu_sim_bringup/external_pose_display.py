@@ -57,7 +57,7 @@ class ExternalPoseDisplayAdapter(Node):
         if update_rate_hz <= 0.0:
             raise ValueError('update_rate_hz must be positive')
         world_name = self.get_parameter('world_name').value
-        self._set_pose_service = f'/world/{world_name}/set_pose'
+        self._set_pose_service = f'/world/{world_name}/set_pose/blocking'
 
         self._last_pose = None
         self._last_pose_wall = None

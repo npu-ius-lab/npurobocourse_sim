@@ -4,3 +4,4 @@ log/
 __pycache__/
 *.egg-info/
 .pytest_cache/
+tasks/gazebo-readme-acceptance-logs/

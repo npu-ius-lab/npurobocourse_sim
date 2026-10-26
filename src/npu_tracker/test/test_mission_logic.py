@@ -80,6 +80,24 @@ def test_full_mission_reaches_complete():
     assert cmd.linear.z == 0.0
 
 
+def test_next_waypoint_resets_state_timeout():
+    mission = _mission(
+        state_timeout_sec=5.0,
+        waypoints=[(2.5, 2.0, 1.0), (4.0, 2.0, 1.0)],
+    )
+    mission.update(_pose(-1.5, -4.0, 0.32), now=0.0)
+    mission.update(_pose(-1.5, -4.0, 1.0), now=1.0)
+    mission.update(_pose(-1.0, 2.8, 1.0), now=2.0)
+    mission.update(_pose(-1.0, 5.8, 1.0), now=3.0)
+    _, state = mission.update(_pose(2.5, 2.0, 1.0), now=4.0)
+    assert state == APPROACH_WAYPOINT
+    cmd, state = mission.update(_pose(4.0, 2.0, 1.0), now=8.5)
+    assert state == COMPLETE
+    assert cmd.linear.x == 0.0
+    assert cmd.linear.y == 0.0
+    assert cmd.linear.z == 0.0
+
+
 def test_state_timeout_goes_failed_and_zeroes():
     mission = _mission(state_timeout_sec=10.0)
     mission.update(_pose(-1.5, -4.0, 0.32), now=0.0)

@@ -27,6 +27,11 @@ class CommandGate:
         )
         return all(math.isfinite(v) for v in values)
 
+    def mark_received(self, now: float) -> None:
+        # 超时只归零一次，下一条命令负责重新武装门控。
+        self._last_command_stamp = now
+        self._timed_out = False
+
     def validate(self, twist: Twist, now: float) -> Tuple[Optional[Twist], Optional[str]]:
         if not self._finite(twist):
             return None, 'rejected non-finite command'
@@ -38,8 +43,7 @@ class CommandGate:
         clamped.angular.x = max(-lim.max_yaw_rate, min(lim.max_yaw_rate, twist.angular.x))
         clamped.angular.y = max(-lim.max_yaw_rate, min(lim.max_yaw_rate, twist.angular.y))
         clamped.angular.z = max(-lim.max_yaw_rate, min(lim.max_yaw_rate, twist.angular.z))
-        self._last_command_stamp = now
-        self._timed_out = False
+        self.mark_received(now)
         return clamped, None
 
     def is_timed_out(self, now: float) -> bool:
