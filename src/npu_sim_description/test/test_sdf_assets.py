@@ -79,6 +79,38 @@ def test_robot_model_structure():
     assert len(weld) == 1, 'marker must be rigidly welded to the robot'
 
 
+def test_robot_has_symmetric_front_rear_casters():
+    root = _parse(os.path.join(MODELS_DIR, 'robot', 'model.sdf'))
+    model = root.find('model')
+    links = {link.get('name'): link for link in model.findall('link')}
+    joints = {joint.get('name'): joint for joint in model.findall('joint')}
+
+    rear = links['caster_link']
+    front = links['caster_front_link']
+    assert sum(name.startswith('caster_') for name in links) == 2
+    assert [float(value) for value in rear.findtext('pose').split()] == \
+        pytest.approx([-0.055, 0.0, -0.0065, 0.0, 0.0, 0.0])
+    assert [float(value) for value in front.findtext('pose').split()] == \
+        pytest.approx([0.055, 0.0, -0.0065, 0.0, 0.0, 0.0])
+
+    for element_name in ['inertial', 'collision', 'visual']:
+        assert ET.tostring(rear.find(element_name)) == \
+            ET.tostring(front.find(element_name))
+    assert rear.findtext('inertial/mass') == '0.02'
+    assert rear.findtext('collision/geometry/sphere/radius') == '0.015'
+    assert rear.findtext('visual/geometry/sphere/radius') == '0.015'
+    assert rear.findtext('collision/surface/friction/ode/mu') == '0.0'
+    assert rear.findtext('collision/surface/friction/ode/mu2') == '0.0'
+
+    for joint_name, child_name in [
+            ('caster_joint', 'caster_link'),
+            ('caster_front_joint', 'caster_front_link')]:
+        joint = joints[joint_name]
+        assert joint.get('type') == 'fixed'
+        assert joint.findtext('parent') == 'base_link'
+        assert joint.findtext('child') == child_name
+
+
 def test_drone_model_plugins():
     root = _parse(os.path.join(MODELS_DIR, 'drone', 'model.sdf'))
     model = root.find('model')

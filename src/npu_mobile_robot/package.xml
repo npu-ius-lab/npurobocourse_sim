@@ -23,6 +23,7 @@
   <exec_depend>nav2_behaviors</exec_depend>
   <exec_depend>nav2_bt_navigator</exec_depend>
   <exec_depend>nav2_lifecycle_manager</exec_depend>
+  <exec_depend>nav2_rviz_plugins</exec_depend>
   <exec_depend>tf2_ros</exec_depend>
   <exec_depend>teleop_twist_keyboard</exec_depend>
 

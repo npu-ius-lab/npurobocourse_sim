@@ -16,10 +16,12 @@ import rclpy
 from ament_index_python.packages import get_package_share_directory
 from rclpy.action import ActionClient
 from rclpy.node import Node
+from rclpy.qos import qos_profile_sensor_data
 
 from geometry_msgs.msg import PoseStamped, PoseWithCovarianceStamped
 from lifecycle_msgs.srv import GetState
 from nav2_msgs.action import NavigateToPose
+from nav2_msgs.msg import ParticleCloud
 from nav_msgs.msg import OccupancyGrid, Odometry
 from tf2_ros import Buffer, TransformListener
 
@@ -54,8 +56,15 @@ class NavProbe(Node):
         self.last_odom = None
         self.costmap_seen = False
         self.amcl_pose = None
+        self.particle_cloud = None
         self.create_subscription(
             Odometry, '/npu/robot/odom', lambda msg: setattr(self, 'last_odom', msg), 10)
+        self.create_subscription(
+            ParticleCloud, '/particle_cloud',
+            lambda msg: setattr(self, 'particle_cloud', msg),
+            qos_profile_sensor_data)
+        self.initial_pose_pub = self.create_publisher(
+            PoseWithCovarianceStamped, '/initialpose', 10)
         self.create_subscription(
             OccupancyGrid, '/global_costmap/costmap',
             lambda msg: setattr(self, 'costmap_seen', True), 10)
@@ -111,6 +120,22 @@ class TestAmclNav2Launch(unittest.TestCase):
                      'planner_server', 'behavior_server', 'bt_navigator'):
             state = self.probe.wait_lifecycle_active(node)
             self.assertEqual(state, 'active', f'{node} not active: {state}')
+
+    def test_amcl_publishes_particle_cloud(self):
+        self.assertEqual(self.probe.wait_lifecycle_active('amcl'), 'active')
+        initial_pose = PoseWithCovarianceStamped()
+        initial_pose.header.stamp = self.probe.get_clock().now().to_msg()
+        initial_pose.header.frame_id = 'world'
+        initial_pose.pose.pose.position.x = 2.5
+        initial_pose.pose.pose.position.y = -1.5
+        initial_pose.pose.pose.orientation.w = 1.0
+        self.probe.initial_pose_pub.publish(initial_pose)
+        received = self.probe.spin_until(
+            lambda: self.probe.particle_cloud is not None
+            and len(self.probe.particle_cloud.particles) > 0,
+            60.0)
+        self.assertTrue(received, 'AMCL did not publish a non-empty particle cloud')
+        self.assertEqual(self.probe.particle_cloud.header.frame_id, 'world')
 
     def test_localization_tf(self):
         ok = self.probe.spin_until(lambda: self.probe.tf_buffer.can_transform(

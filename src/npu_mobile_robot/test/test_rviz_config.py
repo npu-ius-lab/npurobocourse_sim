@@ -37,16 +37,14 @@ def test_rviz_has_teaching_displays(name):
 
 def test_amcl_has_navigation_displays():
     config = _load_rviz('amcl')
-    displays = {
-        display['Class']: display
-        for display in config['Visualization Manager']['Displays']
-    }
+    display_list = config['Visualization Manager']['Displays']
+    displays = {display['Class']: display for display in display_list}
     expected = {
-        'rviz_default_plugins/PoseArray': '/particlecloud',
-        'rviz_default_plugins/Path': '/plan',
-        'rviz_default_plugins/Odometry': '/npu/robot/odom',
+        'nav2_rviz_plugins/ParticleCloud': ('/particle_cloud', 'Best Effort'),
+        'rviz_default_plugins/Path': ('/plan', 'Reliable'),
+        'rviz_default_plugins/Odometry': ('/npu/robot/odom', 'Reliable'),
     }
-    for plugin_name, topic_name in expected.items():
+    for plugin_name, (topic_name, reliability) in expected.items():
         display = displays[plugin_name]
         assert display['Enabled'] is True
         assert display['Value'] is True
@@ -54,11 +52,27 @@ def test_amcl_has_navigation_displays():
             'Depth': 5,
             'Durability Policy': 'Volatile',
             'History Policy': 'Keep Last',
-            'Reliability Policy': 'Reliable',
+            'Reliability Policy': reliability,
             'Value': topic_name,
         }
     assert displays['rviz_default_plugins/Path']['Buffer Length'] == 1
     assert displays['rviz_default_plugins/Odometry']['Keep'] >= 100
+
+    particle_displays = [
+        display for display in display_list
+        if display.get('Topic', {}).get('Value') == '/particle_cloud'
+    ]
+    assert len(particle_displays) == 1
+    assert particle_displays[0]['Name'] == 'ParticleCloud'
+    assert particle_displays[0]['Class'] == 'nav2_rviz_plugins/ParticleCloud'
+    assert not any(
+        display['Class'] == 'rviz_default_plugins/PoseArray'
+        and display.get('Topic', {}).get('Value') == '/particle_cloud'
+        for display in display_list)
+
+
+def test_amcl_declares_particle_cloud_plugin_dependency():
+    assert '<exec_depend>nav2_rviz_plugins</exec_depend>' in _read('package.xml')
 
 
 def test_amcl_has_initial_pose_and_nav2_goal_tools():
@@ -68,6 +82,17 @@ def test_amcl_has_initial_pose_and_nav2_goal_tools():
     initial_pose = tools['rviz_default_plugins/SetInitialPose']
     assert initial_pose['Topic']['Value'] == '/initialpose'
     assert 'nav2_rviz_plugins/GoalTool' in tools
+
+
+def test_amcl_loads_navigation_2_panel():
+    config = _load_rviz('amcl')
+    navigation_panels = [
+        panel for panel in config['Panels']
+        if panel['Class'] == 'nav2_rviz_plugins/Navigation 2'
+    ]
+    assert len(navigation_panels) == 1
+    assert navigation_panels[0]['Name'] == 'Navigation 2'
+    assert config['Window Geometry']['Navigation 2']['collapsed'] is False
 
 
 def test_slam_keeps_toolbox_panel():
